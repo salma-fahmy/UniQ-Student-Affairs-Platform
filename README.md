@@ -16,7 +16,7 @@
 
 <sub>Graduation Project · Faculty of Computers and Data Science · Alexandria University</sub>
 
-[Features](#-features) • [Architecture](#-architecture) • [Tech Stack](#-tech-stack) • [Project Structure](#-project-structure) • [Getting Started](#-getting-started) • [API Overview](#-api-overview) • [Chatbot](#-ai-chatbot)
+[Features](#-features) • [Architecture](#-architecture) • [Tech Stack](#-tech-stack) • [Project Structure](#-project-structure) • [Getting Started](#-getting-started) • [API Overview](#-api-overview) • [Chatbot](#-ai-chatbot) • [Database](#-database) • [Docs, Diagrams & Demo](#-docs-diagrams--demo)
 
 </div>
 
@@ -125,6 +125,7 @@ flowchart LR
 - ChromaDB (vector store)
 - Sentence-Transformers
 - Arabic NLP: AraBERT, PyArabic, Farasa
+- Streamlit (standalone demo UI)
 
 </td>
 </tr>
@@ -136,28 +137,324 @@ flowchart LR
 
 ## 📁 Project Structure
 
+Full repository layout (generated files such as `node_modules`, `.git`, and compiled Chroma vector binaries are omitted for clarity):
+
 ```
-UniQ/
+UniQ-Student-Affairs-Platform/
+│
 ├── apps/
-│   ├── api/              # 🚀 Express + TypeScript + Prisma REST API
-│   ├── workers/          # 📧 BullMQ background email worker
-│   └── chatbot/          # 🤖 FastAPI + Streamlit RAG chatbot microservice
-├── frontend/              # 🖥️ React 19 + Vite single-page application
-├── packages/
-│   ├── database/          # 🗄️ Shared Prisma schema, migrations & client (@repo/db)
-│   ├── config/             # ⚙️ Shared Redis/Cloudinary configuration (@repo/config)
-│   ├── ui/                  # 🧩 Shared React UI primitives (@repo/ui)
-│   ├── eslint-config/        # 🧹 Shared ESLint configuration
-│   └── typescript-config/     # 🧾 Shared tsconfig presets
-├── sql/                    # 🐘 Raw SQL: roles, permissions, RLS policies & seed data
-├── http/                    # 🔬 REST Client (.http) request collections for manual API testing
-├── diagrams/                 # 🗺️ Architecture / flow diagrams (draw.io)
-├── docker-compose.yml         # 🐳 Orchestrates api, chatbot, workers, postgres, redis
-└── entrypoint.sh                # 🔑 API container startup: migrate → grant RLS perms → run
+│   ├── api/                              # 🚀 Express + TypeScript + Prisma REST API
+│   │   ├── src/
+│   │   │   ├── controller/                # Request handlers — one per domain
+│   │   │   │   ├── academic.controller.ts
+│   │   │   │   ├── auth.controller.ts
+│   │   │   │   ├── collageInfo.controller.ts
+│   │   │   │   ├── complaint.controller.ts
+│   │   │   │   ├── inquires.controller.ts
+│   │   │   │   ├── notification.controller.ts
+│   │   │   │   ├── payment.controller.ts
+│   │   │   │   ├── program.controller.ts
+│   │   │   │   ├── request.controller.ts
+│   │   │   │   ├── staff.controller.ts
+│   │   │   │   ├── student.controller.ts
+│   │   │   │   └── user.controller.ts
+│   │   │   ├── dto/                       # Data-transfer objects, enums & payload shapes
+│   │   │   │   ├── INotification.ts
+│   │   │   │   ├── ProgramEnum.ts
+│   │   │   │   ├── RoleEnum.ts
+│   │   │   │   ├── cloudinaryUpload.dto.ts
+│   │   │   │   ├── payload.ts
+│   │   │   │   ├── response.dto.ts
+│   │   │   │   └── user.dto.ts
+│   │   │   ├── error/                     # Custom error classes + Express error types
+│   │   │   │   ├── AuthenticationError.ts
+│   │   │   │   ├── BadRequestError.ts
+│   │   │   │   ├── CustomError.ts
+│   │   │   │   ├── EntityNotFoundError.ts
+│   │   │   │   ├── ForbiddenError.ts
+│   │   │   │   ├── NotFound.Error.ts
+│   │   │   │   └── types.d.ts
+│   │   │   ├── jobs/
+│   │   │   │   └── email.job.ts           # Job payload builder enqueued onto BullMQ
+│   │   │   ├── lib/
+│   │   │   │   └── config.ts              # Centralized env/config loader
+│   │   │   ├── middlewares/
+│   │   │   │   ├── authenticate-user.ts
+│   │   │   │   ├── authorize-permission.ts
+│   │   │   │   ├── error-handler.ts
+│   │   │   │   ├── file-upload.ts
+│   │   │   │   ├── http-logger.ts
+│   │   │   │   ├── ip-rate-limiter.ts
+│   │   │   │   ├── jwt-rate-limiter.ts
+│   │   │   │   ├── optional-auth.ts
+│   │   │   │   ├── photo-upload.ts
+│   │   │   │   ├── rate-limiter.ts
+│   │   │   │   ├── request-context.ts
+│   │   │   │   ├── request-logger.ts
+│   │   │   │   ├── verify-role.ts
+│   │   │   │   └── verify-same-user.ts
+│   │   │   ├── queues/
+│   │   │   │   └── email.queue.ts         # BullMQ queue definition (producer side)
+│   │   │   ├── routes/                    # Route definitions, grouped by domain
+│   │   │   │   ├── academic/academic.router.ts
+│   │   │   │   ├── authRouter/auth.router.ts
+│   │   │   │   ├── chatbot/chatbot.route.ts
+│   │   │   │   ├── collageInfoRouter/collageInfo.router.ts
+│   │   │   │   ├── complaints/complaints.router.ts
+│   │   │   │   ├── inquires/inquires.router.ts
+│   │   │   │   ├── notifications/notification.router.ts
+│   │   │   │   ├── payments/payment.router.ts
+│   │   │   │   ├── program/program.router.ts
+│   │   │   │   ├── requests/requests.router.ts
+│   │   │   │   ├── staff/staff.router.ts
+│   │   │   │   ├── student/student.router.ts
+│   │   │   │   ├── user/user.router.ts
+│   │   │   │   └── v1/v1.ts               # Mounts every router under /api/v1
+│   │   │   ├── services/                  # Business logic, one service per domain
+│   │   │   │   ├── academic.service.ts
+│   │   │   │   ├── auth.services.ts
+│   │   │   │   ├── collage.info.services.ts
+│   │   │   │   ├── complaint.service.ts
+│   │   │   │   ├── inquires.service.ts
+│   │   │   │   ├── notification.service.ts
+│   │   │   │   ├── payment.service.ts
+│   │   │   │   ├── program.service.ts
+│   │   │   │   ├── request.services.ts
+│   │   │   │   ├── staff.services.ts
+│   │   │   │   ├── student.service.ts
+│   │   │   │   └── user.services.ts
+│   │   │   ├── templates/email/           # HTML email templates + template-name enum
+│   │   │   │   ├── EmailTemplateEnum.ts
+│   │   │   │   └── template.ts
+│   │   │   ├── tests/
+│   │   │   │   └── add.test.ts            # Jest test suite entry point
+│   │   │   ├── types/                     # Ambient TypeScript declarations
+│   │   │   │   ├── express.d.ts
+│   │   │   │   └── geoip-lite.d.ts
+│   │   │   ├── utils/                     # Shared helpers (tokens, logging, cache, email…)
+│   │   │   │   ├── asyncHandler.ts
+│   │   │   │   ├── cache.ts
+│   │   │   │   ├── generateToken.ts
+│   │   │   │   ├── getAllowedFolder.ts
+│   │   │   │   ├── getErrorMessage.ts
+│   │   │   │   ├── httpStatus.ts
+│   │   │   │   ├── logger.ts
+│   │   │   │   ├── safeEmailJob.ts
+│   │   │   │   ├── sendEmail.ts
+│   │   │   │   └── tokenExpiration.ts
+│   │   │   ├── validator/                 # Zod request-validation schemas
+│   │   │   │   ├── complaint.schema.ts
+│   │   │   │   ├── inquiery.schema.ts
+│   │   │   │   ├── request.schema.ts
+│   │   │   │   ├── sendEmail.schema.ts
+│   │   │   │   └── user.schema.ts
+│   │   │   ├── index.ts                   # App bootstrap
+│   │   │   └── server.ts                  # HTTP server entry point
+│   │   ├── .env.example
+│   │   ├── Dockerfile.api
+│   │   ├── biome.json                     # Biome lint/format config
+│   │   ├── jest.config.mjs
+│   │   ├── nodemon.json
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   │
+│   ├── workers/                          # 📧 BullMQ background email worker service
+│   │   ├── src/email/
+│   │   │   ├── email.processor.js         # Job processing logic (renders + sends email)
+│   │   │   ├── email.service.js           # Nodemailer transport wrapper
+│   │   │   └── email.worker.js            # Worker entry point (consumes the BullMQ queue)
+│   │   ├── .env.example
+│   │   ├── Dockerfile.worker
+│   │   └── package.json
+│   │
+│   └── chatbot/                          # 🤖 FastAPI + Streamlit RAG chatbot microservice
+│       ├── api/
+│       │   └── app.py                     # FastAPI app / HTTP route definitions
+│       ├── core/
+│       │   ├── access_control.py          # Per-role permission checks for chatbot actions
+│       │   ├── memory_manager.py          # Conversation/session memory handling
+│       │   └── orchestrator.py            # Central pipeline: intent → RAG → LLM
+│       ├── data/                          # Source documents & vector store
+│       │   ├── Department/
+│       │   │   ├── courses.pdf
+│       │   │   └── general_rules.pdf
+│       │   ├── chroma_laiha_v2/           # Persisted ChromaDB vector index
+│       │   ├── AlexU_*.pdf                # University bylaws source document (Arabic)
+│       │   ├── classification_dataset_shuffled.jsonl
+│       │   ├── data.json
+│       │   └── load_pdfs.py               # Script to ingest/embed PDFs into ChromaDB
+│       ├── database/
+│       │   └── mock_data.py               # Mock data used for local/offline development
+│       ├── services/
+│       │   ├── academic_rag_service.py    # RAG specialised for academic bylaws
+│       │   ├── gpa_service.py             # GPA calculation & "what-if" planning logic
+│       │   ├── intent_service.py          # Classifies user intent per message
+│       │   ├── llm_service.py             # Groq/Llama LLM client wrapper
+│       │   ├── rag_service.py             # General-purpose retrieval-augmented generation
+│       │   └── recommendation_service.py  # Course recommendation logic
+│       ├── utils/
+│       │   ├── course_matcher.py
+│       │   ├── formatters.py
+│       │   ├── rate_limiter.py
+│       │   └── token_counter.py
+│       ├── .env.example
+│       ├── Dockerfile
+│       ├── app.py                         # Streamlit demo UI entry point
+│       ├── config.py                      # Environment/config loader
+│       └── requirements.txt
+│
+├── frontend/                             # 🖥️ React 19 + Vite single-page application
+│   ├── public/
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── Components/                    # Reusable, non-feature-specific UI components
+│   │   │   ├── About/                      # About/College landing sections
+│   │   │   ├── Card/                       # Program & service cards
+│   │   │   ├── Charts/                     # Recharts wrappers (bar, donut, line, stacked)
+│   │   │   ├── Chat/                       # Chat widget shell
+│   │   │   ├── ContactForm/
+│   │   │   ├── Dashboard/                  # Shared dashboard cards/nav/sidebar
+│   │   │   ├── Forms/                      # DynamicForm (schema-driven form renderer)
+│   │   │   ├── Herosection/
+│   │   │   ├── Layouts/                    # DashboardLayout wrapper
+│   │   │   ├── Location/
+│   │   │   ├── Nav/                        # Navbar, login menu, logo, nav links
+│   │   │   ├── Records/                    # Record cards, filters, pagination, modal
+│   │   │   ├── Shared/                     # Buttons, avatar, inputs, stats cards, loaders
+│   │   │   ├── footer/
+│   │   │   ├── GuestRoute.jsx               # Redirects authenticated users away from guest pages
+│   │   │   └── ProtectedRoute.jsx           # Route guard for authenticated/role-based pages
+│   │   ├── assets/                        # Images grouped by section (About, Hero, Login, Programs…)
+│   │   ├── features/                      # Feature-based modules (domain-driven frontend)
+│   │   │   ├── academic/pages/             # Academic staff dashboard
+│   │   │   ├── admin/                      # Admin service, user cards, admin pages
+│   │   │   ├── affairs/                    # Affairs office dashboard, complaints, requests, decisions
+│   │   │   ├── auth/                       # Login, forgot/reset password, auth service, role routing
+│   │   │   ├── chatbot/                    # Chat widget, GPA calculator/plan forms, chatbot service
+│   │   │   ├── dashboard/                  # Shared dashboard data service
+│   │   │   ├── notifications/              # Notification context, service & page
+│   │   │   └── student/                    # Student dashboard, requests, complaints, payments, records
+│   │   ├── pages/                         # Top-level routed pages
+│   │   │   ├── Dashboard/RoleDashboard.jsx  # Resolves which dashboard to render by role
+│   │   │   ├── Profile/                     # Shared/Staff/Student profile pages
+│   │   │   ├── Collage.jsx
+│   │   │   ├── CollegeContext.jsx
+│   │   │   └── Landing.jsx
+│   │   ├── routes/
+│   │   │   └── AppRoutes.jsx               # Full role-based route map
+│   │   ├── services/                      # Cross-feature API clients
+│   │   │   ├── api.js                      # Axios instance (base URL, interceptors)
+│   │   │   ├── collegeService.js
+│   │   │   ├── contactService.js
+│   │   │   └── landingService.js
+│   │   ├── store/
+│   │   │   └── authContext.jsx             # Global auth context/provider
+│   │   ├── App.jsx / App.css
+│   │   ├── index.css
+│   │   └── main.jsx                        # React app entry point
+│   ├── .env.example
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── tailwind.config.js
+│   ├── vite.config.js
+│   └── README.md                          # Vite template notes (frontend-specific)
+│
+├── packages/                             # Shared, workspace-linked libraries
+│   ├── database/                          # 🗄️ @repo/db — shared Prisma schema, client & migrations
+│   │   ├── prisma/
+│   │   │   ├── schema.prisma               # Full data model (users, students, staff, requests…)
+│   │   │   └── migrations/                 # Versioned migration history (10 migrations)
+│   │   ├── scripts/
+│   │   │   └── grant-permissions.ts        # Grants table permissions to the app_user role
+│   │   ├── src/
+│   │   │   ├── client.ts                   # PrismaClient singleton
+│   │   │   └── index.ts
+│   │   ├── .env.example
+│   │   ├── package.json
+│   │   └── prisma.config.ts
+│   ├── config/                            # ⚙️ @repo/config — shared runtime configuration
+│   │   ├── src/
+│   │   │   ├── cloudinary.ts
+│   │   │   ├── index.ts
+│   │   │   └── redis.ts
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── ui/                                # 🧩 @repo/ui — shared React UI primitives
+│   │   ├── src/
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   └── code.tsx
+│   │   ├── eslint.config.mjs
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   ├── eslint-config/                     # 🧹 Shared ESLint presets (base, next, react-internal)
+│   └── typescript-config/                 # 🧾 Shared tsconfig presets (base, nextjs, react-library)
+│
+├── sql/                                  # 🐘 Raw SQL: roles, permissions, RLS policies & seed data
+│   ├── 01_init_db_user.sql                # Bootstraps DB + restricted app_user role
+│   ├── 02_roles_permissions.sql
+│   ├── 03_rls_policies.sql                # Row-Level Security policy definitions
+│   ├── 04_programs_semesters.sql
+│   ├── 05_users_staff_students.sql
+│   ├── 06_courses_programs.sql
+│   ├── 07_request_types.sql
+│   ├── 08_college_info.sql
+│   ├── 09_extra_students.sql
+│   ├── 10_new_students_programs.sql
+│   ├── 11_requests_payments_notifications.sql
+│   └── 12_complaints.sql
+│
+├── http/                                 # 🔬 REST Client (.http) collections for manual API testing
+│   ├── academic.http
+│   ├── auth.http
+│   ├── chatbot_new.http
+│   ├── complaints.http
+│   ├── landingPage.http
+│   ├── payments.http
+│   ├── programs.http
+│   ├── requests.http
+│   ├── staff.http
+│   ├── student.http
+│   └── user.http
+│
+├── diagrams/                              # 🗺️ Architecture, flow & UML diagrams
+│   ├── Academic RAG Architecture.png
+│   ├── Chatbot Architecture.png
+│   ├── ERD.png
+│   ├── Class Diagram.jpg
+│   ├── USE CASE.jpg
+│   ├── Data Flow Diagram Level 0.jpg / Level 1.jpg
+│   ├── Activity Diagrams*.jpg              # Admin / Academic / Affairs / Visitors flows
+│   ├── Sequence Diagram*.jpg                # Student view, merged, chatbot query
+│   ├── Logical Schema Diagram QR code.jpg
+│   ├── Payment module flow (simulated).jpg
+│   └── flow.drawio                          # Editable draw.io source for the diagrams above
+│
+├── demo/                                  # 🎬 Product walkthrough videos & feature screenshots
+│   ├── Platform_demo.mp4
+│   ├── chatbot.mp4
+│   └── screenshots/                        # Grouped by feature area (Auth, Dashboard, Forms,
+│                                            # Chatbot, Notifications, Public pages, Staff, Student…)
+│
+├── documentation/
+│   └── Uniq_documentation.pdf              # Full written project documentation
+│
+├── presentation/
+│   ├── Graduation Project phase 1.pptx
+│   └── Graduation project phase 2.pdf
+│
+├── .env.example                          # Docker Compose env (Postgres + shared HF_TOKEN/APP_USER_PW)
+├── .dockerignore / .gitignore / .gitattributes / .npmrc
+├── docker-compose.yml                    # Orchestrates api, chatbot, workers, postgres, redis
+├── entrypoint.sh                         # API container startup: migrate → grant RLS perms → run
+├── package.json                          # Root workspace manifest (npm workspaces: apps/*, packages/*)
+├── turbo.json                            # Turborepo pipeline/task configuration
+└── README.md
 ```
 
 <details>
-<summary><strong>📂 Explore each part of the codebase</strong></summary>
+<summary><strong>📂 Quick reference — where things live</strong></summary>
 
 | Path | What lives here |
 |---|---|
@@ -166,13 +463,24 @@ UniQ/
 | [`apps/api/src/services`](apps/api/src/services) | Business logic, one service per domain |
 | [`apps/api/src/middlewares`](apps/api/src/middlewares) | Auth, rate limiting, logging, file upload, error handling |
 | [`apps/api/src/validator`](apps/api/src/validator) | Zod request-validation schemas |
+| [`apps/api/src/templates/email`](apps/api/src/templates/email) | HTML email templates used by the worker |
 | [`apps/workers/src/email`](apps/workers/src/email) | Email queue processor & worker entrypoint |
 | [`packages/database/prisma/schema.prisma`](packages/database/prisma/schema.prisma) | Full data model (31 models: users, students, staff, requests, complaints, payments, academic records…) |
 | [`packages/database/prisma/migrations`](packages/database/prisma/migrations) | Versioned migration history |
+| [`packages/config/src`](packages/config/src) | Shared Redis & Cloudinary configuration |
+| [`packages/ui/src`](packages/ui/src) | Shared React UI primitives |
 | [`apps/chatbot/services`](apps/chatbot/services) | RAG, intent classification, GPA calculation, course recommendation services |
 | [`apps/chatbot/core/orchestrator.py`](apps/chatbot/core/orchestrator.py) | Central pipeline that routes a user message through intent → RAG → LLM |
+| [`apps/chatbot/data`](apps/chatbot/data) | Source PDFs + persisted ChromaDB vector store |
 | [`frontend/src/features`](frontend/src/features) | Feature-based frontend modules: `auth`, `student`, `academic`, `affairs`, `admin`, `chatbot`, `notifications` |
+| [`frontend/src/Components`](frontend/src/Components) | Shared/reusable UI components used across features |
 | [`frontend/src/routes/AppRoutes.jsx`](frontend/src/routes/AppRoutes.jsx) | Full role-based route map |
+| [`sql/`](sql) | Role bootstrap, permissions & Row-Level Security policies, applied in numeric order |
+| [`http/`](http) | REST Client request collections for manual, per-module API testing |
+| [`diagrams/`](diagrams) | ERD, class/sequence/activity/use-case diagrams and system architecture visuals |
+| [`demo/`](demo) | Demo videos and feature screenshots |
+| [`documentation/`](documentation) | Full written project documentation (PDF) |
+| [`presentation/`](presentation) | Graduation project presentation slides (phases 1 & 2) |
 
 </details>
 
@@ -292,7 +600,7 @@ The chatbot ([`apps/chatbot`](apps/chatbot)) is a standalone Python service comb
 - **GPA calculation & planning** ([`services/gpa_service.py`](apps/chatbot/services/gpa_service.py))
 - **Course recommendations** ([`services/recommendation_service.py`](apps/chatbot/services/recommendation_service.py))
 - An **orchestrator** ([`core/orchestrator.py`](apps/chatbot/core/orchestrator.py)) that ties intent → retrieval → LLM (Groq/Llama) generation together, with per-role **access control** ([`core/access_control.py`](apps/chatbot/core/access_control.py))
-- A lightweight **Streamlit** front door ([`app.py`](apps/chatbot/app.py)) for demoing the assistant independently of the main frontend
+- A **FastAPI** HTTP layer ([`api/app.py`](apps/chatbot/api/app.py)) exposing the chatbot as a service, plus a lightweight **Streamlit** front door ([`app.py`](apps/chatbot/app.py)) for demoing the assistant independently of the main frontend
 
 The production chat experience is embedded directly into the React app via [`frontend/src/features/chatbot`](frontend/src/features/chatbot); the frontend never calls the chatbot service directly — every request flows through the Node API's `/api/v1/chatbot` routes.
 
@@ -304,6 +612,17 @@ The production chat experience is embedded directly into the React app via [`fro
 - Versioned migrations live in [`packages/database/prisma/migrations`](packages/database/prisma/migrations)
 - Role/permission bootstrapping and Row-Level Security policies live in [`sql/`](sql), applied in order (`01_init_db_user.sql` → `12_complaints.sql`)
 - [`packages/database/scripts/grant-permissions.ts`](packages/database/scripts/grant-permissions.ts) grants table-level permissions to the restricted `app_user` role after migrations run — see [`entrypoint.sh`](entrypoint.sh) for the full boot sequence
+
+---
+
+## 🖼️ Docs, Diagrams & Demo
+
+Supporting project material lives outside the codebase, at the repo root:
+
+- [`diagrams/`](diagrams) — ERD, class diagram, use-case diagram, data-flow diagrams (levels 0 & 1), activity diagrams per role (admin, academic staff, affairs staff, visitors), sequence diagrams (including the chatbot query flow), the simulated payment flow, and the editable `flow.drawio` source
+- [`demo/`](demo) — `Platform_demo.mp4` and `chatbot.mp4` walkthroughs, plus categorized screenshots under `demo/screenshots/` (auth & RBAC, dashboards, dynamic forms, notifications, public pages, staff workflows, student workflows, profile management, responsive UI)
+- [`documentation/Uniq_documentation.pdf`](documentation/Uniq_documentation.pdf) — full written project documentation
+- [`presentation/`](presentation) — graduation project slide decks for phase 1 and phase 2
 
 ---
 
@@ -319,4 +638,3 @@ The production chat experience is embedded directly into the React app via [`fro
 ## 📄 License
 
 No license has been specified yet for this project. Add a `LICENSE` file to define how others may use, modify, and distribute this code.
-
