@@ -4,15 +4,17 @@
 
 **A full-stack digital services platform for university student affairs — requests, complaints, payments, academic records, and an AI assistant, all in one place.**
 
-[![Node](https://img.shields.io/badge/Node.js-%3E%3D18-339933?logo=node.js&logoColor=white)](https://nodejs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Express](https://img.shields.io/badge/Express-5-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![Prisma](https://img.shields.io/badge/Prisma-7-2D3748?logo=prisma&logoColor=white)](https://www.prisma.io/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-elephant-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Turborepo](https://img.shields.io/badge/Turborepo-monorepo-EF4444?logo=turborepo&logoColor=white)](https://turborepo.dev/)
-[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
+[![Node](https://img.shields.io/badge/Node.js-%3E%3D18-0B2545?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-12294B?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19-1B3B6F?style=flat-square&logo=react&logoColor=white)](https://react.dev/)
+[![Express](https://img.shields.io/badge/Express-5-1E4079?style=flat-square&logo=express&logoColor=white)](https://expressjs.com/)
+[![Prisma](https://img.shields.io/badge/Prisma-7-234A85?style=flat-square&logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-database-27548F?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-Python-2B5FA0?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Turborepo](https://img.shields.io/badge/Turborepo-monorepo-3068B0?style=flat-square&logo=turborepo&logoColor=white)](https://turborepo.dev/)
+[![Docker](https://img.shields.io/badge/Docker-Compose-3672C4?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
+
+<sub>Graduation Project · Faculty of Computers and Data Science · Alexandria University</sub>
 
 [Features](#-features) • [Architecture](#-architecture) • [Tech Stack](#-tech-stack) • [Project Structure](#-project-structure) • [Getting Started](#-getting-started) • [API Overview](#-api-overview) • [Chatbot](#-ai-chatbot)
 
@@ -35,7 +37,7 @@ The project is organized as a **Turborepo monorepo** for the Node.js/TypeScript 
 | 👤 **Authentication & Roles** | JWT-based auth (short & long-lived tokens), role-based access control for `student`, `academic_staff`, `affairs_staff`, and `admin` |
 | 📝 **Requests & Complaints** | Students submit requests/complaints with file attachments; staff review, approve, and track status through a full lifecycle |
 | 🎓 **Academic Records** | Course history, GPA tracking, semester/program management, doctor approvals |
-| 💳 **Payments** | Payment tracking and processing integrated with Stripe |
+| 💳 **Payments** | Full payment lifecycle simulation (`initiate` → `confirm`/`fail`) with atomic DB commits and sequential request/payment numbering — no external gateway involved |
 | 🔔 **Notifications** | Real-time in-app notifications for students and staff |
 | 📧 **Email Delivery** | Background email worker (BullMQ + Redis) for transactional emails, decoupled from the API |
 | 🖼️ **File Uploads** | Cloudinary-backed photo/document uploads with signed upload URLs |
@@ -63,9 +65,8 @@ flowchart LR
     end
 
     DB[("🐘 PostgreSQL<br/>Row-Level Security")]
-    REDIS[("🟥 Redis<br/>Queues & Rate Limiting")]
+    REDIS[("🧮 Redis<br/>Queues & Rate Limiting")]
     CLOUD["☁️ Cloudinary"]
-    STRIPE["💳 Stripe"]
 
     FE -->|REST /api/v1| API
     FE -.->|Chat UI| BOT
@@ -73,15 +74,15 @@ flowchart LR
     API -->|Enqueue jobs| REDIS
     WORKER -->|Consume jobs| REDIS
     API --> CLOUD
-    API --> STRIPE
     BOT -->|Auth & data proxy| API
 
-    style FE fill:#61DAFB,color:#000
-    style API fill:#000,color:#fff
-    style WORKER fill:#DC2626,color:#fff
-    style BOT fill:#009688,color:#fff
-    style DB fill:#336791,color:#fff
-    style REDIS fill:#DC2626,color:#fff
+    style FE fill:#5B8DBE,color:#0B1D3A,stroke:#0B1D3A,stroke-width:1px
+    style API fill:#0B2545,color:#fff,stroke:#5B8DBE,stroke-width:1px
+    style WORKER fill:#1B3B6F,color:#fff,stroke:#5B8DBE,stroke-width:1px
+    style BOT fill:#2E5C8A,color:#fff,stroke:#5B8DBE,stroke-width:1px
+    style DB fill:#0B1D3A,color:#fff,stroke:#5B8DBE,stroke-width:1px
+    style REDIS fill:#27548F,color:#fff,stroke:#5B8DBE,stroke-width:1px
+    style CLOUD fill:#7FA8D9,color:#0B1D3A,stroke:#0B1D3A,stroke-width:1px
 ```
 
 **Key design decisions:**
@@ -113,7 +114,7 @@ flowchart LR
 - Prisma 7 (PostgreSQL)
 - BullMQ + Redis
 - JWT, Helmet, Zod
-- Cloudinary, Nodemailer, Stripe
+- Cloudinary, Nodemailer
 
 </td>
 <td valign="top" width="33%">
@@ -183,7 +184,8 @@ UniQ/
 
 - [Docker](https://www.docker.com/) & Docker Compose
 - Node.js ≥ 18 and npm (for local, non-Docker frontend development)
-- API keys/credentials for: PostgreSQL, Redis, Cloudinary, Gmail (App Password), Stripe, Groq, and optionally Hugging Face
+- API keys/credentials for: PostgreSQL, Redis, Cloudinary, Gmail (App Password), Groq, and optionally Hugging Face
+- Stripe keys are present in `apps/api/.env.example` as reserved config, but the payment flow currently runs fully simulated — no live Stripe calls are made (see [Payments](#-api-overview))
 
 ### 1. Clone & configure environment variables
 
