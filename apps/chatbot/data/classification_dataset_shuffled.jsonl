@@ -1,0 +1,1591 @@
+{"prompt": "في أخبار عن ميعاد نهاية السنة الدراسية؟", "label": "general_query"}
+{"prompt": "حد عرف السنة الدراسية هتخلص امتى؟", "label": "general_query"}
+{"prompt": "ميعاد انتهاء السنة الدراسية نزل؟", "label": "general_query"}
+{"prompt": "امتى اخر يوم في السنة دي؟", "label": "general_query"}
+{"prompt": "هو الميد بيبقى في الأسبوع التاسع ولا العاشر؟", "label": "general_query"}
+{"prompt": "الميدترم بيبقى اسبوع 9 ولا 10؟", "label": "general_query"}
+{"prompt": "هل امتحانات الميد في الاسبوع التاسع ولا العاشر؟", "label": "general_query"}
+{"prompt": "توقيت الميد بيبقى في انهي اسبوع بالظبط؟", "label": "general_query"}
+{"prompt": "إزاي أعمل قناة على اليوتيوب؟", "label": "general_query"}
+{"prompt": "طريقة إنشاء قناة يوتيوب", "label": "general_query"}
+{"prompt": "عايز افتح channel على YouTube", "label": "general_query"}
+{"prompt": "كيفية عمل قناة يوتيوب من الموبايل", "label": "general_query"}
+{"prompt": "اعمل بيان قيد ازاي؟", "label": "general_query"}
+{"prompt": "طريقة استخراج بيان قيد", "label": "general_query"}
+{"prompt": "عايز اطلع بيان قيد، الخطوات ايه؟", "label": "general_query"}
+{"prompt": "ازاي اجيب ورقة بيان قيد من الكلية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف مواد، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف Data Structures، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف Data، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف Structures، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف هياكل البيانات، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف داتا استراكتشر، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "الموقع واقع ومش راضي يضيف structer، فيه طريقة تانية؟", "label": "general_query"}
+{"prompt": "إيه رأيك في السياحة في مصر؟", "label": "general_query"}
+{"prompt": "السياحة في مصر كويسة؟", "label": "general_query"}
+{"prompt": "رأيك ايه في الاماكن السياحية بمصر؟", "label": "general_query"}
+{"prompt": "مصر حلوة في السياحة؟", "label": "general_query"}
+{"prompt": "امتى هستلم اي ورقه قدمت عليها", "label": "general_query"}
+{"prompt": "مواعيد استلام الاوراق اللي قدمت عليها امتى؟", "label": "general_query"}
+{"prompt": "الورق اللي طلبته هستلمه بعد قد ايه؟", "label": "general_query"}
+{"prompt": "متى يتم تسليم المستندات المقدم عليها؟", "label": "general_query"}
+{"prompt": "عايز اعرف ازاي اخس", "label": "general_query"}
+{"prompt": "طريقة للتخسيس وفقدان الوزن", "label": "general_query"}
+{"prompt": "ازاي اقلل وزني بسرعة؟", "label": "general_query"}
+{"prompt": "نظام غذائي عشان اخس", "label": "general_query"}
+{"prompt": "عايز اعرف ميعاد الميد امتى", "label": "general_query"}
+{"prompt": "امتى ميعاد امتحانات نص الترم؟", "label": "general_query"}
+{"prompt": "متى تبدأ امتحانات الميدترم؟", "label": "general_query"}
+{"prompt": "ميعاد الميد امتى بالظبط؟", "label": "general_query"}
+{"prompt": "أقل GPA ممكن أتخرج بيه كام؟", "label": "general_query"}
+{"prompt": "اقل جي بي ايه للتخرج كام؟", "label": "general_query"}
+{"prompt": "ايه هو الـ GPA الادنى عشان اقدر اتخرج؟", "label": "general_query"}
+{"prompt": "التخرج بيحتاج GPA كام كحد ادنى؟", "label": "general_query"}
+{"prompt": "لو السيستم مش بيحمل معايا الإضافة والحذف، أعمل إيه؟", "label": "general_query"}
+{"prompt": "نظام الإضافة والحذف مش شغال على الموقع، اتصرف ازاي؟", "label": "general_query"}
+{"prompt": "لو موقع التسجيل مش بيحمل في الحذف والاضافه اعمل ايه؟", "label": "general_query"}
+{"prompt": "الموقع معلق في الـ Add and Drop، في حل؟", "label": "general_query"}
+{"prompt": "عايز اعرف احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "ممكن تحسبلي الجي بي ايه بتاعي؟", "label": "gpa_calc"}
+{"prompt": "احسب الـ GPA بتاعي ازاي؟", "label": "gpa_calc"}
+{"prompt": "عايز طريقة لحساب المعدل التراكمي", "label": "gpa_calc"}
+{"prompt": "لو ضاع مني الكارنيه في اللجنة ألاقيه فين؟", "label": "general_query"}
+{"prompt": "كارنيه الكلية ضاع مني وانا في اللجنة، ادور عليه فين؟", "label": "general_query"}
+{"prompt": "لو فقدت الكارنيه وقت الامتحان بيبقى موجود فين؟", "label": "general_query"}
+{"prompt": "مكاتب المفقودات فين لو ضاع الكارنيه في اللجنه؟", "label": "general_query"}
+{"prompt": "اعملدايتازاي", "label": "general_query"}
+{"prompt": "عايز نظام غذائي امشي عليه", "label": "general_query"}
+{"prompt": "كيفية البدء في دايت صحي", "label": "general_query"}
+{"prompt": "ايه احسن طريقة للرجيم؟", "label": "general_query"}
+{"prompt": "هل الكلية بتطلع شهادات قيد لغات ولا لازم أترجمها بره؟", "label": "general_query"}
+{"prompt": "في شهادة قيد بالانجليزي في الكلية ولا اترجمها في مكتب؟", "label": "general_query"}
+{"prompt": "متاح استخراج بيان قيد لغات من شؤون الطلاب؟", "label": "general_query"}
+{"prompt": "شهادة القيد لازم تترجم بره ولا بتطلع لغات من هنا؟", "label": "general_query"}
+{"prompt": "عيادة مجمع سوتر دي فين بالظبط عشان أروح أكشف؟", "label": "general_query"}
+{"prompt": "اوصل ازاي لعيادة مجمع سوتر؟", "label": "general_query"}
+{"prompt": "عنوان عيادة مجمع سوتر للكشف الطبي", "label": "general_query"}
+{"prompt": "مكان عيادة سوتر فين بالظبط؟", "label": "general_query"}
+{"prompt": "عايز اعرف gpa بتاعي كام", "label": "gpa_calc"}
+{"prompt": "ممكن تطلعلي الـ GPA بتاعي؟", "label": "gpa_calc"}
+{"prompt": "الجي بي ايه بتاعي كام دلوقتي؟", "label": "gpa_calc"}
+{"prompt": "وريني الـ GPA بتاعي", "label": "gpa_calc"}
+{"prompt": "مادة Distributed Data Analysis بتستخدم لغة R؟", "label": "general_query"}
+{"prompt": "مادة Distributed بتستخدم لغة R؟", "label": "general_query"}
+{"prompt": "مادة Data Analysis بتستخدم لغة R؟", "label": "general_query"}
+{"prompt": "مادة تحليل البيانات الموزعة بتستخدم لغة R؟", "label": "general_query"}
+{"prompt": "مادة ديستريبيوتد داتا اناليسيس بتستخدم لغة R؟", "label": "general_query"}
+{"prompt": "هل الـ DDA بتعتمد على لغة R في الشغل؟", "label": "general_query"}
+{"prompt": "عايز اخلي تقديري اعلى؟", "label": "gpa_plan"}
+{"prompt": "ازاي ارفع الـ GPA بتاعي؟", "label": "gpa_plan"}
+{"prompt": "طريقة لتحسين التقدير العام", "label": "gpa_plan"}
+{"prompt": "عايز خطة عشان الجي بي ايه يعلى", "label": "gpa_plan"}
+{"prompt": "أحلى مطعم سمك في بحري", "label": "general_query"}
+{"prompt": "ترشيحات لمطاعم سمك كويسة في منطقة بحري", "label": "general_query"}
+{"prompt": "عايز اكل سمك في بحري اروح فين؟", "label": "general_query"}
+{"prompt": "افضل سمك في اسكندرية عند بحري", "label": "general_query"}
+{"prompt": "عايز أقدم شكوى في الشؤون، أروحلهم ولا أعمل إيه؟", "label": "general_query"}
+{"prompt": "اجراءات تقديم شكوى لشؤون الطلاب", "label": "general_query"}
+{"prompt": "اروح فين لو عايز اقدم شكوى رسمية في الشؤون؟", "label": "general_query"}
+{"prompt": "لو عندي مشكلة وعايز اشتكي في الشؤون اعمل ايه؟", "label": "general_query"}
+{"prompt": "يا جماعة هو الدفع بيسمع في السيستم بعد قد إيه؟", "label": "general_query"}
+{"prompt": "المصاريف بتظهر انها اتدفعت على الموقع بعد كام يوم؟", "label": "general_query"}
+{"prompt": "وقت سماع المصاريف في السيستم بعد الدفع", "label": "general_query"}
+{"prompt": "دفعت والوصل لسه مظهرش على السيستم، بيقعد قد ايه؟", "label": "general_query"}
+{"prompt": "مكتب الشؤون بيفتح لحد الساعة كام بالظبط؟", "label": "general_query"}
+{"prompt": "مواعيد عمل شؤون الطلاب بتخلص امتى؟", "label": "general_query"}
+{"prompt": "مكتب الشؤون بيقفل الساعة كام؟", "label": "general_query"}
+{"prompt": "عايز اعرف مواعيد الشؤون النهاردة", "label": "general_query"}
+{"prompt": "مين رئيس امريكا؟", "label": "general_query"}
+{"prompt": "اسم رئيس الولايات المتحدة الامريكية الحالي", "label": "general_query"}
+{"prompt": "عايز اعرف عايز اطلع افادة", "label": "general_query"}
+{"prompt": "خطوات استخراج إفادة من الكلية", "label": "general_query"}
+{"prompt": "ازاي اقدر احصل على افادة رسمية؟", "label": "general_query"}
+{"prompt": "اجراءات طلع افادة", "label": "general_query"}
+{"prompt": "يا جماعة حد لقى مفاتيح ضايعة في المدرج؟", "label": "general_query"}
+{"prompt": "في حد لقى مفاتيح مفقودة في المدرجات؟", "label": "general_query"}
+{"prompt": "ضاعت مني مفاتيح في المدرج حد شافها؟", "label": "general_query"}
+{"prompt": "اخد داتا بيز ولا AI", "label": "course_rec"}
+{"prompt": "اخد Database ولا Artificial Intelligence؟", "label": "course_rec"}
+{"prompt": "ايه الاحسن داتا بيز ولا ذكاء اصطناعي؟", "label": "course_rec"}
+{"prompt": "اختار مادة داتا ولا مادة ذكاء؟", "label": "course_rec"}
+{"prompt": "ايه الافضل مادة قاعدة البيانات ولا AI؟", "label": "course_rec"}
+{"prompt": "إيه هي أعراض نقص فيتامين د؟", "label": "general_query"}
+{"prompt": "اعراض نقص Vitamin D", "label": "general_query"}
+{"prompt": "ازاي اعرف ان عندي نقص فيتامين د؟", "label": "general_query"}
+{"prompt": "إيه الفرق بين قسم الحوسبة وقسم علوم البيانات؟", "label": "general_query"}
+{"prompt": "الفرق بين Computing و Data Science", "label": "general_query"}
+{"prompt": "ايه الفرق بين اقسام حوسبة وعلوم بيانات؟", "label": "general_query"}
+{"prompt": "تنصحني اخد ايه الترم ده", "label": "course_rec"}
+{"prompt": "ايه المواد اللي ترشحها ليا الترم ده؟", "label": "course_rec"}
+{"prompt": "عايز اقتراحات لمواد الترم الجديد", "label": "course_rec"}
+{"prompt": "إيه هي مكونات السلطة الخضراء؟", "label": "general_query"}
+{"prompt": "طريقة عمل سلطة خضراء", "label": "general_query"}
+{"prompt": "الايميل بيتبلك ليه", "label": "general_query"}
+{"prompt": "سبب بلوك الايميل الجامعي", "label": "general_query"}
+{"prompt": "ليه الايميل بتاعي معمول له block؟", "label": "general_query"}
+{"prompt": "اخد data mining ولا networks؟", "label": "course_rec"}
+{"prompt": "اخد تنقيب بيانات ولا شبكات؟", "label": "course_rec"}
+{"prompt": "ايه الاحسن مادة Mining ولا مادة نيتورك؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ داتا مايننج ولا نيتوركس؟", "label": "course_rec"}
+{"prompt": "لو عايزة بيان قيد بالإنجليزي، أدخل على صفحة إيه؟", "label": "general_query"}
+{"prompt": "لينك طلب بيان قيد لغات", "label": "general_query"}
+{"prompt": "صفحة استخراج شهادة قيد بالانجليزي", "label": "general_query"}
+{"prompt": "ممكن اعرف اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "خطة عشان تقديري يوصل لجيد جدا", "label": "gpa_plan"}
+{"prompt": "ازاي ارفع تقديري لـ Very Good؟", "label": "gpa_plan"}
+{"prompt": "عايز أعمل تعديل في المواد (حذف وإضافة)، الطريقة إزاي؟", "label": "general_query"}
+{"prompt": "خطوات الحذف والاضافة للمواد", "label": "general_query"}
+{"prompt": "ازاي اعدل المواد اللي سجلتها؟", "label": "general_query"}
+{"prompt": "ايه هي المتطلبات السابقة لمادة Machine Learning؟", "label": "general_query"}
+{"prompt": "بريري كويزيت مادة Machine Learning", "label": "general_query"}
+{"prompt": "افتح مادة ماشين ليرنينج ازاي؟", "label": "general_query"}
+{"prompt": "لازم اكون واخد ايه قبل الماشين؟", "label": "general_query"}
+{"prompt": "المتطلبات السابقة لمادة تعلم الآلة", "label": "general_query"}
+{"prompt": "احسبالمعدلالتراكمي", "label": "gpa_calc"}
+{"prompt": "احسب لي الجي بي ايه التراكمي", "label": "gpa_calc"}
+{"prompt": "طريقة حساب الـ Cumulative GPA", "label": "gpa_calc"}
+{"prompt": "الموقع عامل block ليه", "label": "general_query"}
+{"prompt": "سبب البلوك اللي على الموقع", "label": "general_query"}
+{"prompt": "الموقع متبلك ليه مش شغال؟", "label": "general_query"}
+{"prompt": "gpa بتاعي كام", "label": "gpa_calc"}
+{"prompt": "معدلي التراكمي كام دلوقتي؟", "label": "gpa_calc"}
+{"prompt": "وريني الـ GPA بتاعي", "label": "gpa_calc"}
+{"prompt": "عايز اعرف الـ جي بي ايه بتاعي كام", "label": "gpa_calc"}
+{"prompt": "إيه رأيك في السوشيال ميديا، مفيدة ولا مضرة؟", "label": "general_query"}
+{"prompt": "فوائد وأضرار مواقع التواصل الاجتماعي", "label": "general_query"}
+{"prompt": "رأيك في السوشيال ميديا ايه؟", "label": "general_query"}
+{"prompt": "إزاي أتابع حالة طلب بيان القيد اللي عملته؟", "label": "general_query"}
+{"prompt": "اعرف منين طلب بيان القيد اتقبل ولا لسه؟", "label": "general_query"}
+{"prompt": "طريقة متابعة طلبات الورق على السيستم", "label": "general_query"}
+{"prompt": "حالة طلب بيان القيد", "label": "general_query"}
+{"prompt": "دفعت في البنك والموقع لسه محملش المصاريف، أعمل إيه؟", "label": "general_query"}
+{"prompt": "لو المصاريف مظهرتش على الموقع بعد دفع البنك اتصرف ازاي؟", "label": "general_query"}
+{"prompt": "دفع البنك مظهرش في السيستم", "label": "general_query"}
+{"prompt": "الموقع لسه بيقول اني مدفعتش وانا دافع في البنك", "label": "general_query"}
+{"prompt": "احسبلي gpa؟", "label": "gpa_calc"}
+{"prompt": "ممكن حساب الجي بي ايه؟", "label": "gpa_calc"}
+{"prompt": "كيفية حساب المعدل الدراسي", "label": "gpa_calc"}
+{"prompt": "مين اللي كسب جايزة نوبل السنة دي؟", "label": "general_query"}
+{"prompt": "اسماء الفائزين بجائزة نوبل", "label": "general_query"}
+{"prompt": "إزاي أشحن كارت الكهرباء من الموبايل؟", "label": "general_query"}
+{"prompt": "خطوات شحن كارت الكهرباء بالـ NFC", "label": "general_query"}
+{"prompt": "احسب درجاتي", "label": "gpa_calc"}
+{"prompt": "ممكن تحسبلي درجات الترم ده؟", "label": "gpa_calc"}
+{"prompt": "حساب درجات الطالب", "label": "gpa_calc"}
+{"prompt": "ايه الفرق بين مادة Data Mining ومادة Machine Learning في المحتوى؟", "label": "general_query"}
+{"prompt": "ايه الفرق بين Mining و Machine Learning؟", "label": "general_query"}
+{"prompt": "الفرق بين مادة تنقيب البيانات وتعلم الآلة", "label": "general_query"}
+{"prompt": "محتوى الـ Data Mining مختلف عن الـ ML في ايه؟", "label": "general_query"}
+{"prompt": "ايه الفرق بين مادة داتا وماشين؟", "label": "general_query"}
+{"prompt": "إيه رأيك في كوبري ستانلي بالليل؟", "label": "general_query"}
+{"prompt": "ستانلي بليل حلو؟", "label": "general_query"}
+{"prompt": "تعرف تقول نكتة؟", "label": "general_query"}
+{"prompt": "قولي فزورة او نكتة", "label": "general_query"}
+{"prompt": "ايهالمطلوبعشاناوصلل3", "label": "gpa_plan"}
+{"prompt": "ازاي اخلي الـ GPA بتاعي يوصل لـ 3؟", "label": "gpa_plan"}
+{"prompt": "خطة عشان اجيب جي بي ايه 3", "label": "gpa_plan"}
+{"prompt": "اعمل ايه عشان ارفع المعدل لـ 3.0؟", "label": "gpa_plan"}
+{"prompt": "إزاي أسلق بيض؟", "label": "general_query"}
+{"prompt": "طريقة سلق البيض", "label": "general_query"}
+{"prompt": "ازاي اتعلم طبخ؟", "label": "general_query"}
+{"prompt": "تعليم الطبخ للمبتدئين", "label": "general_query"}
+{"prompt": "أطلع ورق منين؟", "label": "general_query"}
+{"prompt": "مكان استخراج الاوراق الرسمية في الكلية", "label": "general_query"}
+{"prompt": "عايز اطلع ورق، اروح فين؟", "label": "general_query"}
+{"prompt": "أنا عايزة أشتري هدية لماما، تقترح إيه؟", "label": "general_query"}
+{"prompt": "افكار لهدايا عيد الام", "label": "general_query"}
+{"prompt": "سعرالدولاركام", "label": "general_query"}
+{"prompt": "سعر الدولار اليوم مقابل الجنيه", "label": "general_query"}
+{"prompt": "أنا مكسلة أقوم أذاكر، شجعني", "label": "general_query"}
+{"prompt": "عايز تحفيز للمذاكرة عشان مكسل", "label": "general_query"}
+{"prompt": "لو سمحتوا مواد رابعة هتبان إمتى عشان نلحق نسجل؟", "label": "general_query"}
+{"prompt": "ميعاد ظهور مواد سنة رابعة للتسجيل", "label": "general_query"}
+{"prompt": "مواد ليفل 4 هتنزل امتى على السيستم؟", "label": "general_query"}
+{"prompt": "متى يبدأ تسجيل مواد الفرقة الرابعة؟", "label": "general_query"}
+{"prompt": "يا بوت إنت بتنام إمتى؟", "label": "general_query"}
+{"prompt": "هل الروبوت بينام؟", "label": "general_query"}
+{"prompt": "أنا عايزة أصبغ شعري، تنصحيني بلون إيه؟", "label": "general_query"}
+{"prompt": "افضل الوان صبغات الشعر", "label": "general_query"}
+{"prompt": "أحلى مكان أصور فيه فوتوسيشن في إسكندرية", "label": "general_query"}
+{"prompt": "أماكن تصوير فوتوسيشن في إسكندرية", "label": "general_query"}
+{"prompt": "عايز مكان حلو أصوره فيه سيشن في اسكندرية", "label": "general_query"}
+{"prompt": "إنت مرتبط ولا سينجل؟", "label": "general_query"}
+{"prompt": "هل أنت مرتبطة؟", "label": "general_query"}
+{"prompt": "Your relationship status?", "label": "general_query"}
+{"prompt": "ممكن اعرف استخراج شهادة قيد", "label": "general_query"}
+{"prompt": "خطوات استخراج شهادة القيد", "label": "general_query"}
+{"prompt": "ازاي اطلع شهادة قيد من الكلية؟", "label": "general_query"}
+{"prompt": "عايز اعرف ورق شهادة القيد بيطلع ازاي", "label": "general_query"}
+{"prompt": "عايز اعرف سعر الدولار كام", "label": "general_query"}
+{"prompt": "سعر الدولار النهاردة", "label": "general_query"}
+{"prompt": "الدولار بكام دلوقتي؟", "label": "general_query"}
+{"prompt": "إيه الفرق بين الـ W والـ FW؟", "label": "general_query"}
+{"prompt": "الفرق بين الـ Withdrawal و الـ Fail Withdrawal", "label": "general_query"}
+{"prompt": "يعني ايه W ويعني ايه FW في التقديرات؟", "label": "general_query"}
+{"prompt": "ايه الفرق بين دبليو واف دبليو؟", "label": "general_query"}
+{"prompt": "أدخل فين عشان أشوف نتيجة التظلم؟", "label": "general_query"}
+{"prompt": "مكان ظهور نتيجة التظلمات", "label": "general_query"}
+{"prompt": "اعرف نتيجة التظلم بتاعي منين؟", "label": "general_query"}
+{"prompt": "لينك نتيجة التظلم", "label": "general_query"}
+{"prompt": "إيه الإجراء اللي الكلية أخدته عشان تحل مشكلة التكدس الطلابي؟", "label": "general_query"}
+{"prompt": "حل مشكلة الزحمة والتكدس في الكلية", "label": "general_query"}
+{"prompt": "الكلية عملت ايه عشان زحمة الطلاب؟", "label": "general_query"}
+{"prompt": "احسب درجاتي؟", "label": "gpa_calc"}
+{"prompt": "ممكن تحسبلي درجاتي؟", "label": "gpa_calc"}
+{"prompt": "حساب الدرجات", "label": "gpa_calc"}
+{"prompt": "احسبلي gpa؟", "label": "gpa_calc"}
+{"prompt": "احسب الجي بي ايه بتاعي", "label": "gpa_calc"}
+{"prompt": "إيه فايدة تقسيمنا لجروبات في التسجيل؟", "label": "general_query"}
+{"prompt": "ليه متقسمين مجموعات وقت تسجيل المواد؟", "label": "general_query"}
+{"prompt": "سبب وجود جروبات للتسجيل", "label": "general_query"}
+{"prompt": "ممكن اعرف مصاريف الكلية كام", "label": "general_query"}
+{"prompt": "مصاريف الكلية السنة دي كام؟", "label": "general_query"}
+{"prompt": "عايز اعرف الرسوم الدراسية", "label": "general_query"}
+{"prompt": "قيمة المصاريف كام؟", "label": "general_query"}
+{"prompt": "ازاي اعرف المديونية اللي عليا", "label": "general_query"}
+{"prompt": "عايز اعرف عليا فلوس كام للكلية؟", "label": "general_query"}
+{"prompt": "طريقة معرفة المديونية المالية", "label": "general_query"}
+{"prompt": "اعرف منين الديون اللي عليا في AlexPay؟", "label": "general_query"}
+{"prompt": "ممكن اعرف ازاي اختم دفتر التأمين", "label": "general_query"}
+{"prompt": "خطوات ختم دفتر التأمين الصحي", "label": "general_query"}
+{"prompt": "ازاي بختم الدفتر بتاع التامين؟", "label": "general_query"}
+{"prompt": "مكان ختم دفتر التامين", "label": "general_query"}
+{"prompt": "ميعاد الميد امتى", "label": "general_query"}
+{"prompt": "امتى امتحانات الميدترم؟", "label": "general_query"}
+{"prompt": "جدول الميد هينزل امتى؟", "label": "general_query"}
+{"prompt": "ممكن اعرف احسب مجموعي", "label": "gpa_calc"}
+{"prompt": "طريقة حساب المجموع الكلي", "label": "gpa_calc"}
+{"prompt": "عايز احسب مجموع درجاتي", "label": "gpa_calc"}
+{"prompt": "ممكن اعرف جدول المحاضرات امتى", "label": "general_query"}
+{"prompt": "جدول المحاضرات نزل؟", "label": "general_query"}
+{"prompt": "عايز اعرف مواعيد المحاضرات", "label": "general_query"}
+{"prompt": "الجدول الدراسي هيبان امتى؟", "label": "general_query"}
+{"prompt": "لو الموقع مش شغال، ينفع أروح أسجل ورقي؟", "label": "general_query"}
+{"prompt": "في تسجيل ورقي لو السيستم واقع؟", "label": "general_query"}
+{"prompt": "هل متاح التسجيل الورقي في حالة تعطل الموقع؟", "label": "general_query"}
+{"prompt": "ينفع اسجل في الكلية لو الموقع مش شغال؟", "label": "general_query"}
+{"prompt": "لو عايز اسجل أو اسحب مادة اعمل ايه", "label": "general_query"}
+{"prompt": "طريقة تسجيل وسحب المواد", "label": "general_query"}
+{"prompt": "ازاي اعمل Add و Drop للمواد؟", "label": "general_query"}
+{"prompt": "خطوات الإضافة والحذف على السيستم", "label": "general_query"}
+{"prompt": "إزاي أعرف إن الموبايل مخترق؟", "label": "general_query"}
+{"prompt": "علامات اختراق الهاتف المحمول", "label": "general_query"}
+{"prompt": "كيفية التأكد من عدم وجود تجسس على الموبايل", "label": "general_query"}
+{"prompt": "عايز اعرف احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "ممكن حساب الجي بي ايه بتاعي؟", "label": "gpa_calc"}
+{"prompt": "احسب الـ GPA", "label": "gpa_calc"}
+{"prompt": "إزاي أنزل فيديوهات من اليوتيوب؟", "label": "general_query"}
+{"prompt": "طريقة تحميل فيديو من يوتيوب", "label": "general_query"}
+{"prompt": "عشان أسجل مادة الـ Pharmacology لازم أكون مخلص مادة إيه؟", "label": "general_query"}
+{"prompt": "عشان أسجل مادة الـ فارماكولوجي لازم أكون مخلص مادة إيه؟", "label": "general_query"}
+{"prompt": "عشان أسجل مادة الـ فارما لازم أكون مخلص مادة إيه؟", "label": "general_query"}
+{"prompt": "عشان أسجل مادة الـ Pharmacology لازم أكون مخلص مادة إيه؟", "label": "general_query"}
+{"prompt": "إيه هي متطلبات مادة علم الأدوية؟", "label": "general_query"}
+{"prompt": "الـ Prerequisite بتاع الفارما ايه؟", "label": "general_query"}
+{"prompt": "لو محتاج إفادة، أدخل فين؟", "label": "general_query"}
+{"prompt": "مكان طلب الإفادة على الموقع", "label": "general_query"}
+{"prompt": "عايز افادة اطلعها منين؟", "label": "general_query"}
+{"prompt": "لو دخلت Intelligent Systems هدرس روبوتات (Robotics)؟", "label": "general_query"}
+{"prompt": "لو دخلت Intelligent هدرس روبوتات (Robotics)؟", "label": "general_query"}
+{"prompt": "لو دخلت Systems هدرس روبوتات (Robotics)؟", "label": "general_query"}
+{"prompt": "لو دخلت النظم الذكية هدرس روبوتات (Robotics)؟", "label": "general_query"}
+{"prompt": "لو دخلت إنتليجنت سيستمز هدرس روبوتات (Robotics)؟", "label": "general_query"}
+{"prompt": "هل قسم الـ IS فيه دراسة للروبوتكس؟", "label": "general_query"}
+{"prompt": "امتى دفع المصاريف", "label": "general_query"}
+{"prompt": "مواعيد سداد الرسوم الدراسية", "label": "general_query"}
+{"prompt": "اخر ميعاد لدفع المصاريف امتى؟", "label": "general_query"}
+{"prompt": "افضل فيلم ايه؟", "label": "general_query"}
+{"prompt": "ترشيحات لأفلام سينما كويسة", "label": "general_query"}
+{"prompt": "مواعيدالشؤونايه", "label": "general_query"}
+{"prompt": "مواعيد عمل شؤون الطلاب", "label": "general_query"}
+{"prompt": "الشؤون بتفتح من الساعة كام؟", "label": "general_query"}
+{"prompt": "أقدر أستلم بيان القيد بتاعي بعد قد إيه؟", "label": "general_query"}
+{"prompt": "بيان القيد بيخلص في كام يوم؟", "label": "general_query"}
+{"prompt": "وقت استلام شهادة القيد بعد الطلب", "label": "general_query"}
+{"prompt": "أقل عدد ساعات ممكن أسجله في الترم كام؟ (Minimum Load)", "label": "general_query"}
+{"prompt": "Minimum load في الساعات المعتمدة كام؟", "label": "general_query"}
+{"prompt": "اقل عدد ساعات مسموح بتسجيله في السمستر", "label": "general_query"}
+{"prompt": "هو مين اللي بيظبط مواعيد التسجيل والسكاشن على الموقع؟", "label": "general_query"}
+{"prompt": "المسؤول عن تنظيم مواعيد التسجيل على السيستم", "label": "general_query"}
+{"prompt": "ليه الدنيا بتبوظ في التسجيل كل مرة؟ مفيش نظام خالص!", "label": "general_query"}
+{"prompt": "مشاكل السيستم وقت التسجيل والزحمة", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام؟", "label": "gpa_calc"}
+{"prompt": "لو جبت 3 B و 1 A الـ GPA هيبقى كام؟", "label": "gpa_calc"}
+{"prompt": "حساب التقدير لو جبت A و 3 B", "label": "gpa_calc"}
+{"prompt": "أحسن طريقة لتنظيف الشاشات الموبايل", "label": "general_query"}
+{"prompt": "تنظيف شاشة الهاتف", "label": "general_query"}
+{"prompt": "احسب مجموعي", "label": "gpa_calc"}
+{"prompt": "عايز اعرف مجموع درجاتي التراكمي", "label": "gpa_calc"}
+{"prompt": "إزاي أخس 10 كيلو في أسبوع؟", "label": "general_query"}
+{"prompt": "فقدان الوزن بسرعة", "label": "general_query"}
+{"prompt": "عايز اعرف اخبار العالم ايه", "label": "general_query"}
+{"prompt": "آخر الأخبار العالمية اليوم", "label": "general_query"}
+{"prompt": "السيستم مش بيفتح ليه", "label": "general_query"}
+{"prompt": "الموقع معلق ومش راضي يفتح ليه؟", "label": "general_query"}
+{"prompt": "ليه صفحة الكلية مش بتفتح معايا؟", "label": "general_query"}
+{"prompt": "مشكلة في فتح السيستم", "label": "general_query"}
+{"prompt": "عايز أعمل طلب إثبات قيد، الطريقة إزاي؟", "label": "general_query"}
+{"prompt": "خطوات التقديم على إثبات قيد", "label": "general_query"}
+{"prompt": "ازاي اطلب ورقة اثبات قيد من الموقع؟", "label": "general_query"}
+{"prompt": "يا جماعة الكلية ماشية عشوائي كده ليه؟", "label": "general_query"}
+{"prompt": "ليه مفيش تنظيم في مواعيد الكلية؟", "label": "general_query"}
+{"prompt": "الكلية بقت عشوائية جداً في قراراتها", "label": "general_query"}
+{"prompt": "عايز اعرف عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "خطة عشان ارفع المعدل لـ 3.5", "label": "gpa_plan"}
+{"prompt": "ازاي اقدر اجيب جي بي ايه 3.5 الترم ده؟", "label": "gpa_plan"}
+{"prompt": "نصايح عشان اوصل لـ 3.5 GPA", "label": "gpa_plan"}
+{"prompt": "مواعيد عيادة العظام في التأمين الصحي إمتى؟", "label": "general_query"}
+{"prompt": "دكتور العظام في التامين بيبقى موجود امتى؟", "label": "general_query"}
+{"prompt": "جدول عيادة العظام بالتأمين الصحي", "label": "general_query"}
+{"prompt": "gpa بتاعي كام؟", "label": "gpa_calc"}
+{"prompt": "ممكن تطلعلي الـ GPA بتاعي؟", "label": "gpa_calc"}
+{"prompt": "عايز اعرف الـ جي بي ايه وصل لكام؟", "label": "gpa_calc"}
+{"prompt": "عايزاخليتقديرياعلى", "label": "gpa_plan"}
+{"prompt": "ازاي ارفع تقديري العام؟", "label": "gpa_plan"}
+{"prompt": "طريقة لتحسين الجي بي ايه بتاعي", "label": "gpa_plan"}
+{"prompt": "هل فيه عطل في السيستم بيخلي اليوزر نيم يظهر إنه غلط؟", "label": "general_query"}
+{"prompt": "الموقع بيقول اليوزر نيم غلط رغم انه صح، ده عطل؟", "label": "general_query"}
+{"prompt": "مشكلة الـ Username في السيستم", "label": "general_query"}
+{"prompt": "يا جماعة حد ظهرتله نتيجة التظلم؟", "label": "general_query"}
+{"prompt": "نتيجة التظلمات بدأت تظهر ولا لسه؟", "label": "general_query"}
+{"prompt": "حد عرف نتيجة تظلمه طلعت فين؟", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام", "label": "gpa_calc"}
+{"prompt": "لو جبت A واحدة و3 B معدلي يبقى كام؟", "label": "gpa_calc"}
+{"prompt": "حساب GPA لـ A و 3 B", "label": "gpa_calc"}
+{"prompt": "مصاريف الكلية كام", "label": "general_query"}
+{"prompt": "قيمة الرسوم الدراسية كام؟", "label": "general_query"}
+{"prompt": "عايز اعرف هدفع كام مصاريف السنة دي", "label": "general_query"}
+{"prompt": "توقعات برج العقرب النهاردة إيه؟", "label": "general_query"}
+{"prompt": "برج العقرب حظك اليوم", "label": "general_query"}
+{"prompt": "ممكن اعرف اخد data mining ولا networks", "label": "course_rec"}
+{"prompt": "اخد تنقيب بيانات ولا شبكات؟", "label": "course_rec"}
+{"prompt": "ايه الاحسن مادة Mining ولا مادة نيتورك؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ داتا مايننج ولا نيتوركس؟", "label": "course_rec"}
+{"prompt": "اخد Data ولا Networks؟", "label": "course_rec"}
+{"prompt": "ممكن تحسبلي التقدير", "label": "gpa_calc"}
+{"prompt": "حساب تقديري العام الدراسي", "label": "gpa_calc"}
+{"prompt": "أنا شكلي وحش أوي النهاردة", "label": "general_query"}
+{"prompt": "حاسة ان شكلي مش حلو النهاردة", "label": "general_query"}
+{"prompt": "احسب المعدل التراكمي", "label": "gpa_calc"}
+{"prompt": "Calculate Cumulative GPA", "label": "gpa_calc"}
+{"prompt": "عايز اعرف لو جبت كام ارفع ال gpa", "label": "gpa_plan"}
+{"prompt": "محتاج اجيب تقدير ايه عشان الـ GPA يعلى؟", "label": "gpa_plan"}
+{"prompt": "درجات الترم ده لازم تكون كام عشان ارفع المعدل؟", "label": "gpa_plan"}
+{"prompt": "إيه اللي الكلية بتهدف توصله للطالب لما يتخرج؟", "label": "general_query"}
+{"prompt": "أهداف البرنامج الدراسي في الكلية", "label": "general_query"}
+{"prompt": "الكلية بتجهزنا لايه بعد التخرج؟", "label": "general_query"}
+{"prompt": "أدخل على صفحة إيه عشان أقدم طلب التدريب؟", "label": "general_query"}
+{"prompt": "لينك تقديم طلبات التدريب الصيفي", "label": "general_query"}
+{"prompt": "ازاي اقدم على تدريب من خلال الموقع؟", "label": "general_query"}
+{"prompt": "هو فيه إشعار بيتبعت لما بيان القيد يخلص؟", "label": "general_query"}
+{"prompt": "بيجيلي رسالة لما شهادة القيد تجهز؟", "label": "general_query"}
+{"prompt": "ازاي بعرف ان الافادة بتاعتي خلصت؟", "label": "general_query"}
+{"prompt": "أحلى محلات لبس في سان ستيفانو", "label": "general_query"}
+{"prompt": "ترشيحات محلات ملابس في سان ستيفانو مول", "label": "general_query"}
+{"prompt": "التقديم امتى", "label": "general_query"}
+{"prompt": "مواعيد فتح باب التقديم", "label": "general_query"}
+{"prompt": "امتى ميعاد التقديمات؟", "label": "general_query"}
+{"prompt": "ايه احسن اختيار للمواد؟", "label": "course_rec"}
+{"prompt": "اروح لانو مواد احسن؟", "label": "course_rec"}
+{"prompt": "افضل المواد اللي ممكن اسجلها الترم ده", "label": "course_rec"}
+{"prompt": "ممكن لينك اعرف منه المصاريف الدراسية السنوية؟", "label": "general_query"}
+{"prompt": "رابط الاستعلام عن المصاريف", "label": "general_query"}
+{"prompt": "لينك الـ AlexPay للمصاريف كام؟", "label": "general_query"}
+{"prompt": "إزاي أتابع حالة التظلم اللي قدمته؟", "label": "general_query"}
+{"prompt": "متابعة طلب التظلم على السيستم", "label": "general_query"}
+{"prompt": "إيه هي التخصصات أو البرامج اللي موجودة في الكلية عشان أختار منها؟", "label": "general_query"}
+{"prompt": "اقسام الكلية المتاحة والفرق بينها", "label": "general_query"}
+{"prompt": "عايز اعرف ايه هي التخصصات اللي ممكن ادخلها", "label": "general_query"}
+{"prompt": "ايه هي البرامج والأقسام المتاحة في الكلية؟", "label": "general_query"}
+{"prompt": "التخصصات اللي ينفع اختار منها ايه؟", "label": "general_query"}
+{"prompt": "قائمة تخصصات الكلية", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام", "label": "gpa_calc"}
+{"prompt": "لو جبت A واحدة و3 B الـ GPA هيبقى كام؟", "label": "gpa_calc"}
+{"prompt": "حساب المعدل لو تقديراتي A و 3 B", "label": "gpa_calc"}
+{"prompt": "ازاي اخس", "label": "general_query"}
+{"prompt": "طريقة فعالة لإنقاص الوزن", "label": "general_query"}
+{"prompt": "عايز نظام للتخسيس", "label": "general_query"}
+{"prompt": "أنا دفعت فلوس الكلية بس لسه مكتوب عليا مديونية، ليه؟", "label": "general_query"}
+{"prompt": "ليه المديونية لسه ظاهرة رغم اني سددت المصاريف؟", "label": "general_query"}
+{"prompt": "دفعت المصاريف والمديونية لسه متشالتش من AlexPay", "label": "general_query"}
+{"prompt": "مشكلة ظهور مديونية بعد الدفع", "label": "general_query"}
+{"prompt": "هو فيه مواد اختيارية جديدة هتنزل لسنة رابعة الترم ده؟", "label": "general_query"}
+{"prompt": "المواد الـ Elective لليفل 4 هتبان امتى؟", "label": "general_query"}
+{"prompt": "في مواد اختيارية جديدة نزلت للفرقة الرابعة؟", "label": "general_query"}
+{"prompt": "مواد ليفل 4 الاختيارية", "label": "general_query"}
+{"prompt": "ممكن اعرف مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "نتيجة مباراة الاهلي الاخيرة", "label": "general_query"}
+{"prompt": "ممكن أعرف ليه حسابي اتعمله بلوك فجأة؟", "label": "general_query"}
+{"prompt": "سبب حظر الحساب (Block) المفاجئ على الموقع", "label": "general_query"}
+{"prompt": "ليه الاكونت بتاعي متبلك؟", "label": "general_query"}
+{"prompt": "الايميل الجامعي اتعمله بلوك ليه؟", "label": "general_query"}
+{"prompt": " حد لقى كارنيه ضايع في لجان امبارح؟", "label": "general_query"}
+{"prompt": "في كارنيه مفقود في اللجان حد شافه؟", "label": "general_query"}
+{"prompt": "ضياع كارنيه الكلية في الامتحانات", "label": "general_query"}
+{"prompt": "ليه بيظهر لي رسالة إن بيانات الدخول غلط وأنا بسجل مواد؟", "label": "general_query"}
+{"prompt": "مشكلة الـ Wrong Login Data وقت التسجيل", "label": "general_query"}
+{"prompt": "بيقولي البيانات غلط وانا متأكد منها وانا بضيف المواد", "label": "general_query"}
+{"prompt": "إيه هي أهمية تعلم اللغات؟", "label": "general_query"}
+{"prompt": "فوائد تعلم لغة جديدة", "label": "general_query"}
+{"prompt": "عايز اخلي تقديري اعلى", "label": "gpa_plan"}
+{"prompt": "ازاي احسن الـ GPA بتاعي؟", "label": "gpa_plan"}
+{"prompt": "خطة لرفع التقدير التراكمي", "label": "gpa_plan"}
+{"prompt": "إمتى أقدر أعمل حذف وإضافة (Add/Drop) للمواد؟", "label": "general_query"}
+{"prompt": "مواعيد الـ Add & Drop الرسمية", "label": "general_query"}
+{"prompt": "امتى بيفتح الحذف والاضافة في اللائحة؟", "label": "general_query"}
+{"prompt": "فترة تعديل المواد المسجلة", "label": "general_query"}
+{"prompt": "فيلم السهرة النهاردة تنصحني بإيه؟", "label": "general_query"}
+{"prompt": "ترشيح لفيلم سهرة كويس", "label": "general_query"}
+{"prompt": "أجيب إفادة إزاي من الموقع؟", "label": "general_query"}
+{"prompt": "طريقة استخراج افادة الكترونية", "label": "general_query"}
+{"prompt": "خطوات الحصول على افادة من السيستم", "label": "general_query"}
+{"prompt": "الموقع بيقولي الباسورد غلط مع إني متأكد منه، أعمل إيه؟", "label": "general_query"}
+{"prompt": "مشكلة كلمة المرور غير الصحيحة رغم التأكد منها", "label": "general_query"}
+{"prompt": "الباسورد مش راضي يفتح رغم انه صح اعمل ايه؟", "label": "general_query"}
+{"prompt": "لو جبت C و B يطلع كام؟", "label": "gpa_calc"}
+{"prompt": "معدلي هيبقى كام لو تقديراتي C و B؟", "label": "gpa_calc"}
+{"prompt": "حساب الجي بي ايه لتقدير B و C", "label": "gpa_calc"}
+{"prompt": "يعني إيه ساعة معتمدة أو Credit Hour؟ دي بتتحسب إزاي؟", "label": "general_query"}
+{"prompt": "شرح نظام الـ Credit Hours في الكلية", "label": "general_query"}
+{"prompt": "كيفية احتساب الساعات المعتمدة للمواد", "label": "general_query"}
+{"prompt": "معنى كلمة ساعة معتمدة", "label": "general_query"}
+{"prompt": "لو عايز أقرأ عن الكلية ونظامها، أدخل فين؟", "label": "general_query"}
+{"prompt": "أعرف منين معلومات عن نظام الكلية واللايحة؟", "label": "general_query"}
+{"prompt": "دليل الطالب ونظام الدراسة موجود فين؟", "label": "general_query"}
+{"prompt": "عايز اقرأ عن نظام الساعات المعتمدة هنا", "label": "general_query"}
+{"prompt": "مين هو الممثل اللي قام بدور المعلم في فيلم كذا؟", "label": "general_query"}
+{"prompt": "اسم بطل فيلم كذا اللي عمل دور المعلم", "label": "general_query"}
+{"prompt": "مين اخترع الكهرباء؟", "label": "general_query"}
+{"prompt": "Who invented electricity?", "label": "general_query"}
+{"prompt": "أجيب منين تفاصيل المبالغ اللي المفروض أدفعها؟", "label": "general_query"}
+{"prompt": "اعرف الفلوس اللي عليا كام منين؟", "label": "general_query"}
+{"prompt": "تفاصيل مديونية الطالب بتظهر فين؟", "label": "general_query"}
+{"prompt": "ازاي اعرف المبالغ الدراسية المطلوبة مني؟", "label": "general_query"}
+{"prompt": "يا جماعة أطلع منين إثبات قيد باللغة الإنجليزية؟", "label": "general_query"}
+{"prompt": "خطوات استخراج إثبات قيد لغات (English)", "label": "general_query"}
+{"prompt": "عايز بيان قيد بالانجليزي اجيبه ازاي؟", "label": "general_query"}
+{"prompt": "صفحة طلب اثبات قيد مترجم", "label": "general_query"}
+{"prompt": "أروح فين عشان أسأل على الحاجات اللي ضاعت مني في الكلية؟", "label": "general_query"}
+{"prompt": "مكان المفقودات في الكلية فين؟", "label": "general_query"}
+{"prompt": "لو ضاع مني حاجة اسأل عليها فين؟", "label": "general_query"}
+{"prompt": "الدرجات هتنزل أمتى", "label": "general_query"}
+{"prompt": "موعد ظهور النتائج على السيستم", "label": "general_query"}
+{"prompt": "النتيجة هتبان امتى؟", "label": "general_query"}
+{"prompt": "ليه مواد رابعة لسه مظهرتش في التسجيل؟", "label": "general_query"}
+{"prompt": "مواد ليفل 4 لسه مظهرتش في الـ Registration ليه؟", "label": "general_query"}
+{"prompt": "تأخر ظهور مواد الفرقة الرابعة في التسجيل", "label": "general_query"}
+{"prompt": "ليه كل ترم السيستم يقع ويعملولنا مشاكل؟", "label": "general_query"}
+{"prompt": "مشاكل سقوط السيرفر وقت تسجيل المواد", "label": "general_query"}
+{"prompt": "ايه احسن مادة اخدها", "label": "course_rec"}
+{"prompt": "تنصحني اسجل مواد ايه الترم ده؟", "label": "course_rec"}
+{"prompt": "ترشيحات لافضل مواد اختيارية", "label": "course_rec"}
+{"prompt": "ألاقي فين تفاصيل عن الأقسام والنظام الأكاديمي؟", "label": "general_query"}
+{"prompt": "معلومات عن اقسام الكلية والنظام الدراسي", "label": "general_query"}
+{"prompt": "الموقع هيشتغل أمتي", "label": "general_query"}
+{"prompt": "السيرفر هيقوم امتى؟ الموقع مش بيفتح", "label": "general_query"}
+{"prompt": "أنا مخنوقة من العالم كله", "label": "general_query"}
+{"prompt": "حاسة بضيق ومخنوقة جداً", "label": "general_query"}
+{"prompt": "مادة Advanced Calculus بتغطي الـ Multiple integrals؟", "label": "general_query"}
+{"prompt": "مادة ادفانسد كالكولاس بتغطي الـ Multiple integrals؟", "label": "general_query"}
+{"prompt": "مادة Calculus بتغطي الـ Multiple integrals؟", "label": "general_query"}
+{"prompt": "مادة Advanced بتغطي الـ Multiple integrals؟", "label": "general_query"}
+{"prompt": "مادة حساب التفاضل والتكامل المتقدم بتغطي الـ Multiple integrals؟", "label": "general_query"}
+{"prompt": "هل الـ Multiple integrals موجودة في منهج الادفانسد؟", "label": "general_query"}
+{"prompt": "لو دخلت الكلية هدرس تخصص واحد ولا البرامج داخلة في بعض؟", "label": "general_query"}
+{"prompt": "نظام التخصص والبرامج الدراسية في الكلية", "label": "general_query"}
+{"prompt": "مين اللي اخترع التليفون؟", "label": "general_query"}
+{"prompt": "Who invented the telephone?", "label": "general_query"}
+{"prompt": "ممكن أعرف الميدترم الأسبوع الكام؟", "label": "general_query"}
+{"prompt": "توقيت امتحانات الميدترم بيبقى في انهي اسبوع؟", "label": "general_query"}
+{"prompt": "عايز أعرف آخر ميعاد لدفع المصاريف إمتى؟", "label": "general_query"}
+{"prompt": "Deadline دفع المصاريف امتى؟", "label": "general_query"}
+{"prompt": "عايز اعرف احسب المعدل التراكمي", "label": "gpa_calc"}
+{"prompt": "كيفية حساب الـ Cumulative GPA", "label": "gpa_calc"}
+{"prompt": "اعرف مصاريف الترم والسمر كورس منين؟", "label": "general_query"}
+{"prompt": "مصاريف الـ Summer course كام واعرفها منين؟", "label": "general_query"}
+{"prompt": "تكلفة الترم الصيفي والمصاريف العادية", "label": "general_query"}
+{"prompt": "ليه الموقع مش بيفتح", "label": "general_query"}
+{"prompt": "السيستم واقع مش راضي يحمل ليه؟", "label": "general_query"}
+{"prompt": "عايزه ختم وموافقه لاثبات ان انا في الكليه عندنا", "label": "general_query"}
+{"prompt": "اجراءات ختم شهادة القيد من الكلية", "label": "general_query"}
+{"prompt": "ازاي اختم ورقة تثبت اني طالبة في الكلية؟", "label": "general_query"}
+{"prompt": "أعرف منين لو حصل تعديل في جدول الامتحانات؟", "label": "general_query"}
+{"prompt": "تغييرات جدول الامتحانات بتبان فين؟", "label": "general_query"}
+{"prompt": "2 مادة A و مادة B يطلع كام؟", "label": "gpa_calc"}
+{"prompt": "لو جبت 2 A وواحدة B المعدل يبقى كام؟", "label": "gpa_calc"}
+{"prompt": "حساب GPA لـ تقديرين A وتقدير B", "label": "gpa_calc"}
+{"prompt": "هو مفيش حل لمشاكل الموقع والزحمة اللي بتحصل دي؟", "label": "general_query"}
+{"prompt": "شكوى من زحمة التسجيل وعطل الموقع", "label": "general_query"}
+{"prompt": "عيادة الغدد في التأمين الصحي بتفتح يوم إيه؟", "label": "general_query"}
+{"prompt": "مواعيد دكتور الغدد في التامين", "label": "general_query"}
+{"prompt": "محتاج درجات كام عشان ارفع التراكمي", "label": "gpa_plan"}
+{"prompt": "تقديرات الترم ده لازم تكون ايه عشان ارفع المعدل؟", "label": "gpa_plan"}
+{"prompt": "خطة رفع الـ CGPA للترم الحالي", "label": "gpa_plan"}
+{"prompt": "إيه الفرق بين الآيفون والسامسونج؟", "label": "general_query"}
+{"prompt": "الفرق بين iPhone و Samsung", "label": "general_query"}
+{"prompt": "مين اللي بيتحكم في فتح وقفل تسجيل المواد على الموقع؟", "label": "general_query"}
+{"prompt": "المسؤول عن مواعيد قفل وفتح السيستم", "label": "general_query"}
+{"prompt": "اقدم للعسكريه ازاي", "label": "general_query"}
+{"prompt": "اجراءات تقديم التربية العسكرية", "label": "general_query"}
+{"prompt": "خطوات التسجيل في العسكرية للطلبة", "label": "general_query"}
+{"prompt": "الموقع مقفول عليا لوحدي", "label": "general_query"}
+{"prompt": "السيستم مش بيفتح عندي انا بس ليه؟", "label": "general_query"}
+{"prompt": "مخاطر الـ AI على البشرية", "label": "general_query"}
+{"prompt": "هل الذكاء الاصطناعي خطر على المستقبل؟", "label": "general_query"}
+{"prompt": "توقعات سيطرة الروبوتات على العالم", "label": "general_query"}
+{"prompt": "ممكن اعرف امتحانات نص الترم هتكون امتى", "label": "general_query"}
+{"prompt": "تاريخ امتحانات الميدترم نزل؟", "label": "general_query"}
+{"prompt": "توقيت امتحانات الـ Midterms", "label": "general_query"}
+{"prompt": "جدول الميدترم هيبان امتى؟", "label": "general_query"}
+{"prompt": "مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "نتيجة مباراة الاهلي اليوم", "label": "general_query"}
+{"prompt": "الاهلي عمل ايه في الماتش؟", "label": "general_query"}
+{"prompt": "عايز اعرف ميعاد الميد امتى", "label": "general_query"}
+{"prompt": "امتى امتحان نص الترم؟", "label": "general_query"}
+{"prompt": "ميعاد الميدترم نزل ولا لسه؟", "label": "general_query"}
+{"prompt": "اخبار العالم ايه؟", "label": "general_query"}
+{"prompt": "What's the world news today?", "label": "general_query"}
+{"prompt": "آخر الأخبار العالمية", "label": "general_query"}
+{"prompt": "أعرف منين إن التظلم بتاعي اتقبل ولا لا؟", "label": "general_query"}
+{"prompt": "نتيجة قبول او رفض التظلم بتبان فين؟", "label": "general_query"}
+{"prompt": "ازاي اتابع حالة التظلم اللي قدمته؟", "label": "general_query"}
+{"prompt": "اعرف منين نتيجة التظلم؟", "label": "general_query"}
+{"prompt": "لو الـ CGPA بتاعي قل عن 2.00 إيه اللي هيحصل؟", "label": "general_query"}
+{"prompt": "عقوبة انخفاض المعدل التراكمي عن 2", "label": "general_query"}
+{"prompt": "ايه اللي بيحصل لو الـ GPA نزل تحت الـ 2؟", "label": "general_query"}
+{"prompt": "لو جبت اقل من 2 في الـ CGPA هتحول؟", "label": "general_query"}
+{"prompt": "موقف الطالب لو المعدل التراكمي نزل عن 2.00", "label": "general_query"}
+{"prompt": "لو مادة فيها سيكشن 3 ساعات، بتتحسب كام ساعة في المعدل؟", "label": "general_query"}
+{"prompt": "حساب ساعات المادة اللي ليها سيكشن طويل", "label": "general_query"}
+{"prompt": "سيكشن الـ 3 ساعات بيتحسب كام ساعة معتمدة؟", "label": "general_query"}
+{"prompt": "وزن الساعات للمواد اللي فيها سيكشن 3 ساعات", "label": "general_query"}
+{"prompt": "هو في ترم صيفي (Summer Course)؟ وبياخد كام مادة؟", "label": "general_query"}
+{"prompt": "شروط السمر كورس وعدد المواد المتاحة", "label": "general_query"}
+{"prompt": "نظام الترم الصيفي بياخد كام ساعة؟", "label": "general_query"}
+{"prompt": "السمر كورس بيفتح امتى وبكام مادة؟", "label": "general_query"}
+{"prompt": "عدد المواد المسموح بيها في الـ Summer Course", "label": "general_query"}
+{"prompt": "معاد امتحانات الميد ترم إيه؟", "label": "general_query"}
+{"prompt": "ميعاد امتحانات الميدترم نزل ولا لسه؟", "label": "general_query"}
+{"prompt": "الجدول بتاع الميدترم امتى؟", "label": "general_query"}
+{"prompt": "مواعيد عيادة الجراحة العامة في التأمين الصحي إمتى؟", "label": "general_query"}
+{"prompt": "دكتور الجراحة بيبقى موجود امتى في التامين؟", "label": "general_query"}
+{"prompt": "جدول عيادة الجراحة العامة بالتأمين", "label": "general_query"}
+{"prompt": "لازم أخلص تدريب صيفي كام مرة عشان أتخرج؟", "label": "general_query"}
+{"prompt": "عدد مرات التدريب الصيفي الاجبارية للتخرج", "label": "general_query"}
+{"prompt": "شروط التدريب الصيفي في اللايحة", "label": "general_query"}
+{"prompt": "التخرج بيحتاج كام Summer Training؟", "label": "general_query"}
+{"prompt": "عدد مرات التدريب الصيفي الاجبارية للتخرج", "label": "general_query"}
+{"prompt": "شروط التدريب الصيفي في اللايحة", "label": "general_query"}
+{"prompt": "عايز اطلع افادة", "label": "general_query"}
+{"prompt": "خطوات استخراج افادة طالب", "label": "general_query"}
+{"prompt": "عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "خطة للوصول لـ جي بي ايه 3.5", "label": "gpa_plan"}
+{"prompt": "اقدمتأجيلازاي", "label": "general_query"}
+{"prompt": "ازاي اقدم على تأجيل دراسي؟", "label": "general_query"}
+{"prompt": "خطوات تأجيل الترم او السنة", "label": "general_query"}
+{"prompt": "يا جماعة لو رحت الشؤون دلوقتي هلاقيهم؟", "label": "general_query"}
+{"prompt": "الشؤون لسه فاتحة دلوقتي؟", "label": "general_query"}
+{"prompt": "هو السيستم واقع ولا إيه؟ مش راضي يسجل", "label": "general_query"}
+{"prompt": "الموقع مش شغال في التسجيل خالص، هو واقع؟", "label": "general_query"}
+{"prompt": "السفر لأوروبا محتاج ورق إيه؟", "label": "general_query"}
+{"prompt": "الاوراق المطلوبة لفيزا اوروبا", "label": "general_query"}
+{"prompt": "احسبالمعدلالتراكمي", "label": "gpa_calc"}
+{"prompt": "ممكن تحسبلي المعدل التراكمي بتاعي؟", "label": "gpa_calc"}
+{"prompt": "طريقة حساب الـ CGPA", "label": "gpa_calc"}
+{"prompt": "عايز أحسب التراكمي", "label": "gpa_calc"}
+{"prompt": "قسم السايبر (Cyber) بيدرسوا تشفير (Cryptography) في سنة كام؟", "label": "general_query"}
+{"prompt": "مادة Cryptography بتنزل سنة كام في قسم Cyber؟", "label": "general_query"}
+{"prompt": "مادة التشفير بيدرسها قسم سايبر في انهي ليفل؟", "label": "general_query"}
+{"prompt": "قسم السايبر بيدرسوا كريبتوجرافي في سنة كام؟", "label": "general_query"}
+{"prompt": "مادة Cryptography في قسم Cyber", "label": "general_query"}
+{"prompt": "ممكن تحسبلي التقدير؟", "label": "gpa_calc"}
+{"prompt": "احسبلي تقديري العام", "label": "gpa_calc"}
+{"prompt": "معدلي الدراسي كام؟", "label": "gpa_calc"}
+{"prompt": "هو بيتبعت رد على التظلمات فين؟", "label": "general_query"}
+{"prompt": "مكان الرد على طلبات التظلم", "label": "general_query"}
+{"prompt": "الرد على التظلم بيظهر فين في السيستم؟", "label": "general_query"}
+{"prompt": "إزاي أنزل وزن الكرش؟", "label": "general_query"}
+{"prompt": "طرق التخلص من دهون البطن", "label": "general_query"}
+{"prompt": "اعملايهعشاناجيبجيدجدا", "label": "gpa_plan"}
+{"prompt": "عايز خطة عشان أجيب تقدير جيد جداً", "label": "gpa_plan"}
+{"prompt": "ازاي ارفع تقديري لـ Very Good؟", "label": "gpa_plan"}
+{"prompt": "اعمل ايه عشان الجي بي ايه يوصل لجيد جدا؟", "label": "gpa_plan"}
+{"prompt": "سعر الذهب عيار 21 بكام النهاردة؟", "label": "general_query"}
+{"prompt": "Gold price for 21 karat today", "label": "general_query"}
+{"prompt": "ايه المواد السهلة", "label": "course_rec"}
+{"prompt": "تنصحني بمواد سهلة الترم ده؟", "label": "course_rec"}
+{"prompt": "ايه اخف مواد ممكن اسجلها؟", "label": "course_rec"}
+{"prompt": "عيادة الجهاز الهضمي في التأمين الصحي بتفتح إمتى؟", "label": "general_query"}
+{"prompt": "مواعيد دكتور الجهاز الهضمي في التامين", "label": "general_query"}
+{"prompt": "إزاي أشغل نت فليكس على الشاشة؟", "label": "general_query"}
+{"prompt": "هو في قسم في حاسبات بيدرس تصوير ومونتاج (Digital Video Production)؟", "label": "general_query"}
+{"prompt": "مادة Digital Video Production موجودة في انهي قسم؟", "label": "general_query"}
+{"prompt": "دراسة المونتاج والتصوير في حاسبات", "label": "general_query"}
+{"prompt": "مادة ديجيتال فيديو برودكشن موجودة عندنا؟", "label": "general_query"}
+{"prompt": "الكلية بتهتم بالجانب العملي والمعامل ولا الدراسة كلها ورق وكتابة؟", "label": "general_query"}
+{"prompt": "طبيعة الدراسة في الكلية عملي ولا نظري؟", "label": "general_query"}
+{"prompt": "نظام المعامل والسكاشن العملية في اللايحة", "label": "general_query"}
+{"prompt": "أنا بحب اللون الأسود، إنت إيه رأيك؟", "label": "general_query"}
+{"prompt": "Black color is my favorite, what do you think?", "label": "general_query"}
+{"prompt": "ممكن اعرف اخد AI ولا security", "label": "course_rec"}
+{"prompt": "ايه الاحسن مادة ذكاء اصطناعي ولا سيكيورتي؟", "label": "course_rec"}
+{"prompt": "تنصحني بمادة الـ AI ولا مادة الـ Security؟", "label": "course_rec"}
+{"prompt": "اختار AI ولا Security الترم ده؟", "label": "course_rec"}
+{"prompt": "ممكن اعرف gpa بتاعي كام", "label": "gpa_calc"}
+{"prompt": "جي بي ايه الطالب", "label": "gpa_calc"}
+{"prompt": "طريقة التسجيل في التربية العسكرية من الموقع إيه؟", "label": "general_query"}
+{"prompt": "ازاي اسجل في التربية العسكرية الكترونياً؟", "label": "general_query"}
+{"prompt": "خطوات حجز دورة التربية العسكرية", "label": "general_query"}
+{"prompt": "بتحب اللون الأحمر ولا الأخضر؟", "label": "general_query"}
+{"prompt": "باقيلي كام عشان اجيب امتياز؟", "label": "gpa_plan"}
+{"prompt": "محتاج درجات كام عشان التراكمي يبقى امتياز؟", "label": "gpa_plan"}
+{"prompt": "ازاي اوصل لتقدير Excellent؟", "label": "gpa_plan"}
+{"prompt": "خطة الوصول للامتياز", "label": "gpa_plan"}
+{"prompt": "ينفع نسجل ورقي", "label": "general_query"}
+{"prompt": "متاح التسجيل الورقي في الكلية؟", "label": "general_query"}
+{"prompt": "لو الموقع واقف ينفع اروح اسجل ورقي؟", "label": "general_query"}
+{"prompt": "يا جماعة حد عرف هندفع المصاريف إمتى؟", "label": "general_query"}
+{"prompt": "موعد سداد المصاريف الدراسية", "label": "general_query"}
+{"prompt": "امتى ميعاد الدفع في البنك؟", "label": "general_query"}
+{"prompt": "احسب درجاتي؟", "label": "gpa_calc"}
+{"prompt": "Calculate my grades", "label": "gpa_calc"}
+{"prompt": "احسبليgpa", "label": "gpa_calc"}
+{"prompt": "GPA calculator", "label": "gpa_calc"}
+{"prompt": "عايز اعرف مين رئيس امريكا", "label": "general_query"}
+{"prompt": "Who is the US president?", "label": "general_query"}
+{"prompt": "إيه الفرق بين القهوة الكولومبي والبرازيلي؟", "label": "general_query"}
+{"prompt": "الفرق بين بن كولومبيا وبرازيليا", "label": "general_query"}
+{"prompt": "أقدر أروح مستشفى الجامعة بالتأمين ولا لازم عيادة سوتر الأول؟", "label": "general_query"}
+{"prompt": "اجراءات دخول مستشفى الجامعة بالتأمين الصحي", "label": "general_query"}
+{"prompt": "لازم اروح عيادة سوتر قبل مستشفى الجامعة؟", "label": "general_query"}
+{"prompt": "الموقع بطيء جداً ومش بيحمل، والضغط عليه كبير أوي.", "label": "general_query"}
+{"prompt": "مشاكل بطء السيستم وقت الضغط", "label": "general_query"}
+{"prompt": "الموقع مش بيحمل بسبب الزحمة", "label": "general_query"}
+{"prompt": "أنا حلمت إني بطير، ده معناه إيه؟", "label": "general_query"}
+{"prompt": "تفسير حلم الطيران في المنام", "label": "general_query"}
+{"prompt": "حلمت اني بطير في السماء ده تفسيره ايه؟", "label": "general_query"}
+{"prompt": "مادة Introduction to Data Sciences بتدرس ايه بالظبط؟", "label": "general_query"}
+{"prompt": "مادة Introduction بتدرس ايه بالظبط؟", "label": "general_query"}
+{"prompt": "مادة Data Sciences بتدرس ايه بالظبط؟", "label": "general_query"}
+{"prompt": "مادة مقدمة في علوم البيانات بتدرس ايه بالظبط؟", "label": "general_query"}
+{"prompt": "مادة إنترودكشن تو داتا ساينس بتدرس ايه بالظبط؟", "label": "general_query"}
+{"prompt": "محتوى مادة الـ IDS عبارة عن ايه؟", "label": "general_query"}
+{"prompt": "عايز أنزل تدريب، أعمل إيه عشان أسجل اسمي؟", "label": "general_query"}
+{"prompt": "خطوات التسجيل في التدريب الصيفي", "label": "general_query"}
+{"prompt": "ازاي اقدم اسمي في الـ Internship بتاعة الكلية؟", "label": "general_query"}
+{"prompt": "ممكن أعرف أطلع إفادة منين؟", "label": "general_query"}
+{"prompt": "مكان استخراج الإفادات في الكلية", "label": "general_query"}
+{"prompt": "ازاي اجيب افادة نجاح او قيد؟", "label": "general_query"}
+{"prompt": "طريقة سحب مادة من الترم ده إيه؟", "label": "general_query"}
+{"prompt": "خطوات الـ Withdrawal من مادة مسجلة", "label": "general_query"}
+{"prompt": "ازاي اسحب مادة بعد ما سجلتها؟", "label": "general_query"}
+{"prompt": "موعد إعلان نتيجة المواد إيه يا شباب؟", "label": "general_query"}
+{"prompt": "النتائج هتظهر امتى على الموقع؟", "label": "general_query"}
+{"prompt": "ميعاد ظهور نتيجة الترم", "label": "general_query"}
+{"prompt": "عايز ورقة إثبات قيد", "label": "general_query"}
+{"prompt": "طلب بيان قيد من الشؤون", "label": "general_query"}
+{"prompt": "ازاي اطلع اثبات قيد؟", "label": "general_query"}
+{"prompt": "عايز اعرف ازاي اختم دفتر التأمين", "label": "general_query"}
+{"prompt": "اجراءات ختم دفتر التأمين الصحي", "label": "general_query"}
+{"prompt": "مكان ختم دفاتر التأمين للطلبة", "label": "general_query"}
+{"prompt": "مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "النتيجة النهائية لمباراة الاهلي", "label": "general_query"}
+{"prompt": "ازاي اخس", "label": "general_query"}
+{"prompt": "طرق انقاص الوزن", "label": "general_query"}
+{"prompt": "هو فيه خبر عن ميعاد النتيجة في الكلية؟", "label": "general_query"}
+{"prompt": "حد سمع حاجة عن ميعاد ظهور النتيجة؟", "label": "general_query"}
+{"prompt": "أقصى عدد ساعات (Max Load) مسموح بيا أسجله لو تقديري عالي؟", "label": "general_query"}
+{"prompt": "الـ Maximum load في حالة الامتياز كام ساعة؟", "label": "general_query"}
+{"prompt": "اكبر عدد ساعات ممكن اسجله في الترم (Max Load)", "label": "general_query"}
+{"prompt": "أروح فين عشان أسأل على الحاجات المفقودة؟", "label": "general_query"}
+{"prompt": "مكتب المفقودات في الكلية فين؟", "label": "general_query"}
+{"prompt": "الموقع تقيل أوي ومش عارف أضيف مواد، إيه الحل؟", "label": "general_query"}
+{"prompt": "مشكلة بطء السيستم وقت الاضافة والحذف", "label": "general_query"}
+{"prompt": "إنت شغال بذكاء اصطناعي إيه؟", "label": "general_query"}
+{"prompt": "What AI model are you using?", "label": "general_query"}
+{"prompt": "عايز اعرف اعمل دايت ازاي", "label": "general_query"}
+{"prompt": "طريقة عمل نظام غذائي للتخسيس", "label": "general_query"}
+{"prompt": "اعملدايتازاي", "label": "general_query"}
+{"prompt": "خطوات البدء في دايت صحي", "label": "general_query"}
+{"prompt": "مين هو مؤسس شركة أبل؟", "label": "general_query"}
+{"prompt": "عايز أعرف الخريطة الزمنية للامتحانات الترم ده، ألاقيها فين؟", "label": "general_query"}
+{"prompt": "مواعيد الامتحانات والخريطة الزمنية للترم", "label": "general_query"}
+{"prompt": "لو جبت كام ارفع ال gpa؟", "label": "gpa_plan"}
+{"prompt": "محتاج تقديرات ايه عشان الجي بي ايه يعلى؟", "label": "gpa_plan"}
+{"prompt": "ازاي ارفع المعدل التراكمي بتاعي؟", "label": "gpa_plan"}
+{"prompt": "إيه رأيك في أغاني المهرجانات؟", "label": "general_query"}
+{"prompt": "بتحب تسمع مهرجانات؟", "label": "general_query"}
+{"prompt": "ممكن اعرف عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "خطة للوصول لـ معدل تراكمي 3.5", "label": "gpa_plan"}
+{"prompt": "احسب المعدل التراكمي؟", "label": "gpa_calc"}
+{"prompt": "Calculate CGPA", "label": "gpa_calc"}
+{"prompt": "إيه هي مادة الـ E-health اللي موجودة في ليفل 4 قسم هيلث؟", "label": "general_query"}
+{"prompt": "إيه هي مادة الـ E-health اللي موجودة في ليفل 4 قسم هيلث؟", "label": "general_query"}
+{"prompt": "إيه هي مادة الـ هيلث اللي موجودة في ليفل 4 قسم هيلث؟", "label": "general_query"}
+{"prompt": "إيه هي مادة الـ الصحة الإلكترونية اللي موجودة في ليفل 4 قسم هيلث؟", "label": "general_query"}
+{"prompt": "إيه هي مادة الـ إي هيلث اللي موجودة في ليفل 4 قسم هيلث؟", "label": "general_query"}
+{"prompt": "تفاصيل مادة الصحة الرقمية في قسم هيلث", "label": "general_query"}
+{"prompt": "إنت بتعرف تطبخ يا بوت؟", "label": "general_query"}
+{"prompt": "يعني إيه متطلبات جامعة (University Requirements) وإيه المواد اللي فيها؟", "label": "general_query"}
+{"prompt": "شرح مواد متطلبات الجامعة والفرق بينها", "label": "general_query"}
+{"prompt": "قائمة مواد الـ University Requirements", "label": "general_query"}
+{"prompt": "الموقع مش بيفتح معايا انا بس، ايه الحل", "label": "general_query"}
+{"prompt": "ليه السيستم مقفول عندي لوحدي؟", "label": "general_query"}
+{"prompt": "احسبدرجاتي", "label": "gpa_calc"}
+{"prompt": "حساب درجات الطالب التراكمية", "label": "gpa_calc"}
+{"prompt": "عايز اعرف احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "تفتكر الحرب العالمية التالتة هتقوم؟", "label": "general_query"}
+{"prompt": "اخد داتا بيز ولا AI", "label": "course_rec"}
+{"prompt": "ايه الاحسن Database ولا ذكاء اصطناعي؟", "label": "course_rec"}
+{"prompt": "حد يعرف جدول الامتحانات هينزل إمتى؟", "label": "general_query"}
+{"prompt": "ميعاد صدور جدول امتحانات الترم", "label": "general_query"}
+{"prompt": "دفعت المصاريف ومبنش ع السيستم", "label": "general_query"}
+{"prompt": "المصاريف لسه مظهرتش على الموقع رغم الدفع", "label": "general_query"}
+{"prompt": "لو وقعت مادة وسقطت فيها، ينفع آخد مرتبة شرف بعد كدة؟", "label": "general_query"}
+{"prompt": "شروط الحصول على مرتبة الشرف في حالة الرسوب", "label": "general_query"}
+{"prompt": "هل السقوط في مادة يمنع مرتبة الشرف؟", "label": "general_query"}
+{"prompt": "إزاي أعمل فورمات للموبايل؟", "label": "general_query"}
+{"prompt": "طريقة عمل ضبط مصنع للهاتف", "label": "general_query"}
+{"prompt": "How to factory reset my phone?", "label": "general_query"}
+{"prompt": "عايز اعرف لو جبت كام ارفع ال gpa", "label": "gpa_plan"}
+{"prompt": "محتاج تقدير كام الترم ده عشان الـ GPA يعلى؟", "label": "gpa_plan"}
+{"prompt": "ازاي ارفع المعدل التراكمي بتاعي؟", "label": "gpa_plan"}
+{"prompt": "خطة تحسين الـ GPA", "label": "gpa_plan"}
+{"prompt": "اخد data mining ولا networks", "label": "course_rec"}
+{"prompt": "ايه الافضل مادة Mining ولا مادة نيتورك؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ Data Mining ولا Networks؟", "label": "course_rec"}
+{"prompt": "ليه مفيش توازن بين عدد المقبولين وبين مساحة الكلية؟", "label": "general_query"}
+{"prompt": "مشكلة التكدس الطلابي ومساحة المدرجات", "label": "general_query"}
+{"prompt": "العدد كبير جداً على مساحة الكلية ليه؟", "label": "general_query"}
+{"prompt": "لو نسيت شنطتي في اللجنة أروح لمين؟", "label": "general_query"}
+{"prompt": "مكان استلام المفقودات في لجان الامتحانات", "label": "general_query"}
+{"prompt": "ضاعت مني شنطة في اللجنة اسأل فين؟", "label": "general_query"}
+{"prompt": "عايز اعرف ازاي اخس", "label": "general_query"}
+{"prompt": "طرق انقاص الوزن الزائد", "label": "general_query"}
+{"prompt": "إيه هي عاصمة موزمبيق؟", "label": "general_query"}
+{"prompt": "Capital of Mozambique", "label": "general_query"}
+{"prompt": "مواعيد عيادة الرمد في التأمين الصحي إمتى؟", "label": "general_query"}
+{"prompt": "جدول دكتور الرمد في التامين الصحي للطلبة", "label": "general_query"}
+{"prompt": "هل فيه خطة لتخفيف الزحمة وتسهيل التسجيل للطلبة؟", "label": "general_query"}
+{"prompt": "اجراءات الكلية لتنظيم عملية التسجيل ومنع الزحام", "label": "general_query"}
+{"prompt": "هدرس Operating Systems في أنهي ترم لو أنا تخصص Cybersecurity؟", "label": "general_query"}
+{"prompt": "مادة الـ OS بتنزل في انهي سمستر لقسم سايبر؟", "label": "general_query"}
+{"prompt": "مادة نظم التشغيل في تخصص Cybersecurity", "label": "general_query"}
+{"prompt": "هدرس أوبريشن سيستمز في أنهي ترم لو أنا تخصص سايبر سكيورتي؟", "label": "general_query"}
+{"prompt": "ازاي اعمل طلب إفادة؟", "label": "general_query"}
+{"prompt": "خطوات الحصول على افادة نجاح او قيد", "label": "general_query"}
+{"prompt": "عايز اعرف اخد AI ولا security", "label": "course_rec"}
+{"prompt": "ايه الاحسن مادة ذكاء اصطناعي ولا سيكيورتي؟", "label": "course_rec"}
+{"prompt": "إحنا هنمتحن ميدترم إمتى يا جماعة؟", "label": "general_query"}
+{"prompt": "ميعاد امتحانات الميدترم نزل؟", "label": "general_query"}
+{"prompt": "يا جماعة الكلية بقت زحمة جداً، فين النظام في توزيع الطلاب؟", "label": "general_query"}
+{"prompt": "انتقاد لسوء تنظيم توزيع الطلاب في الكلية", "label": "general_query"}
+{"prompt": "عايز اخلي تقديري اعلى", "label": "gpa_plan"}
+{"prompt": "طريقة رفع التقدير العام الدراسي", "label": "gpa_plan"}
+{"prompt": "كيفية الصلاة الصحيحة؟", "label": "general_query"}
+{"prompt": "خطوات الصلاة الصحيحة بالتفصيل", "label": "general_query"}
+{"prompt": "إزاي أسجل المواد بتاعتي؟", "label": "general_query"}
+{"prompt": "طريقة الـ Registration للمواد على السيستم", "label": "general_query"}
+{"prompt": "طريقة عمل القهوة المظبوطة", "label": "general_query"}
+{"prompt": "How to make a perfect cup of coffee?", "label": "general_query"}
+{"prompt": "يا جماعة حد يعرف إزاي أثبت إني مقيد في الكلية الترم ده؟", "label": "general_query"}
+{"prompt": "طريقة اثبات القيد للترم الحالي", "label": "general_query"}
+{"prompt": "ازاي ارفع تقديري", "label": "gpa_plan"}
+{"prompt": "نصايح لرفع الـ GPA", "label": "gpa_plan"}
+{"prompt": "ايه احسن مادة اخدها؟", "label": "course_rec"}
+{"prompt": "ترشيح لمواد اختيارية سهلة", "label": "course_rec"}
+{"prompt": "ممكن اعرف عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "خطة للوصول لتقدير 3.5", "label": "gpa_plan"}
+{"prompt": "طريقة عمل الإفادة يا جماعة لو سمحتم؟", "label": "general_query"}
+{"prompt": "ممكن حد يقولي الافادة بتتعمل ازاي؟", "label": "general_query"}
+{"prompt": "احسبلي gpa؟", "label": "gpa_calc"}
+{"prompt": "ممكن اعرف الطقس عامل ايه", "label": "general_query"}
+{"prompt": "حالة الجو اليوم", "label": "general_query"}
+{"prompt": "مين رئيس أمريكا الحالي؟", "label": "general_query"}
+{"prompt": "Who is the US president?", "label": "general_query"}
+{"prompt": "أنا عايزة أتعلم بيانو، الموضوع بياخد وقت؟", "label": "general_query"}
+{"prompt": "تعلم عزف البيانو للمبتدئين", "label": "general_query"}
+{"prompt": "الامتحانات هتبقى من يوم كام ليوم كام", "label": "general_query"}
+{"prompt": "جدول بداية ونهاية الامتحانات", "label": "general_query"}
+{"prompt": "ازاي اعمل مكرونة", "label": "general_query"}
+{"prompt": "طريقة طبخ المكرونة", "label": "general_query"}
+{"prompt": "إزاي أصلح الويندوز لو جاب شاشة زرقاء؟", "label": "general_query"}
+{"prompt": "How to fix Blue Screen of Death in Windows?", "label": "general_query"}
+{"prompt": "الموقع مش مستجيب لإضافة المواد، أتصرف إزاي؟", "label": "general_query"}
+{"prompt": "مشكلة عدم استجابة السيستم وقت التسجيل", "label": "general_query"}
+{"prompt": "لو جبت 80 و 90 احسب المتوسط؟", "label": "gpa_calc"}
+{"prompt": "حساب المتوسط لدرجتين 80 و 90", "label": "gpa_calc"}
+{"prompt": "يا جماعة حد يعرف خطوات التقديم على التدريب الصيفي؟", "label": "general_query"}
+{"prompt": "طريقة حجز الـ Summer Training", "label": "general_query"}
+{"prompt": "مصاريف الكلية كام؟", "label": "general_query"}
+{"prompt": "رسوم الكلية السنوية", "label": "general_query"}
+{"prompt": "طريقة عمل المكرونة بالبشاميل", "label": "general_query"}
+{"prompt": "وصفة مكرونة بالبشاميل", "label": "general_query"}
+{"prompt": "أعرف منين إن بيان القيد جاهز للاستلام؟", "label": "general_query"}
+{"prompt": "ازاي اعرف ان الافادة بتاعتي خلصت؟", "label": "general_query"}
+{"prompt": "لو جبت C و B يطلع كام", "label": "gpa_calc"}
+{"prompt": "معدلي هيبقى كام لو تقديراتي B و C؟", "label": "gpa_calc"}
+{"prompt": "يا فاشل يا بوت", "label": "general_query"}
+{"prompt": "الموقع معلق وبيديني يوزر وباسورد غلط، أتصرف إزاي؟", "label": "general_query"}
+{"prompt": "مشكلة الـ Wrong Password رغم التأكد منها", "label": "general_query"}
+{"prompt": "سعر الدولار كام النهاردة؟", "label": "general_query"}
+{"prompt": "العملة الصعبة النهاردة بكام؟", "label": "general_query"}
+{"prompt": "مين اللي اكتشف أمريكا؟", "label": "general_query"}
+{"prompt": "Who discovered America?", "label": "general_query"}
+{"prompt": "ايه المطلوب عشان اوصل ل 3", "label": "gpa_plan"}
+{"prompt": "ازاي اخلي الـ GPA يوصل لـ 3.0؟", "label": "gpa_plan"}
+{"prompt": "يا جماعة العدد كبير جداً والموقع بيقع بسببنا كلنا، فين الحل؟", "label": "general_query"}
+{"prompt": "شكوى من سقوط الموقع بسبب كثرة الطلاب", "label": "general_query"}
+{"prompt": "عايز اعرف مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "نتيجة مباراة الاهلي", "label": "general_query"}
+{"prompt": "ليه الدفعة كلها بتسجل في نفس الوقت؟ ده ملوش علاقة بالتنظيم.", "label": "general_query"}
+{"prompt": "اعتراض على تزامن تسجيل الدفعات", "label": "general_query"}
+{"prompt": "اخبار العالم ايه", "label": "general_query"}
+{"prompt": "آخر الأخبار العالمية", "label": "general_query"}
+{"prompt": "مادة الـ Logistics and Supply Chain دي موجودة في أنهي ليفل في الـ BA؟", "label": "general_query"}
+{"prompt": "مادة الـ لوجيستكس دي موجودة في أنهي ليفل في الـ بي ايه؟", "label": "general_query"}
+{"prompt": "مادة الـ Logistics دي موجودة في أنهي ليفل في الـ BA؟", "label": "general_query"}
+{"prompt": "مادة الـ Supply Chain دي موجودة في أنهي ليفل في الـ BA؟", "label": "general_query"}
+{"prompt": "مادة الـ Logistics and Supply Chain دي موجودة في أنهي ليفل في الـ إدارة الأعمال؟", "label": "general_query"}
+{"prompt": "مادة الـ لوجيستيك وسلاسل الامداد موجودة في انهي مستوى؟", "label": "general_query"}
+{"prompt": "ينفع أسجل Cloud Computing من غير ما أكون خلصت Data Structures؟", "label": "general_query"}
+{"prompt": "ينفع أسجل كلاود كومبيوتنج من غير ما أكون خلصت داتا ستراكشرز؟", "label": "general_query"}
+{"prompt": "ينفع أسجل Cloud من غير ما أكون خلصت Data Structures؟", "label": "general_query"}
+{"prompt": "ينفع أسجل Cloud Computing من غير ما أكون خلصت DS؟", "label": "general_query"}
+{"prompt": "هل مادة الـ DS متطلب سابق للـ Cloud Computing؟", "label": "general_query"}
+{"prompt": "ينفع أسجل حوسبة سحابية من غير ما أكون خلصت هياكل بيانات؟", "label": "general_query"}
+{"prompt": "عايز أحجز في عيادة الأسنان تبع التأمين الصحي، المواعيد إيه؟", "label": "general_query"}
+{"prompt": "مواعيد عيادة الاسنان بالتأمين الصحي للطلبة", "label": "general_query"}
+{"prompt": "إيه رأيك في القراءة، بتغير الشخصية؟", "label": "general_query"}
+{"prompt": "فوائد القراءة وتأثيرها على الشخصية", "label": "general_query"}
+{"prompt": "امتحانات نص الترم هتكون امتى", "label": "general_query"}
+{"prompt": "ميعاد الميدترم امتى؟", "label": "general_query"}
+{"prompt": "ممكن اطلع بيان القيد بالانجليزي", "label": "general_query"}
+{"prompt": "خطوات استخراج شهادة قيد لغات", "label": "general_query"}
+{"prompt": "إزاي أطلب أوراق رسمية من الموقع؟", "label": "general_query"}
+{"prompt": "طريقة طلب الوثائق من السيستم", "label": "general_query"}
+{"prompt": "أنا بحبك يا بوت", "label": "general_query"}
+{"prompt": "I love you bot", "label": "general_query"}
+{"prompt": "يا جماعة حد معاه موقع مديونية جامعة إسكندرية لمصاريف السنة؟", "label": "general_query"}
+{"prompt": "لينك سداد مصاريف جامعة اسكندرية (AlexPay)", "label": "general_query"}
+{"prompt": "مادة الـ Deep Learning موجودة في تخصص النظم الذكية في سنة كام؟", "label": "general_query"}
+{"prompt": "مادة الـ ديب ليرنينج موجودة في تخصص النظم الذكية في سنة كام؟", "label": "general_query"}
+{"prompt": "مادة الـ Deep موجودة في تخصص النظم الذكية في سنة كام؟", "label": "general_query"}
+{"prompt": "مادة الـ التعلم العميق موجودة في تخصص النظم الذكية في سنة كام؟", "label": "general_query"}
+{"prompt": "مادة الـ Deep Learning موجودة في تخصص الـ IS في سنة كام؟", "label": "general_query"}
+{"prompt": "الـ Deep Learning بيتاخد في سنة كام في قسم الـ Intelligent؟", "label": "general_query"}
+{"prompt": "أطلع إثبات قيد إزاي؟", "label": "general_query"}
+{"prompt": "ازاي اطلع كارنيه", "label": "general_query"}
+{"prompt": "إزاي أستعلم عن المديونية بتاعتي؟", "label": "general_query"}
+{"prompt": "احسب مجموعي", "label": "gpa_calc"}
+{"prompt": "هل تسجيل التدريب زي تسجيل المواد العادية؟", "label": "general_query"}
+{"prompt": "احسب المعدل التراكمي؟", "label": "gpa_calc"}
+{"prompt": "إزاي أعمل حساب على تيك توك؟", "label": "general_query"}
+{"prompt": "تخصص علوم البيانات فيه مواد رياضة كتير؟ زي الـ Stochastic مثلاً؟", "label": "general_query"}
+{"prompt": "أحسن ماركة مكياج إيه؟", "label": "general_query"}
+{"prompt": "محتاج ورقة إثبات قيد بالإنجليزية وتكون مختومة، أتصرف إزاي؟", "label": "general_query"}
+{"prompt": "مادة Text and Social Media Mining بتدرس لغات طبيعية (NLP)؟", "label": "general_query"}
+{"prompt": "يعني إيه تقدير I في النتيجة؟ (Incomplete)", "label": "general_query"}
+{"prompt": "هو التدريب بيتسجل على الموقع ولا ورقي؟", "label": "general_query"}
+{"prompt": "ممكن أعرف هستلم ورقة بيان القيد إمتى؟", "label": "general_query"}
+{"prompt": "أعرف منين القواعد واللايحة بتاعة الكلية؟", "label": "general_query"}
+{"prompt": "هل في مادة بتشرح الـ Convex Optimization؟", "label": "general_query"}
+{"prompt": "كل ما أدخل أسجل الموقع يخرجني أو يهنج، ليه؟", "label": "general_query"}
+{"prompt": "أغاني ويجز الجديدة حلوة؟", "label": "general_query"}
+{"prompt": "تنصحني اخد ايه الترم ده؟", "label": "course_rec"}
+{"prompt": "احسبمجموعي", "label": "gpa_calc"}
+{"prompt": "ليه السيرفر مش مستحمل وواقف خالص؟", "label": "general_query"}
+{"prompt": "مواعيد جراحة التجميل والأوعية الدموية في التأمين الصحي إيه؟", "label": "general_query"}
+{"prompt": "أنا حلمت حلم غريب، تعرف تفسره؟", "label": "general_query"}
+{"prompt": "إمتى أول يوم دراسة؟", "label": "general_query"}
+{"prompt": "باقيلي كام عشان اجيب امتياز", "label": "gpa_plan"}
+{"prompt": "الحاجات الي بتضيع", "label": "general_query"}
+{"prompt": "إيه رأيك في مدينة العلمين الجديدة؟", "label": "general_query"}
+{"prompt": "السيستم مهنج ومش عارف أسجل خالص، أعمل إيه؟", "label": "general_query"}
+{"prompt": "هو الميد إمتى؟", "label": "general_query"}
+{"prompt": "gpa بتاعي كام", "label": "gpa_calc"}
+{"prompt": "هي الكلية فيها أقسام إيه؟ (Departments)", "label": "general_query"}
+{"prompt": "الطقس عامل ايه؟", "label": "general_query"}
+{"prompt": "قسم تحليلات الرعاية الصحية بيدرس مواد طبية؟ زي الـ Anatomy مثلاً؟", "label": "general_query"}
+{"prompt": "يا بوت قولي فزورة صعبة", "label": "general_query"}
+{"prompt": "يا جماعة حد يعرف أسجل في دورة التربية العسكرية إزاي؟", "label": "general_query"}
+{"prompt": "ممكن اعرف الطقس عامل ايه", "label": "general_query"}
+{"prompt": "السيستم مش بيفتح عندي ليه", "label": "general_query"}
+{"prompt": "إزاي أعمل إيميل على الجيميل؟", "label": "general_query"}
+{"prompt": "استخراجشهادةقيد", "label": "general_query"}
+{"prompt": "مكانالسكشنفين", "label": "general_query"}
+{"prompt": "بتفهم في الكيمياء العضوية؟", "label": "general_query"}
+{"prompt": "عيادة الجلدية في التأمين الصحي موجودة أيام إيه؟", "label": "general_query"}
+{"prompt": "مين رئيس امريكا", "label": "general_query"}
+{"prompt": "سعر الدولار كام", "label": "general_query"}
+{"prompt": "تعرف تبرمج لي لعبة؟", "label": "general_query"}
+{"prompt": "احسب المعدل التراكمي", "label": "gpa_calc"}
+{"prompt": "إيه أحسن موبايل في حدود 10 آلاف جنيه؟", "label": "general_query"}
+{"prompt": "لما أتخرج هاخد شهادة بكالوريوس في إيه بالظبط؟", "label": "general_query"}
+{"prompt": "ممكن اعرف امتحانات نص الترم هتكون امتى", "label": "general_query"}
+{"prompt": "أنا نفسي أروح المريخ", "label": "general_query"}
+{"prompt": "في أي أخبار عن مواعيد الميد؟", "label": "general_query"}
+{"prompt": "ميعادالميدامتى", "label": "general_query"}
+{"prompt": "عشان أسجل Numerical Computations لازم أكون نجحت في Linear Algebra؟", "label": "general_query"}
+{"prompt": "الورق اللي طلبته هيخلص إمتى؟", "label": "general_query"}
+{"prompt": "لو محتاج اي ورقه اعمل ايه", "label": "general_query"}
+{"prompt": "إيه الفرق بين الـ GPA والـ CGPA؟", "label": "general_query"}
+{"prompt": "نظام الكلية بيمشي بالساعات المعتمدة ولا نظام قديم؟", "label": "general_query"}
+{"prompt": "هو جدول الفاينال نزل ولا لسه؟", "label": "general_query"}
+{"prompt": "ايه احسن اختيار للمواد؟", "label": "course_rec"}
+{"prompt": "ازاياطلعكارنيه", "label": "general_query"}
+{"prompt": "امتى نتيجة التظلم", "label": "general_query"}
+{"prompt": "عايز اعرف نظام الكلية", "label": "general_query"}
+{"prompt": "إزاي الكلية بتحاول تحل مشكلة الضغط على الموقع؟", "label": "general_query"}
+{"prompt": "تعرف إيه اللي بيجيب بلوك على السيستم؟", "label": "general_query"}
+{"prompt": "أنا بحب القهوة السادة جداً", "label": "general_query"}
+{"prompt": "السيستم بطيء جداً ومش راضي يحمل، إيه المشكلة؟", "label": "general_query"}
+{"prompt": "لو مخلصتش Programming 1 ينفع أسجل مادة الـ Data Structures؟", "label": "general_query"}
+{"prompt": "مكان السكشن فين", "label": "general_query"}
+{"prompt": "عايز اعرف اعمل دايت ازاي", "label": "general_query"}
+{"prompt": "أحسن نوع قهوة إيه؟", "label": "general_query"}
+{"prompt": "ازاي اخس", "label": "general_query"}
+{"prompt": "ممكن اعرف احسب المعدل التراكمي", "label": "gpa_calc"}
+{"prompt": "ميعاد الميد امتى", "label": "general_query"}
+{"prompt": "لو جبت 80 و 90 احسب المتوسط", "label": "gpa_calc"}
+{"prompt": "إيه هو معنى الحياة؟", "label": "general_query"}
+{"prompt": "أنا عايز أخطب، أعمل إيه؟", "label": "general_query"}
+{"prompt": "ممكن اعرف ممكن تحسبلي التقدير", "label": "gpa_calc"}
+{"prompt": "أقدر أقدم طلب تسجيل ورقي منين؟", "label": "general_query"}
+{"prompt": "عشان أسجل Big Data Analytics لازم أكون مخلص مواد ايه؟", "label": "general_query"}
+{"prompt": "مين اللي بنى سور الصين العظيم؟", "label": "general_query"}
+{"prompt": "عايز أسحب ورق من الكلية، الطريقة إزاي؟", "label": "general_query"}
+{"prompt": "اعمل دايت ازاي؟", "label": "general_query"}
+{"prompt": "طريقة استخراج الأوراق من السيستم إيه؟", "label": "general_query"}
+{"prompt": "إيه المواد الاختيارية (Program Electives) اللي موجودة في تخصص بيزنس؟", "label": "general_query"}
+{"prompt": "إيه رأيك في الذكاء الاصطناعي، هيخلص على البشر؟", "label": "general_query"}
+{"prompt": "هي الكلية هتخلص إمتى ؟", "label": "general_query"}
+{"prompt": "محتاج درجات كام عشان ارفع التراكمي", "label": "gpa_plan"}
+{"prompt": "مواعيد عيادة الكبد في التأمين الصحي إيه؟", "label": "general_query"}
+{"prompt": "فينشؤونالطلبة", "label": "general_query"}
+{"prompt": "لو محتاج ورقة قيد أعمل إيه؟", "label": "general_query"}
+{"prompt": "ازاي اتعلم طبخ", "label": "general_query"}
+{"prompt": "توقعاتك لمستقبل الميتافيرس", "label": "general_query"}
+{"prompt": "ازاي ارفع تقديري", "label": "gpa_plan"}
+{"prompt": "ممكن اعرف ايه المواد السهلة", "label": "course_rec"}
+{"prompt": "مكان عيادة الطلبة فين بالظبط؟", "label": "general_query"}
+{"prompt": "إزاي أوصل لجروب المفقودات بتاع الكلية؟", "label": "general_query"}
+{"prompt": "أجيب منين شهادة قيد موجهة لجهة معينة؟", "label": "general_query"}
+{"prompt": "أنا عايزة أتعلم لغة جديدة، أبدأ بإيه؟", "label": "general_query"}
+{"prompt": "عيادة الباطنة في التأمين الصحي بتفتح يوم إيه؟", "label": "general_query"}
+{"prompt": "إيه الفرق بين محتوى مادة Programming I و Programming II؟", "label": "general_query"}
+{"prompt": "ايه هي المواضيع اللي بتغطيها مادة Operating Systems؟", "label": "general_query"}
+{"prompt": "إزاي أعمل حساب على فيسبوك؟", "label": "general_query"}
+{"prompt": "مواعيدالشؤونايه", "label": "general_query"}
+{"prompt": "افضل فيلم ايه", "label": "general_query"}
+{"prompt": "إيه رأيك في المسلسلات التركي؟", "label": "general_query"}
+{"prompt": "هل مادة Introduction to Business إجبارية في برنامج تحليالت الأعمال؟", "label": "general_query"}
+{"prompt": "لو سقطت في مادة (F)، درجتها بتفضل في السجل التراكمي؟", "label": "general_query"}
+{"prompt": "هو لازم أروح الشؤون عشان أسمّع المصاريف ولا بتظهر لوحدها؟", "label": "general_query"}
+{"prompt": "مادة Linear Algebra كام ساعة معتمدة؟", "label": "general_query"}
+{"prompt": "عايز اعرف ازاي ارفع تقديري", "label": "gpa_plan"}
+{"prompt": "ميعادالميدامتى", "label": "general_query"}
+{"prompt": "مين هو المرشد الأكاديمي (Academic Advisor) وهل كلامه إلزامي؟", "label": "general_query"}
+{"prompt": "عيادة الأنف والأذن في التأمين الصحي بتفتح أيام إيه؟", "label": "general_query"}
+{"prompt": "مين اللي كتب قصيدة كذا؟", "label": "general_query"}
+{"prompt": "أنا عايزة أسيب الكلية وأقعد في البيت", "label": "general_query"}
+{"prompt": "يا جماعة الموقع تقيل جداً، أسجل إزاي لو مش شغال؟", "label": "general_query"}
+{"prompt": "أنا عايزة أسافر دهب، الميزانية كام؟", "label": "general_query"}
+{"prompt": "اخد داتا بيز ولا AI", "label": "course_rec"}
+{"prompt": "مواعيد الشؤون ايه", "label": "general_query"}
+{"prompt": "إزاي أسحب إثبات قيد من على الموقع؟", "label": "general_query"}
+{"prompt": "تعرف النتيجة هتظهر إمتى؟", "label": "general_query"}
+{"prompt": "مواد الـ Faculty Elective دي بختارها منين؟", "label": "general_query"}
+{"prompt": "لو روحت جيش ينفع أسحب الترم؟ (Military Withdrawal)", "label": "general_query"}
+{"prompt": "عايز اعرف افضل فيلم ايه", "label": "general_query"}
+{"prompt": "عايز اطلع افادة؟", "label": "general_query"}
+{"prompt": "إنت غبي أوي", "label": "general_query"}
+{"prompt": "اعمل دايت ازاي", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام", "label": "gpa_calc"}
+{"prompt": "عيادة الروماتيزم والمناعة في التأمين الصحي بتفتح إمتى؟", "label": "general_query"}
+{"prompt": "إيه هي عاصمة اليابان؟", "label": "general_query"}
+{"prompt": "هو السيستم ممكن يبلكني لو مخرجتش منه صح؟", "label": "general_query"}
+{"prompt": "ازاي اتعلم طبخ", "label": "general_query"}
+{"prompt": "ايهالموادالسهلة", "label": "course_rec"}
+{"prompt": "احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "عايز اعرف تنصحني اخد ايه الترم ده", "label": "course_rec"}
+{"prompt": "حالة الطقس بكره في محطة الرمل", "label": "general_query"}
+{"prompt": "ممكن اعرف اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "حاولت أدخل على حسابي وقت التسجيل وقالي البيانات مش صحيحة، إيه الحل؟", "label": "general_query"}
+{"prompt": "ممكن أسجل يدوي بدل الموقع؟", "label": "general_query"}
+{"prompt": "فيه حل لمشكلة بطء الموقع وأنا بسجل المواد؟", "label": "general_query"}
+{"prompt": "مين رئيس امريكا", "label": "general_query"}
+{"prompt": "إيه المواد اللي بيدرسها طالب ميديا في سنة رابعة؟", "label": "general_query"}
+{"prompt": "هو أنا لازم أخلص كام ساعة تبع الكلية وكام ساعة تبع التخصص؟", "label": "general_query"}
+{"prompt": "الموقع مش بيفتح عندي", "label": "general_query"}
+{"prompt": "أفتح صفحة إيه عشان أغير في المواد اللي سجلتها؟", "label": "general_query"}
+{"prompt": "هل مادة Discrete Structures ليها متطلب سابق؟", "label": "general_query"}
+{"prompt": "لو جبت C و B يطلع كام", "label": "gpa_calc"}
+{"prompt": "إيه المتطلب بتاع مادة الـ Computer Vision في قسم النظم الذكية؟", "label": "general_query"}
+{"prompt": "عايز اعرف تنصحني اخد ايه الترم ده", "label": "course_rec"}
+{"prompt": "Invalid username or password في الموقع", "label": "general_query"}
+{"prompt": "مواعيد عيادة النساء في التأمين الصحي إيه؟", "label": "general_query"}
+{"prompt": "ازاي اخس؟", "label": "general_query"}
+{"prompt": "احسب مجموعي", "label": "gpa_calc"}
+{"prompt": "ينفع أعمل شهادة قيد مترجمة إنجليزي؟", "label": "general_query"}
+{"prompt": "إزاي أتابع ميعاد ظهور النتيجة أول بأول؟", "label": "general_query"}
+{"prompt": "إيه هي مكونات الكشري المصري؟", "label": "general_query"}
+{"prompt": "هل مادة Web Programming بتشرح Django و React؟", "label": "general_query"}
+{"prompt": "الموقع بيقع ليه", "label": "general_query"}
+{"prompt": "ممكن اعرف اعمل تحويل ازاي", "label": "general_query"}
+{"prompt": "هو العام الدراسي الجديد بيبدأ يوم كام؟", "label": "general_query"}
+{"prompt": "فين الكارنيه عشان نسيتو في اللجنة أمبارح", "label": "general_query"}
+{"prompt": "هل مادة Calculus متطلب لمادة Quantitative Analysis؟", "label": "general_query"}
+{"prompt": "هو ختم التأمين الصحي بيتعمل فين في الكلية؟", "label": "general_query"}
+{"prompt": "عايز اعرف ازاي اتعلم طبخ", "label": "general_query"}
+{"prompt": "مشروع التخرج (Project I & II) بيبدأ من سنة كام؟", "label": "general_query"}
+{"prompt": "ليه مفيش تنظيم في الكليه في اي حاجه", "label": "general_query"}
+{"prompt": "ممكن أعرف ميعاد نزول الـ Elective courses لرابعة؟", "label": "general_query"}
+{"prompt": "ايه هي مادة Stream Processing وبتركز على ايه؟", "label": "general_query"}
+{"prompt": "ممكن اعرف ايه المواد السهلة", "label": "course_rec"}
+{"prompt": "أدخل فين عشان أقدم طلب التربية العسكرية؟", "label": "general_query"}
+{"prompt": "ليه مفيش سيرفرات تستحملنا؟ كل ما ندخل نسجل الموقع يقع.", "label": "general_query"}
+{"prompt": "ممكن اعرف تنصحني اخد ايه الترم ده", "label": "course_rec"}
+{"prompt": "هو في مواد إجبارية على كل طلبة الكلية مهما كان تخصصهم؟", "label": "general_query"}
+{"prompt": "يا جماعة مين الدكتور المسؤول عن موقع الكلية؟", "label": "general_query"}
+{"prompt": "سعر حراري في رغيف العيش البلدي كام؟", "label": "general_query"}
+{"prompt": "مين أحسن ميسي ولا رونالدو؟", "label": "general_query"}
+{"prompt": "ايه المطلوب عشان اوصل ل 3", "label": "gpa_plan"}
+{"prompt": "إزاي أعمل سيرة ذاتية (CV) احترافية؟", "label": "general_query"}
+{"prompt": "مادة Programming II معتمدة على مادة ايه؟", "label": "general_query"}
+{"prompt": "التقديم على التدريب", "label": "general_query"}
+{"prompt": "أنا معايا وصل الدفع بس الموقع مش فاتح لي التسجيل برضه، إيه الحل؟", "label": "general_query"}
+{"prompt": "الساعة كام في القاهرة دلوقتي؟", "label": "general_query"}
+{"prompt": "إزاي أحافظ على بطارية الموبايل؟", "label": "general_query"}
+{"prompt": "ممكن أعرف ميعاد بداية الدراسة في جامعة إسكندرية؟", "label": "general_query"}
+{"prompt": "لو عايز أعمل طلب ورقي، الشؤون موجودين لحد إمتى؟", "label": "general_query"}
+{"prompt": "ممكن اعرف احسب مجموعي", "label": "gpa_calc"}
+{"prompt": "إزاي أعرف ميعاد بداية الترم؟", "label": "general_query"}
+{"prompt": "امتحانات نص الترم هتكون امتى؟", "label": "general_query"}
+{"prompt": "مادة Distributed Processing بتغطي الـ MapReduce و Google File System؟", "label": "general_query"}
+{"prompt": "مسموح لي أغيب قد إيه قبل ما أتحرم من المادة؟", "label": "general_query"}
+{"prompt": "ممكن اعرف مصاريف الكلية كام", "label": "general_query"}
+{"prompt": "يا جماعة حد يعرف طريق عيادة التأمين الصحي لطلبة حاسبات؟", "label": "general_query"}
+{"prompt": "يا جماعة هو فيه تقديم ورقي للمواد ولا لازم السيستم؟", "label": "general_query"}
+{"prompt": "ممكن أعرف المديونية بتظهر فين على الموقع؟", "label": "general_query"}
+{"prompt": "لو جبت كام ارفع ال gpa؟", "label": "gpa_plan"}
+{"prompt": "عايز لينك المديونية الرسمي بتاع الجامعة", "label": "general_query"}
+{"prompt": "إيه هي المواد الاختيارية المتاحة في الكلية؟", "label": "general_query"}
+{"prompt": "مين كسب ماتش الاهلي؟", "label": "general_query"}
+{"prompt": "الدراسة هتبدأ إمتى؟", "label": "general_query"}
+{"prompt": "gpa؟", "label": "gpa_calc"}
+{"prompt": "أروح فين لو تعبت وعايز أكشف بالتأمين بتاع الكلية؟", "label": "general_query"}
+{"prompt": "عايز اعرف عايز اطلع افادة", "label": "general_query"}
+{"prompt": "إيه أحسن برنامج لمونتاج الفيديوهات؟", "label": "general_query"}
+{"prompt": "نسيت كارنيه الكلية في المدرج، أعمل إيه؟", "label": "general_query"}
+{"prompt": "اعملدايتازاي", "label": "general_query"}
+{"prompt": "ممكن اعرف ميعاد الميد امتى", "label": "general_query"}
+{"prompt": "يا جماعة الموقع واقع تماماً، ليه مفيش حل جذري للموضوع ده؟", "label": "general_query"}
+{"prompt": "مين اللي كتب رواية الفيل الأزرق؟", "label": "general_query"}
+{"prompt": "إيه هي المواد اللي هدرسها في ترم أول سنة تانية تخصص CDS؟", "label": "general_query"}
+{"prompt": "إمتى الطالب يتفصل من الكلية؟", "label": "general_query"}
+{"prompt": "مين كسب ماتش الأهلي والزمالك؟", "label": "general_query"}
+{"prompt": "مادة Mobile Programming بتركز على لغات برمجة ايه؟", "label": "general_query"}
+{"prompt": "مين اللي بيفتح التسجيل للجروبات على الموقع؟", "label": "general_query"}
+{"prompt": "المشاكل دي نتيجة استقبال عدد كبير من الطلاب اكبر من الكليه", "label": "general_query"}
+{"prompt": "سعر الدولار كام", "label": "general_query"}
+{"prompt": "مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "ليه الكلية مش قادرة تستوعبنا في موضوع تسجيل المواد ده؟", "label": "general_query"}
+{"prompt": "هو فيه مكتب مفقودات في الكلية؟", "label": "general_query"}
+{"prompt": "كل ما أدخل اليوزر نيم يقولي غلط، السيستم فيه مشكلة؟", "label": "general_query"}
+{"prompt": "يا جماعة هي الامتحانات هتبدأ يوم كام بالظبط؟", "label": "general_query"}
+{"prompt": "لو عايز أسجل التدريب ورقي أروح فين؟", "label": "general_query"}
+{"prompt": "إزاي أتابع الطلب بتاعي واعرف هو وصل لفين؟", "label": "general_query"}
+{"prompt": "عايز اعرف ميعاد الميد امتى", "label": "general_query"}
+{"prompt": "التقديم امتى؟", "label": "general_query"}
+{"prompt": "عايز اعرف اخد داتا بيز ولا AI", "label": "course_rec"}
+{"prompt": "محتاجدرجاتكامعشانارفعالتراكمي", "label": "gpa_plan"}
+{"prompt": "إزاي الكلية بتتعامل مع مشكلة وقوع السيستم وقت ضغط التسجيل؟", "label": "general_query"}
+{"prompt": "ازاياطلعكارنيه", "label": "general_query"}
+{"prompt": "احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "الموقع لسه قايل إني مدفعتش وأنا دافع فعلاً، فيه مشكلة؟", "label": "general_query"}
+{"prompt": "عايز اعرف باقيلي كام عشان اجيب امتياز", "label": "gpa_plan"}
+{"prompt": "إزاي أصلح الحنفية اللي بتنقط؟", "label": "general_query"}
+{"prompt": "أنا بحب واحدة ومش عارف أقولها، أعمل إيه؟", "label": "general_query"}
+{"prompt": "لو غبت أكتر من 25% من المحاضرات إيه اللي هيحصل؟", "label": "general_query"}
+{"prompt": "ليه الموقع مديني بلوك", "label": "general_query"}
+{"prompt": "لو جبت C و B يطلع كام", "label": "gpa_calc"}
+{"prompt": "اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "احسب المعدل التراكمي", "label": "gpa_calc"}
+{"prompt": "ممكن اعرف ازاي اتعلم طبخ", "label": "general_query"}
+{"prompt": "عايز أعرف الأجندة الدراسية وبداية السنة، فين المواعيد؟", "label": "general_query"}
+{"prompt": "أقدر أروح الشؤون الساعة كام؟", "label": "general_query"}
+{"prompt": "هتنزلوا مواد جديدة لرابعه امتى", "label": "general_query"}
+{"prompt": "هو كود المادة (Course Code) ده ليه لازمة ولا مجرد أرقام؟", "label": "general_query"}
+{"prompt": "اخدداتابيزولاAI", "label": "course_rec"}
+{"prompt": "ممكن أعرف إمتى هيردوا على التظلمات؟", "label": "general_query"}
+{"prompt": "أعرف منين إن درجات الترم ده نزلت؟", "label": "general_query"}
+{"prompt": "مواعيد عيادة القلب والصدرية في التأمين الصحي إيه؟", "label": "general_query"}
+{"prompt": "ممكن أعرف ميعاد بداية ونهاية امتحانات الترم؟", "label": "general_query"}
+{"prompt": "يا جماعة لو محتاج ورق معين أعمل إيه؟", "label": "general_query"}
+{"prompt": "ممكن اعرف ايه احسن اختيار للمواد", "label": "course_rec"}
+{"prompt": "يا جماعة حد عارف ليه الموقع مش بيدخلني؟", "label": "general_query"}
+{"prompt": "ازاي اعمل مكرونة", "label": "general_query"}
+{"prompt": "ممكن اعرف لو جبت C و B يطلع كام", "label": "gpa_calc"}
+{"prompt": "تنصحني اخد ايه الترم ده؟", "label": "course_rec"}
+{"prompt": "ايه هي مواعيد عيادات التأمين الصحي للطلاب؟", "label": "general_query"}
+{"prompt": "مادة Data Compression Techniques بتدرس الـ Huffman coding؟", "label": "general_query"}
+{"prompt": "عايز بيان قيد بالإنجليزي عشان التقديم على منحة، أعمله إزاي؟", "label": "general_query"}
+{"prompt": "إيه الأخبار بخصوص  مواد سنة رابعة؟", "label": "general_query"}
+{"prompt": "إيه خطوات التقديم في العسكرية؟", "label": "general_query"}
+{"prompt": "هو الضغط على الموقع هيخف إمتى؟ مش عارف أسجل خالص.", "label": "general_query"}
+{"prompt": "ممكن اعرف اخبار العالم ايه", "label": "general_query"}
+{"prompt": "ازاي اعمل مكرونة", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام", "label": "gpa_calc"}
+{"prompt": "مين هو وزير التعليم العالي الحالي؟", "label": "general_query"}
+{"prompt": "مين هي أم كلثوم؟", "label": "general_query"}
+{"prompt": "عايز أطلع شهادة قيد عشان التقديمات، أروح فين؟", "label": "general_query"}
+{"prompt": "عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "المبنى الرسمي اتفتح فعلاً ولا لسه فيه ضغط؟", "label": "general_query"}
+{"prompt": "لو أنا Cybersecurity، هبقى تبع أنهي قسم في الكلية؟", "label": "general_query"}
+{"prompt": "في أي أخبار عن دفع المصاريف؟", "label": "general_query"}
+{"prompt": "عايز اعرف اخبار العالم ايه", "label": "general_query"}
+{"prompt": "إيه هي فوائد ممارسة الرياضة الصبح؟", "label": "general_query"}
+{"prompt": "ليه الكلية بتاخد أعداد كبيرة أوي كدة والمكان مش مكفي؟", "label": "general_query"}
+{"prompt": "اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "الموقع عاملي بلوك", "label": "general_query"}
+{"prompt": "التأمين الصحي لكلية حاسبات في العياده ولا في المستشفى ولا مكانه فين", "label": "general_query"}
+{"prompt": "المديونية لسه متشالتش رغم إني دافع من كذا يوم، أكلم مين؟", "label": "general_query"}
+{"prompt": "هو أنا عليا فلوس كام للكلية؟", "label": "general_query"}
+{"prompt": "مين هو أغنى راجل في العالم؟", "label": "general_query"}
+{"prompt": "مادة الـ Infographics تبع أنهي برنامج دراسي؟", "label": "general_query"}
+{"prompt": "هو إحنا هنفضل كل سنة في نفس موال وقوع الموقع ده؟", "label": "general_query"}
+{"prompt": "عايز أدفع مديونية السمر كورس أونلاين، أروح فين؟", "label": "general_query"}
+{"prompt": "ممكن اعرف باقيلي كام عشان اجيب امتياز", "label": "gpa_plan"}
+{"prompt": "إيه رأيك في أغنية ويجز الجديدة؟", "label": "general_query"}
+{"prompt": "اعملكارنيهبدلفاقد", "label": "general_query"}
+{"prompt": "هو التدريب الصيفي (Field Training) عليه ساعات معتمدة؟", "label": "general_query"}
+{"prompt": "عايزاخليتقديرياعلى", "label": "gpa_plan"}
+{"prompt": "الكلية أعلنت عن مواعيد الامتحانات الرسمية ولا لسه؟", "label": "general_query"}
+{"prompt": "حد جاله رد على طلب بيان القيد يا شباب؟", "label": "general_query"}
+{"prompt": "مادة الـ Machine Learning ليها متطلب سابق (Pre-requisite) إيه؟", "label": "general_query"}
+{"prompt": "أجيب منين الورق اللي ناقصني؟", "label": "general_query"}
+{"prompt": "باقيليكامعشاناجيبامتياز", "label": "gpa_plan"}
+{"prompt": "الدرجات لسه منزلتش ليه؟", "label": "general_query"}
+{"prompt": "اعمل دايت ازاي", "label": "general_query"}
+{"prompt": "هي مادة الـ Numerical Computations بتعتمد على Linear Algebra؟", "label": "general_query"}
+{"prompt": "الدراسة في الكلية بالعربي ولا بالإنجليزي؟", "label": "general_query"}
+{"prompt": "إيه رأيك في العملات الرقمية والبيتكوين؟", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام؟", "label": "gpa_calc"}
+{"prompt": "مين اللي فاز بالدوري المصري السنة دي؟", "label": "general_query"}
+{"prompt": "إيه هي فوائد شرب المية؟", "label": "general_query"}
+{"prompt": "ممكن اعرف عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "ممكن اعرف 2 مادة A و مادة B يطلع كام", "label": "gpa_calc"}
+{"prompt": "ممكن تفتحوا برامج جديدة في المستقبل ولا هما الستة اللي موجودين بس؟", "label": "general_query"}
+{"prompt": "لو جبت 80 و 90 احسب المتوسط", "label": "gpa_calc"}
+{"prompt": "عايز اعرف gpa بتاعي كام", "label": "gpa_calc"}
+{"prompt": "ايه المواد اللي ملهاش Pre-requisite في اللائحة؟", "label": "general_query"}
+{"prompt": "نتيجة التظلمات هتظهر إمتى؟", "label": "general_query"}
+{"prompt": "إيه هي أسرع عربية في العالم؟", "label": "general_query"}
+{"prompt": "عايز اعرف اخد AI ولا security", "label": "course_rec"}
+{"prompt": "الطقس عامل ايه", "label": "general_query"}
+{"prompt": "السيستم كل مرة بيقع في وقت التسجيل، إيه السبب؟", "label": "general_query"}
+{"prompt": "أحلى كافيه في سموحة قعدته هادية؟", "label": "general_query"}
+{"prompt": "اعملايهعشاناجيبجيدجدا", "label": "gpa_plan"}
+{"prompt": "ايهالموادالسهلة", "label": "course_rec"}
+{"prompt": "أنا عايزة أتعلم طبخ، أبدأ بأكلة إيه؟", "label": "general_query"}
+{"prompt": "لو جبت كام ارفع ال gpa", "label": "gpa_plan"}
+{"prompt": "اخبارالعالمايه", "label": "general_query"}
+{"prompt": "عايز اعرف اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "عايز اعرف اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "عايز اعرف ازاي اخس", "label": "general_query"}
+{"prompt": "ايه احسن مادة اخدها الترم ده", "label": "course_rec"}
+{"prompt": "هو مين المسؤول عن تنظيم المواد أو فتح اقفل التسجيل", "label": "general_query"}
+{"prompt": "مين المسؤول عن السيستم عشان عايز أتواصل معاه؟", "label": "general_query"}
+{"prompt": "عايز اخلي تقديري اعلى", "label": "gpa_plan"}
+{"prompt": "عايز أقدم على التربية العسكرية، أعمل إيه؟", "label": "general_query"}
+{"prompt": "عايز اعرف سعر الدولار كام", "label": "general_query"}
+{"prompt": "الموقع جاب لي Error 502 أو 504، ده معناه إيه؟", "label": "general_query"}
+{"prompt": "اعمل بيان قيد ازاي", "label": "general_query"}
+{"prompt": "تفتكر فيه كائنات فضائية؟", "label": "general_query"}
+{"prompt": "إزاي أوصل لجروب المفقودات بتاع الكلية؟", "label": "general_query"}
+{"prompt": "ايه هي المحتويات العلمية لمادة Algorithm Design؟", "label": "general_query"}
+{"prompt": "لو الموقع معلق في التسجيل، مين الدكتور اللي ماسك الموضوع ده؟", "label": "general_query"}
+{"prompt": "الطقسعاملايه", "label": "general_query"}
+{"prompt": "ايهالمتطلباتالسابقةلAI", "label": "course_rec"}
+{"prompt": "2 مادة A و مادة B يطلع كام", "label": "gpa_calc"}
+{"prompt": "الطقس في إسكندرية بكره عامل إيه؟", "label": "general_query"}
+{"prompt": "مين هو هداف الدوري الإسباني التاريخي؟", "label": "general_query"}
+{"prompt": "إزاي أطلب بيان قيد مختوم من الكلية؟", "label": "general_query"}
+{"prompt": "عايز اعرف مواعيد الشؤون ايه", "label": "general_query"}
+{"prompt": "عايز اخلي تقديري اعلى", "label": "gpa_plan"}
+{"prompt": "ممكن أوقف قيدي (Freeze) كام ترم؟", "label": "general_query"}
+{"prompt": "لو عايز أروح التأمين الصحي، مكانه فين؟", "label": "general_query"}
+{"prompt": "اقدم في المدينة الجامعية ازاي؟", "label": "general_query"}
+{"prompt": "يا جماعة حد يعرف أشوف المديونية إزاي؟", "label": "general_query"}
+{"prompt": "قسم الـ Business Analytics بيدرسوا محاسبة (Accounting) فعلاً؟", "label": "general_query"}
+{"prompt": "تفتكر إيه اللي حصل في مثلث برمودا؟", "label": "general_query"}
+{"prompt": "مادة Concurrent Algorithms بتشرح الـ Synchronization و Locks؟", "label": "general_query"}
+{"prompt": "عملت إيداع للمصاريف ومظهرتش في البروفايل بتاعي، إيه العمل؟", "label": "general_query"}
+{"prompt": "هل الكلية لسه بتستقبل أعداد فوق طاقتها الاستيعابية؟", "label": "general_query"}
+{"prompt": "اخد داتا بيز ولا AI", "label": "course_rec"}
+{"prompt": "مين هي أصغر دولة في العالم؟", "label": "general_query"}
+{"prompt": "عايز اعرف لو جبت C و B يطلع كام", "label": "gpa_calc"}
+{"prompt": "ازاي اطلع كارنيه؟", "label": "general_query"}
+{"prompt": "Machine Learning محتاجة ايه قبلها؟", "label": "course_rec"}
+{"prompt": "ممكن اعرف عايز اخلي تقديري اعلى", "label": "gpa_plan"}
+{"prompt": "عايز اوصل ل gpa 3.5 اعمل ايه؟", "label": "gpa_plan"}
+{"prompt": "إيه طريقة التسجيل الورقي لو سمحت؟", "label": "general_query"}
+{"prompt": "توزيع ساعات مادة Databases بين المحاضرات والتمارين (L, P) كام؟", "label": "general_query"}
+{"prompt": "ممكن أعرف أجيب إثبات القيد أونلاين إزاي؟", "label": "general_query"}
+{"prompt": "هي الشؤون بتقفل الساعة كام؟", "label": "general_query"}
+{"prompt": "هو كشف التأمين بيبقى في عيادة سوتر ولا في المستشفى الميري؟", "label": "general_query"}
+{"prompt": "اخد AI ولا security", "label": "course_rec"}
+{"prompt": "توقعات الأبراج النهاردة", "label": "general_query"}
+{"prompt": "مش شغال تسجيل المواد", "label": "general_query"}
+{"prompt": "أنا عايزة أشتري عجلة، أختار نوع إيه؟", "label": "general_query"}
+{"prompt": "مين هو مخرج فيلم تايتانيك؟", "label": "general_query"}
+{"prompt": "حد يعرف الكارنيهات اللي بتتنسي في الامتحانات بتروح فين؟", "label": "general_query"}
+{"prompt": "مين رئيس امريكا", "label": "general_query"}
+{"prompt": "يا جماعة هو بيان القيد بياخد وقت قد إيه عشان يطلع؟", "label": "general_query"}
+{"prompt": "ازاي اعمل مكرونة", "label": "general_query"}
+{"prompt": "ممكن أعرف الدرجات هتترفع على السيستم إمتى؟", "label": "general_query"}
+{"prompt": "هو الموقع واقع عند الكل ولا عندي أنا بس؟", "label": "general_query"}
+{"prompt": "أنا حاسة إني تايهة في الحياة، أعمل إيه؟", "label": "general_query"}
+{"prompt": "التسجيل قفل ولا لسه؟ مش راضي يفتح عندي", "label": "general_query"}
+{"prompt": "لو حبيت أسأل عن تخصص 'تحليلات الرعاية الصحية' ده موجود عندكم فعلاً؟", "label": "general_query"}
+{"prompt": "مكان السكشن فين", "label": "general_query"}
+{"prompt": "لو عايز ورقة رسمية من الكلية ببياناتي، أطلبها إزاي؟", "label": "general_query"}
+{"prompt": "إزاي أسجل ورقي لو الموقع مش بيفتح؟", "label": "general_query"}
+{"prompt": "طريقة طلب بيان قيد إنجليزي من الموقع إيه؟", "label": "general_query"}
+{"prompt": "ازاي ارفع تقديري", "label": "gpa_plan"}
+{"prompt": "أنا عايزة أطلع رخصة سواقة، الإجراءات إيه؟", "label": "general_query"}
+{"prompt": "ازاي ارفع تقديري", "label": "gpa_plan"}
+{"prompt": "عايز اعرف ايه المواد السهلة", "label": "course_rec"}
+{"prompt": "المكان ضيق على عددنا والسيستم دايمًا مهنج من الضغط.", "label": "general_query"}
+{"prompt": "أنا تعبان، آخد دواء إيه للبرد؟", "label": "general_query"}
+{"prompt": "باقيلي كام عشان اجيب امتياز", "label": "gpa_plan"}
+{"prompt": "ازاي اقدم في الكلية", "label": "general_query"}
+{"prompt": "ممكن اعرف 2 مادة A و مادة B يطلع كام", "label": "gpa_calc"}
+{"prompt": "إزاي أسجل في تدريب الكلية؟", "label": "general_query"}
+{"prompt": "جدول الامتحانات فين؟", "label": "general_query"}
+{"prompt": "أختم دفتر التأمين منين؟", "label": "general_query"}
+{"prompt": "ممكن اعرف ايه احسن اختيار للمواد", "label": "course_rec"}
+{"prompt": "عايز اعرف اخد داتا بيز ولا AI", "label": "course_rec"}
+{"prompt": "يا جماعة حد يعرف مواد رابعة هتنزل على الموقع إمتى؟", "label": "general_query"}
+{"prompt": "مين هو بطل مسلسل صراع العروش؟", "label": "general_query"}
+{"prompt": "افضل فيلم ايه", "label": "general_query"}
+{"prompt": "أدفع المصاريف إمتى؟", "label": "general_query"}
+{"prompt": "أروح إمتى لو عايز أكشف أعصاب في التأمين الصحي؟", "label": "general_query"}
+{"prompt": "ايهاحسنمادةاخدها", "label": "course_rec"}
+{"prompt": "عايز اعرف عايز اطلع افادة", "label": "general_query"}
+{"prompt": "ازاي اخس؟", "label": "general_query"}
+{"prompt": "أحسن ساندوتش كبدة في إسكندرية فين؟", "label": "general_query"}
+{"prompt": "ازاياخس", "label": "general_query"}
+{"prompt": "تحيا مصر", "label": "general_query"}
+{"prompt": "مين اللي اكتشف الجاذبية؟", "label": "general_query"}
+{"prompt": "احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "ينفع أفتح مادة الـ Cloud Computing وأنا لسه مخلصتش هياكل البيانات؟", "label": "general_query"}
+{"prompt": "أنا زهقان وعايز أموت", "label": "general_query"}
+{"prompt": "مادة الـ Network Security ليها متطلبات سابقة إيه في قسم الـ Security؟", "label": "general_query"}
+{"prompt": "هل في مادة بتشرح الـ Object-Oriented Programming بالتفصيل؟", "label": "general_query"}
+{"prompt": "عايز أعرف المديونية بتاعتي نزلت ولا لسه؟", "label": "general_query"}
+{"prompt": "ايه المطلوب عشان اوصل ل 3", "label": "gpa_plan"}
+{"prompt": "لو ضاع مني حاجة في الكلية ألاقيها فين؟", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام", "label": "gpa_calc"}
+{"prompt": "عايز اعرف مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "لو جبت 80 و 90 احسب المتوسط", "label": "gpa_calc"}
+{"prompt": "الـ GPA بيتحسب إزاي؟ (Grade Point Average)", "label": "general_query"}
+{"prompt": "محتاج أختم دفتر التأمين الصحي، إيه الورق اللي آخده معايا؟", "label": "general_query"}
+{"prompt": "مين اللي اخترع المصباح الكهربائي؟", "label": "general_query"}
+{"prompt": "انا واخد بلوك على السيستم ليه", "label": "general_query"}
+{"prompt": "إيه رأيك في محمد صلاح؟", "label": "general_query"}
+{"prompt": "عايز اعرف احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "إيه الإجراءات عشان أفعل أو أختم دفتر التأمين بتاعي؟", "label": "general_query"}
+{"prompt": "أقدر أسجل مادة من غير ما أخلص المتطلب بتاعها (Pre-requisite)؟", "label": "general_query"}
+{"prompt": "لو فاتني ميعاد التسجيل الإلكتروني، ينفع أسجل ورقي؟", "label": "general_query"}
+{"prompt": "إزاي أطلب إفادة أونلاين؟", "label": "general_query"}
+{"prompt": "أنا عايزة أسافر اليونان، الفيزا صعبة؟", "label": "general_query"}
+{"prompt": "الترم الواحد في الكلية بيبقى مدته كام أسبوع دراسة؟", "label": "general_query"}
+{"prompt": "مصاريف الكلية كام؟", "label": "general_query"}
+{"prompt": "ممكن اعرف عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "ممكن اعرف مين كسب ماتش الاهلي", "label": "general_query"}
+{"prompt": "محتاج درجات كام عشان ارفع التراكمي؟", "label": "gpa_plan"}
+{"prompt": "عيادة التغذية في التأمين الصحي بتفتح إمتى؟", "label": "general_query"}
+{"prompt": "برنامج الحوسبة وعلوم البيانات فيه مادة عن الـ Big Data؟", "label": "general_query"}
+{"prompt": "إمتى ميعاد الميدتيرم الرسمي؟", "label": "general_query"}
+{"prompt": "احسبمجموعي", "label": "gpa_calc"}
+{"prompt": "يعني إيه حرمان (Forced Withdrawal)؟", "label": "general_query"}
+{"prompt": "الحاجات اللي الطلبة بتنساها بتروح فين؟", "label": "general_query"}
+{"prompt": "لو عايز أنسحب من مادة (Withdraw) عشان مش هلحق ألمها، إيه الشروط؟", "label": "general_query"}
+{"prompt": "جدول الميد هينزل إمتى؟", "label": "general_query"}
+{"prompt": "إزاي أطلع بمرتبة شرف؟", "label": "general_query"}
+{"prompt": "لو أنا طالب متعثر (Probation)، هسجل كام ساعة بس؟", "label": "general_query"}
+{"prompt": "اعملايهعشاناجيبجيدجدا", "label": "gpa_plan"}
+{"prompt": "احسبلي gpa", "label": "gpa_calc"}
+{"prompt": "ايه المواد السهلة", "label": "course_rec"}
+{"prompt": "الطقس عامل ايه", "label": "general_query"}
+{"prompt": "إيه اللي الكلية عملته عشان تحل مشكلة الضغط الطلابي على الموقع والمكان؟", "label": "general_query"}
+{"prompt": "مادة Stochastic Processes بتغطي الـ Markov chains؟", "label": "general_query"}
+{"prompt": "خطوات تسجيل المواد للترم ده إيه يا جماعة؟", "label": "general_query"}
+{"prompt": "اخبار العالم ايه", "label": "general_query"}
+{"prompt": "مين اللي فاز بجائزة أفضل لاعب في أفريقيا؟", "label": "general_query"}
+{"prompt": "أنا زهقت من الكلية وعايز أفتح عربية كبدة", "label": "general_query"}
+{"prompt": "لازم أروح الشؤون عشان أختم دفتر التأمين؟", "label": "general_query"}
+{"prompt": "ممكن اعرف سعر الدولار كام", "label": "general_query"}
+{"prompt": "هو استلام الورق بياخد وقت قد إيه؟", "label": "general_query"}
+{"prompt": "الموقع مقفول ليه", "label": "general_query"}
+{"prompt": "عايز اعرف احسب درجاتي", "label": "gpa_calc"}
+{"prompt": "عايز اعرف استخراج شهادة قيد", "label": "general_query"}
+{"prompt": "أخد إيه معايا وأنا رايح أختم دفتر التأمين الصحي؟", "label": "general_query"}
+{"prompt": "هو المبنى الجديد هيحل مشكلة الزحمة وتكدس الطلاب؟", "label": "general_query"}
+{"prompt": "أنا عايزة أشتري ساعة ذكية، إيه أحسن نوع؟", "label": "general_query"}
+{"prompt": "ممكن أعرف هستلم شهاداتي أو ورقي إمتى؟", "label": "general_query"}
+{"prompt": "عايز اوصل ل gpa 3.5 اعمل ايه", "label": "gpa_plan"}
+{"prompt": "أقدر أضيف مادة جديدة إزاي؟", "label": "general_query"}
+{"prompt": "أجيب منين الورقة اللي بتثبت إني مقيد في الكلية؟", "label": "general_query"}
+{"prompt": "هي البرامج اللي في الكلية ليها علاقة بسوق العمل ولا مجرد كلام نظري؟", "label": "general_query"}
+{"prompt": "مادة Project I و Project II عليهم كام ساعة؟", "label": "general_query"}
+{"prompt": "تفتكر الجواز أحسن ولا العزوبية؟", "label": "general_query"}
+{"prompt": "مين اللي بنى الأهرامات؟", "label": "general_query"}
+{"prompt": "لو عندي مشكلة في السيستم نفسه، مين المسؤول عنه؟", "label": "general_query"}
+{"prompt": "إيه هي إجراءات استخراج إثبات القيد؟", "label": "general_query"}
+{"prompt": "لو عايز أقدم على أي مستخرج، أدخل فين؟", "label": "general_query"}
+{"prompt": "مين أحسن مخرج سينمائي في مصر؟", "label": "general_query"}
+{"prompt": "الشئون فاتحين دلوقتي ولا لا", "label": "general_query"}
+{"prompt": "ممكن اعرف الغياب بيأثر ازاي", "label": "general_query"}
+{"prompt": "هو متاح التسجيل الورقي دلوقتي؟", "label": "general_query"}
+{"prompt": "احسبالمعدلالتراكمي", "label": "gpa_calc"}
+{"prompt": "توقعاتك إيه لسعر الدولار الشهر الجاي؟", "label": "general_query"}
+{"prompt": "ممكن أتخرج في أقل من 4 سنين؟ إيه أقل عدد أتاريم (Semesters) للتخرج؟", "label": "general_query"}
+{"prompt": "هي المصاريف بتتدفع إمتى؟", "label": "general_query"}
+{"prompt": "مين هو هداف الدوري الإنجليزي؟", "label": "general_query"}
+{"prompt": "ممكن اعرف سعر الدولار كام", "label": "general_query"}
+{"prompt": "إيه أحسن نوع لابتوب للجرافيك؟", "label": "general_query"}
+{"prompt": "هي مادة الـ Data Science Methodology دي مادة تخصص ولا كلية؟", "label": "general_query"}
+{"prompt": "عايز أقدم على طلب إفادة، الطريقة إزاي؟", "label": "general_query"}
+{"prompt": "اخد data mining ولا networks", "label": "course_rec"}
+{"prompt": "مش منطقي إننا نكون بالعدد ده والمبنى مبيكفيش، ده بيأثر على السيستم.", "label": "general_query"}
+{"prompt": "ممكن اعرف ايه احسن مادة اخدها", "label": "course_rec"}
+{"prompt": "مين اللي فاز بكأس العالم الأخير؟", "label": "general_query"}
+{"prompt": "أعرف منين مصاريف السمر كورس اللي عليا كام؟", "label": "general_query"}
+{"prompt": "ايه الحاجات المطلوبه علشان اختم دفتر التأمين الصحي", "label": "general_query"}
+{"prompt": "الطقسعاملايه", "label": "general_query"}
+{"prompt": "ممكن لينك فيه كل حاجة تخص نظام الكلية؟", "label": "general_query"}
+{"prompt": "ممكن اعرف افضل فيلم ايه", "label": "general_query"}
+{"prompt": "ممكن اعرف اعمل ايه عشان اجيب جيد جدا", "label": "gpa_plan"}
+{"prompt": "إيه أحسن نوع سماعات بلوتوث؟", "label": "general_query"}
+{"prompt": "احسب مجموعي؟", "label": "gpa_calc"}
+{"prompt": "اعملتحويلازاي", "label": "general_query"}
+{"prompt": "خطوات طلب إثبات القيد إيه يا جماعة؟", "label": "general_query"}
+{"prompt": "ايه احسن اختيار للمواد", "label": "course_rec"}
+{"prompt": "عشان أتخرج لازم أخلص كام ساعة؟ (Total Credit Hours)", "label": "general_query"}
+{"prompt": "ميعاد دفع مصاريف الكلية إمتى يا شباب؟", "label": "general_query"}
+{"prompt": "تعرف تقول نكتة إسكندراني؟", "label": "general_query"}
+{"prompt": "إيه هي فوائد الشاي الأخضر؟", "label": "general_query"}
+{"prompt": "اعمل تحويل ازاي؟", "label": "general_query"}
+{"prompt": "لو محتاج أسحب مادة، أدخل فين؟", "label": "general_query"}
+{"prompt": "لو عايز أغير تخصصي (Change Program) جوه الكلية، ينفع؟", "label": "general_query"}
+{"prompt": "ممكن اعرف امتحانات نص الترم هتكون امتى", "label": "general_query"}
+{"prompt": "عيادة السكر في التأمين الصحي بتفتح إمتى؟", "label": "general_query"}
+{"prompt": "هي الكلية دي الدراسة فيها كام سنة؟", "label": "general_query"}
+{"prompt": "3 مواد B و مادة A يساوي كام؟", "label": "gpa_calc"}
+{"prompt": "عايز اعرف امتحانات نص الترم هتكون امتى", "label": "general_query"}
+{"prompt": "الكلية مش منظمة مواعيد التسجيل خالص والسيستم بيقع.", "label": "general_query"}
+{"prompt": "أنا عايزة أشتري لاب توب، الميزانية 15 ألف", "label": "general_query"}
+{"prompt": "هل مادة Cloud Computing بتركز على الـ Virtualization؟", "label": "general_query"}
+{"prompt": "طلبت بيان قيد من الموقع، أعرف منين إنه خلص؟", "label": "general_query"}
+{"prompt": "أعرف منين إن الورقة بتاعتي جهزت؟", "label": "general_query"}
+{"prompt": "تنصحني اخد ايه الترم ده؟", "label": "course_rec"}
+{"prompt": "ايه هي الأدوات المستخدمة في مادة Data Visualization Tools؟", "label": "general_query"}
+{"prompt": "لو جبت 80 و 90 احسب المتوسط", "label": "gpa_calc"}
+{"prompt": "محتاجة ورقة مختومة تثبت إني طالبة في الكلية، أعمل إيه؟", "label": "general_query"}
+{"prompt": "عايز اعرف ازاي اعمل مكرونة", "label": "general_query"}
+{"prompt": "تفتكر الروبوتات هتحل محل الموظفين؟", "label": "general_query"}
+{"prompt": "خطوات عمل طلب الإفادة إيه؟", "label": "general_query"}
+{"prompt": "إزاي أنضف الكيبورد بتاع اللاب؟", "label": "general_query"}
+{"prompt": "عايز أعرف نتيجة التظلم بتاعي نزلت ولا لسه؟", "label": "general_query"}
+{"prompt": "إيه المهارات اللي هكتسبها لو دخلت تخصص تحليلات الأعمال (Business Analytics)؟", "label": "general_query"}
+{"prompt": "باقيلي كام عشان اجيب امتياز", "label": "gpa_plan"}
+{"prompt": "أنا عايزة أروح جيم، أتدرب كام يوم في الأسبوع؟", "label": "general_query"}
+{"prompt": "2 مادة A و مادة B يطلع كام", "label": "gpa_calc"}
+{"prompt": "الموقع قافل ليه", "label": "general_query"}
+{"prompt": "أعرف منين عليا كام مصاريف؟", "label": "general_query"}
+{"prompt": "إزاي أعمل زبادي في البيت؟", "label": "general_query"}
+{"prompt": "الموقع هيشتغل امتي", "label": "general_query"}
+{"prompt": "إزاي أعمل طلب سحب مادة من الموقع؟", "label": "general_query"}
+{"prompt": "عايزاخليتقديرياعلى", "label": "gpa_plan"}
+{"prompt": "يا بوت إنت بتفهم ولا حافظ؟", "label": "general_query"}
+{"prompt": "يعني إيه إنذار أكاديمي؟", "label": "general_query"}
+{"prompt": "يا جماعة حد يعرف أختم دفتر التأمين إزاي؟", "label": "general_query"}
+{"prompt": "عايز اعرف الطقس عامل ايه", "label": "general_query"}
+{"prompt": "بيان القيد هستلمه امتى", "label": "general_query"}
+{"prompt": "الزحمة في الكلية هي اللي مخليانا مش عارفين نسجل موادنا.", "label": "general_query"}
+{"prompt": "المكان لا يسمح للعد دا كله فبالتالي مشاكل في التسجيل", "label": "general_query"}
+{"prompt": "يعني إيه الكلية ماشية بنظام الجدارات؟ ده هيفرق معايا في إيه؟", "label": "general_query"}
+{"prompt": "عايز اعرف ايه المطلوب عشان اوصل ل 3", "label": "gpa_plan"}
+{"prompt": "أقدر أكشف مسالك بولية في التأمين الصحي يوم إيه؟", "label": "general_query"}
+{"prompt": "أطلع إثبات قيد منين؟", "label": "general_query"}
+{"prompt": "مين أسهل مادة فيهم أجيب فيها امتياز، الـ NLP ولا الـ Computer Vision؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ Infographics ولا Computer Graphics لو عايز مادة مضمونة ترفع الـ GPA؟", "label": "course_rec"}
+{"prompt": "أنهي مادة درجاتها بتيجي أسهل، الـ Big Data Analytics ولا الـ Data Mining؟", "label": "course_rec"}
+{"prompt": "عايز مادة اختيارية خفيفة عشان أرفع التقدير، آخد E-Commerce ولا ERP؟", "label": "course_rec"}
+{"prompt": "بين الـ Cloud Computing والـ Distributed Systems، أنهي مادة محتواها أقل وأضمن؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة مريحة في المذاكرة، أسجل Image Processing ولا Computer Vision؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في دول امتحاناتها بتيجي مباشرة أكتر، الـ Security ولا الـ Network؟", "label": "course_rec"}
+{"prompt": "مين فيهم مادة  وسهلة في لم الدرجات، الـ Cryptography ولا الـ Network Security؟", "label": "course_rec"}
+{"prompt": "أنا جدولي تقيل، آخد Modeling ولا Simulation مادة خفيفة جنبه؟", "label": "course_rec"}
+{"prompt": "لو قدامي Compiler و Operating Systems 2، مين فيهم مادة مضمونة أكتر للتقدير؟", "label": "course_rec"}
+{"prompt": "إيه أسهل مادة اختيارية في قسم ميديا أقدر أجيب فيها A+ من غير مجهود؟", "label": "course_rec"}
+{"prompt": "محتار بين الـ IoT والـ Mobile Applications، أنهي واحدة فيهم تضمن لي درجات المعمل؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ Information Retrieval ولا Data Compression لو بدور على أسهل مادة في ليفل 4؟", "label": "course_rec"}
+{"prompt": "مين مادة  أكتر في الدرجات Algorithms ولا Database 2؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة مذاكرتها ماتاخدش وقت، أسجل Signal Processing ولا Parallel Processing؟", "label": "course_rec"}
+{"prompt": "أنهي مادة نظري وسهلة في الحفظ، System Analysis ولا Software Engineering 2؟", "label": "course_rec"}
+{"prompt": "بين الـ Stochastic Processes والـ Linear Algebra 2، مين المادة اللي درجتها في الجيب؟", "label": "course_rec"}
+{"prompt": "عايزة مادة ليفل 4 تكون ، تنصحيني بإيه؟", "label": "course_rec"}
+{"prompt": "أنهي أسهل في الفهم والدرجات، الـ Web Programming ولا الـ Advanced Programming؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة اختيارية من قسم بزنس تكون سهلة جداً، أختار إيه؟", "label": "course_rec"}
+{"prompt": "إيه الفرق بين الـ AI والـ Security من حيث سهولة الامتحانات؟", "label": "course_rec"}
+{"prompt": "آخد مادة ميديا ولا بزنس عشان أضمن تقدير الترم ده؟", "label": "course_rec"}
+{"prompt": "أنا محبط من التقدير، إيه أكتر مادة في ليفل 3 بتوزع درجات؟", "label": "course_rec"}
+{"prompt": "مين أخف في المذاكرة والعملي، الـ Stream Processing ولا الـ Parallel Processing؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في التخصص بتاعنا تعتبر  للطلبة عشان يرفعوا درجاتهم؟", "label": "course_rec"}
+{"prompt": "أنهي مادة أضمن فيها الـ A+ بسهولة، الـ NLP ولا الـ Computer Vision؟", "label": "course_rec"}
+{"prompt": "مين أخف في المذاكرة عشان أرفع الـ GPA، مادة الـ Infographics ولا الـ Computer Graphics؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة تقديرها مضمون، أسجل Big Data Analytics ولا Data Mining؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ Cloud Computing ولا Distributed Systems لو بدور على مادة لمتها سهلة؟", "label": "course_rec"}
+{"prompt": "إيه أسهل مادة اختيارية في قسم الـ Business تضمن لي درجات، الـ ERP ولا الـ E-Commerce؟", "label": "course_rec"}
+{"prompt": "بين الـ Image Processing والـ Computer Vision، أنهي واحدة امتحاناتها بتيجي مباشرة أكتر؟", "label": "course_rec"}
+{"prompt": "لو محتاج مادة  وسهلة في لم الدرجات، آخد Cryptography ولا Network Security؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في ليفل 4 تعتبر مادة GPA، الـ Information Retrieval ولا الـ Data Compression؟", "label": "course_rec"}
+{"prompt": "مين مادة  في قسم السكيورتي، الـ Security ولا الـ Network؟", "label": "course_rec"}
+{"prompt": "أنا عايز مادة اختيارية من ميديا تكون سهلة جداً، تنصحني بـ Infographics ولا حاجة تانية؟", "label": "course_rec"}
+{"prompt": "لو خيروني بين الـ Modeling والـ Simulation، أنهي مادة درجات عملي بتاعتها أضمن؟", "label": "course_rec"}
+{"prompt": "مين أسهل في الفهم والدرجات، الـ Web Programming ولا الـ Advanced Programming؟", "label": "course_rec"}
+{"prompt": "آخد الـ Signal Processing ولا الـ Parallel Processing مادة خفيفة ترفع التقدير؟", "label": "course_rec"}
+{"prompt": "بين الـ Stochastic Processes والـ Linear Algebra 2، أنهي مادة مذاكرتها ماتاخدش وقت؟", "label": "course_rec"}
+{"prompt": "لو قدامي Compiler أو Operating Systems 2، مين فيهم مادة أضمن فيها درجات عالية؟", "label": "course_rec"}
+{"prompt": "إيه الفرق بين System Analysis و Software Engineering 2 من حيث سهولة الامتحان والتقدير؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ IoT ولا Mobile Applications لو عايز مادة عملي بتاعها بسيط ومضمون؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في تخصص الـ Intelligent Systems تعتبر الأسهل في ليفل 3؟", "label": "course_rec"}
+{"prompt": "مين مادة  أكتر للتقدير، الـ Algorithms ولا Database 2؟", "label": "course_rec"}
+{"prompt": "لو عايز أسجل مادة اختيارية سهلة من قسم Healthcare، أختار إيه؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في ليفل 4 محتواها أقصر، الـ Stream Processing ولا الـ Parallel Processing؟", "label": "course_rec"}
+{"prompt": "عايز مادة برمجة تكون سهلة في التقييم، آخد Programming 2 ولا مادة تانية؟", "label": "course_rec"}
+{"prompt": "بين الـ AI والـ Security، أنهي تخصص مواده درجاتها بتيجي أسهل في الكلية؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة ترفع جي بي إيه الترم ده، تنصحني بـ E-Commerce ولا مادة ميديا؟", "label": "course_rec"}
+{"prompt": "مين في دول مادة تقديرها في الجيب، الـ Big Data ولا الـ IoT؟", "label": "course_rec"}
+{"prompt": "مين أسهل في الدرجات الـ Social ولا الـ Database؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة ترفع الـ GPA، آخد Deep ولا Computation؟", "label": "course_rec"}
+{"prompt": "أنهي مادة  أكتر، الـ Data Science ولا الـ Security؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ Image ولا Vision لو بدور على مادة سهلة؟", "label": "course_rec"}
+{"prompt": "بين الـ Crypto والـ Network، أنهي واحدة لمتها أسرع؟", "label": "course_rec"}
+{"prompt": "مين فيهم مادة GPA، الـ Big Data ولا الـ Data Mining؟", "label": "course_rec"}
+{"prompt": "آخد Web ولا Mobile؟ أنهي مادة درجاتها في الجيب؟", "label": "course_rec"}
+{"prompt": "أنهي أخف في المذاكرة، الـ Parallel ولا الـ Distributed؟", "label": "course_rec"}
+{"prompt": "لو محتاج مادة تقدير، أختار الـ Graphics ولا الـ Infographics؟", "label": "course_rec"}
+{"prompt": "مين مادة  الترم ده، الـ Cloud ولا الـ IoT؟", "label": "course_rec"}
+{"prompt": "بين الـ AI والـ NLP، أنهي مادة امتحاناتها بتيجي أسهل؟", "label": "course_rec"}
+{"prompt": "أسجل Modeling ولا Simulation؟ مين فيهم أضمن للتقدير؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة  سهلة، الـ Ethics ولا الـ Social؟", "label": "course_rec"}
+{"prompt": "مين أسهل مادة اختيارية ترفع الجي بي إيه، الـ E-commerce ولا الـ ERP؟", "label": "course_rec"}
+{"prompt": "آخد الـ Algorithms ولا الـ Logic؟ أنهي مادة فهمها بسيط ودرجاتها حلوة؟", "label": "course_rec"}
+{"prompt": "بين الـ OS والـ Networks، مين فيهم مادة مريحة في لم الدرجات؟", "label": "course_rec"}
+{"prompt": "أنهي مادة محتواها أصغر، الـ Signal ولا الـ Image؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة من غير وجع دماغ، أسجل Software ولا System Analysis؟", "label": "course_rec"}
+{"prompt": "مين أضمن في الـ A+، الـ Math 4 ولا الـ Stochastic؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في ليفل 4 تعتبر ، الـ NLP ولا الـ Deep؟", "label": "course_rec"}
+{"prompt": "مين أسهل في الدرجات السوشيال ولا الداتا بيز؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة ترفع الـ GPA، آخد ديب ولا كمبيوتيشن؟", "label": "course_rec"}
+{"prompt": "أنهي مادة مضمونة أكتر، داتا ساينس ولا سكيورتي؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ إيمدج ولا فيجن لو بدور على مادة سهلة؟", "label": "course_rec"}
+{"prompt": "بين الكريبتو والنتورك، أنهي واحدة لمتها أسرع؟", "label": "course_rec"}
+{"prompt": "مين فيهم مادة GPA، بيج داتا ولا داتا مايننج؟", "label": "course_rec"}
+{"prompt": "آخد ويب ولا موبايل؟ أنهي مادة درجاتها في الجيب؟", "label": "course_rec"}
+{"prompt": "أنهي أخف في المذاكرة، بارالل ولا ديستريبيوتد؟", "label": "course_rec"}
+{"prompt": "لو محتاج مادة تقدير، أختار جرافيكس ولا إنفوجرافيكس؟", "label": "course_rec"}
+{"prompt": "مين مادة هدية الترم ده، كلاود ولا آي أو تي؟", "label": "course_rec"}
+{"prompt": "بين إيه آي وإن إل بي، أنهي مادة امتحاناتها بتيجي أسهل؟", "label": "course_rec"}
+{"prompt": "أسجل مودلينج ولا سيميوليشن؟ مين فيهم أضمن للتقدير؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة بصمجة سهلة، إيثيكس ولا سوشيال؟", "label": "course_rec"}
+{"prompt": "مين أسهل مادة اختيارية ترفع الجي بي إيه، إي كوميرس ولا إي أر بي؟", "label": "course_rec"}
+{"prompt": "آخد الجورزمات ولا لوجيك؟ أنهي مادة فهمها بسيط ودرجاتها حلوة؟", "label": "course_rec"}
+{"prompt": "بين الأو إس والنتورك، مين فيهم مادة مريحة في لم الدرجات؟", "label": "course_rec"}
+{"prompt": "أنهي مادة محتواها أصغر، سيجنال ولا إيمدج؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة من غير وجع دماغ، أسجل سوفت وير ولا سيستم أنالسس؟", "label": "course_rec"}
+{"prompt": "مين أضمن في الامتياز، ماث 4 ولا ستوكاستيك؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في ليفل 4 تعتبر مادة تقدير، إن إل بي ولا ديب؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة خفيفة جنب المشروع، آخد كومبريشن ولا ريتريفال؟", "label": "course_rec"}
+{"prompt": "أنهي أسهل في العملي بتاعها، ماشين ولا فيجن؟", "label": "course_rec"}
+{"prompt": "مين مادة مضمونة أجيب فيها A+، الداتا بيز ولا النتوورك؟", "label": "course_rec"}
+{"prompt": "لو محتار بين بزنس وميديا، أنهي مواد فيهم بترفع الـ GPA أكتر؟", "label": "course_rec"}
+{"prompt": "أسجل أدفانسد بروجرامنج ولا ويب؟ مين فيهم امتحاناته مباشرة؟", "label": "course_rec"}
+{"prompt": "مين أسهل في الدرجات السوشيال ولا الداتا بيز؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة ترفع الـ GPA، آخد ديب ولا كمبيوتيشن؟", "label": "course_rec"}
+{"prompt": "أنهي مادة مضمونة أكتر، داتا ساينس ولا سكيورتي؟", "label": "course_rec"}
+{"prompt": "تنصحني بـ إيمدج ولا فيجن لو بدور على مادة سهلة؟", "label": "course_rec"}
+{"prompt": "بين الكريبتو والنتورك، أنهي واحدة لمتها أسرع؟", "label": "course_rec"}
+{"prompt": "مين فيهم مادة GPA، بيج داتا ولا داتا مايننج؟", "label": "course_rec"}
+{"prompt": "آخد ويب ولا موبايل؟ أنهي مادة درجاتها في الجيب؟", "label": "course_rec"}
+{"prompt": "أنهي أخف في المذاكرة، بارالل ولا ديستريبيوتد؟", "label": "course_rec"}
+{"prompt": "لو محتاج مادة تقدير، أختار جرافيكس ولا إنفوجرافيكس؟", "label": "course_rec"}
+{"prompt": "مين مادة هدية الترم ده، كلاود ولا آي أو تي؟", "label": "course_rec"}
+{"prompt": "بين إيه آي وإن إل بي، أنهي مادة امتحاناتها بتيجي أسهل؟", "label": "course_rec"}
+{"prompt": "أسجل مودلينج ولا سيميوليشن؟ مين فيهم أضمن للتقدير؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة بصمجة سهلة، إيثيكس ولا سوشيال؟", "label": "course_rec"}
+{"prompt": "مين أسهل مادة اختيارية ترفع الجي بي إيه، إي كوميرس ولا إي أر بي؟", "label": "course_rec"}
+{"prompt": "آخد الجورزمات ولا لوجيك؟ أنهي مادة فهمها بسيط ودرجاتها حلوة؟", "label": "course_rec"}
+{"prompt": "بين الأو إس والنتورك، مين فيهم مادة مريحة في لم الدرجات؟", "label": "course_rec"}
+{"prompt": "أنهي مادة محتواها أصغر، سيجنال ولا إيمدج؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة من غير وجع دماغ، أسجل سوفت وير ولا سيستم أنالسس؟", "label": "course_rec"}
+{"prompt": "مين أضمن في الامتياز، ماث 4 ولا ستوكاستيك؟", "label": "course_rec"}
+{"prompt": "أنهي مادة في ليفل 4 تعتبر مادة تقدير، إن إل بي ولا ديب؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة خفيفة جنب المشروع، آخد كومبريشن ولا ريتريفال؟", "label": "course_rec"}
+{"prompt": "أنهي أسهل في العملي بتاعها، ماشين ولا فيجن؟", "label": "course_rec"}
+{"prompt": "مين مادة مضمونة أجيب فيها A+، الداتا بيز ولا النتوورك؟", "label": "course_rec"}
+{"prompt": "لو محتار بين بزنس وميديا، أنهي مواد فيهم بترفع الـ GPA أكتر؟", "label": "course_rec"}
+{"prompt": "أسجل أدفانسد بروجرامنج ولا ويب؟ مين فيهم امتحاناته مباشرة؟", "label": "course_rec"}
+{"prompt": "مين أسهل في لم الدرجات، ستريم بروسيسنج ولا بارالل؟", "label": "course_rec"}
+{"prompt": "آخد مادة هيلث كير ولا مادة ميديا كإليكتيف؟ أنهي أضمن للتقدير؟", "label": "course_rec"}
+{"prompt": "مين أمتع وأسهل في امتحاناته، النتوورك سكيورتي ولا الكريبتو؟", "label": "course_rec"}
+{"prompt": "لو عايز مادة ترفع جي بي إيه، تنصحني بـ ويب 2 ولا أدفانسد بروجرامنج؟", "label": "course_rec"}
+{"prompt": "مين في دول مادة هدية، سوفت وير 2 ولا سيستم؟", "label": "course_rec"}
+{"prompt": "محتاج أجيب كام في مادة الديب عشان الـ GPA بتاعي يوصل لـ 3؟", "label": "gpa_plan"}
+{"prompt": "لو جبت A في السوشيال و B في الداتا بيز، تقديري الترم ده هيبقى كام؟", "label": "gpa_plan"}
+{"prompt": "أنا جايب جيد جداً، المفروض أجيب كام في الكمبيوتيشن عشان أحافظ على التقدير؟", "label": "gpa_plan"}
+{"prompt": "لو نقصت درجات في الماث، أعوض بكام في الاستوكاستيك عشان الـ GPA م ينزلش؟", "label": "gpa_plan"}
+{"prompt": "أنا محتاج مادة السكيورتي والنتورك أجيب فيهم كام عشان أطلع من البروبيشن؟", "label": "gpa_plan"}
+{"prompt": "لو درجتي في الإيمدج طلعت C، المفروض أجيب كام في الفيجن عشان أسند الجي بي إيه؟", "label": "gpa_plan"}
+{"prompt": "أجيب كام في الكريبتو عشان أعوض الدرجة الوحشة اللي جبتها في الميدترم؟", "label": "gpa_plan"}
+{"prompt": "لو تارجت بتاعي امتياز، المفروض أنقص كام درجة بالكتير في مادة البيج داتا؟", "label": "gpa_plan"}
+{"prompt": "أنا عايز أوصل لـ 3.4، محتاج تقديرات إيه في مواد الويب والموبايل الترم ده؟", "label": "gpa_plan"}
+{"prompt": "لو جبت B+ في الداتا مايننج، ده هيرفع الـ GPA بتاعي كام درجة بالظبط؟", "label": "gpa_plan"}
+{"prompt": "محتاج أجيب امتياز في كام مادة من مواد ليفل 4 عشان تقديري العام يبقى جيد جداً؟", "label": "gpa_plan"}
+{"prompt": "لو درجتي في المودلينج وحشة، أجيب كام في السيميوليشن عشان أعدل الوضع؟", "label": "gpa_plan"}
+{"prompt": "أنا جايب D في مادة السيستم، لو عدتها وجبت A الـ GPA هيتغير قد إيه؟", "label": "gpa_plan"}
+{"prompt": "المفروض أجيب كام في مواد الميديا (إنفوجرافيكس وجرافيكس) عشان أرفع تقديري الترم ده؟", "label": "gpa_plan"}
+{"prompt": "لو أنا جايب 2.5، محتاج كام في مادة الـ NLP عشان أوصل لـ 2.7؟", "label": "gpa_plan"}
+{"prompt": "أقل درجة ممكن أجيبها في مادة الكلاود ومنزلش عن جي بي إيه 3 تبقى كام؟", "label": "gpa_plan"}
+{"prompt": "لو مستوايا في السيجنال ضعيف، المفروض أعوض بكام في البارالل عشان أوازن التقدير؟", "label": "gpa_plan"}
+{"prompt": "أجيب تقدير كام في مادة الـ AI عشان أعوض الـ F اللي شلتها قبل كده؟", "label": "gpa_plan"}
+{"prompt": "محتاج كام درجة في الفاينال بتاع الداتا ساينس عشان أضمن الـ A؟", "label": "gpa_plan"}
+{"prompt": "لو جبت امتياز في المواد الاختيارية (بزنس وإي كوميرس)، ده هيأثر إزاي على الـ CGPA؟", "label": "gpa_plan"}
+{"prompt": "ايه احسن لاب توب للجرافيك دزاين؟", "label": "general_query"}
+{"prompt": "لاب توب ماك بوك ولا ويندوز احسن للشغل؟", "label": "general_query"}
+{"prompt": "مقارنة بين معالجات intel و amd", "label": "general_query"}
+{"prompt": "مين افضل Dell ولا HP في التحمل؟", "label": "general_query"}
+{"prompt": "ايهما افضل ايفون ولا سامسونج في الكاميرا؟", "label": "general_query"}
+{"prompt": "تنصحني باني موبايل في فئة 10000 جنيه؟", "label": "general_query"}
+{"prompt": "ايه احسن كورس انجليزي اونلاين؟", "label": "general_query"}
+{"prompt": "كورس يوديمي ولا كورسيرا افضل؟", "label": "general_query"}
+{"prompt": "مين احسن مطعم بيقدم اكل سوري في اسكندرية؟", "label": "general_query"}
+{"prompt": "ايه افضل طريقة للمذاكرة بتركيز؟", "label": "general_query"}
+{"prompt": "يعني ايه تقدير F؟", "label": "general_query"}
+{"prompt": "ممكن تشرحلي يعني ايه تقدير D في اللائحة؟", "label": "general_query"}
+{"prompt": "هو الـ A بيبقى من كام؟", "label": "general_query"}
+{"prompt": "يعني ايه تقدير غير مكتمل أو IC؟", "label": "general_query"}
+{"prompt": "إيه الفرق بين تقدير الـ W والـ F؟", "label": "general_query"}
+{"prompt": "هو كل تقدير بيبقى ال gpa بتاعه كام؟", "label": "general_query"}
+{"prompt": "يعني ايه تقدير F؟", "label": "general_query"}
+{"prompt": "ممكن تشرحلي يعني ايه تقدير D في اللائحة؟", "label": "general_query"}
+{"prompt": "هو الـ A بيبقى من كام؟", "label": "general_query"}
+{"prompt": "يعني ايه تقدير غير مكتمل أو IC؟", "label": "general_query"}
+{"prompt": "إيه الفرق بين تقدير الـ W والـ F؟", "label": "general_query"}
+{"prompt": "هو كل تقدير بيبقى ال gpa بتاعه كام؟", "label": "general_query"}

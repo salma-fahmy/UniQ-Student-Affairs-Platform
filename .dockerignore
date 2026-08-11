@@ -1,0 +1,12 @@
+node_modules/
+.gitignore
+endpoints.http
+Dockerfile*
+docker-compose*
+.dockerignore
+dist
+build
+.git
+api.txt
+.env
+diagrams

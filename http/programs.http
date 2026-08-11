@@ -1,0 +1,28 @@
+@baseUrl = http://localhost:3000
+@token =  PASTE_YOUR_JWT_TOKEN_HERE
+###
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+{
+    "userId":"super-admin-1975-031" ,
+    "password":"12345678"
+}
+
+
+###
+# get all programs info
+Get {{baseUrl}}/api/v1/programs
+
+
+# get specific program details 
+###
+Get {{baseUrl}}/api/v1/programs/3
+
+
+# program statistics 
+#####
+# get number of student for all programs
+GET {{baseUrl}}/api/v1/programs/programs-students-count
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,79 @@
+# global variables
+@baseUrl = http://localhost:3000
+@token = PASTE_YOUR_JWT_TOKEN_HERE
+
+
+
+
+
+
+
+
+#student endpoints
+
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+//osama student id in the database, 
+# if you want to test with your CDS account search on DB for userId
+{
+    "userId": "22010007" ,
+    "password":"12345678"
+}
+
+
+### 
+#get student Complaints 
+Get {{baseUrl}}/api/v1/students/complaints
+Authorization: Bearer {{token}}
+
+###
+# get specific complaint
+Get {{baseUrl}}/api/v1/students/complaints/CMP-2024-001
+Authorization: Bearer {{token}}
+
+
+###
+#get student requests
+
+Get {{baseUrl}}/api/v1/students/requests
+Authorization: Bearer {{token}}
+
+
+######
+# get  student specific request
+Get {{baseUrl}}/api/v1/students/requests/REQ-2026-004
+Authorization: Bearer {{token}}
+
+
+######################
+# get student payments
+Get {{baseUrl}}/api/v1/students/payments
+Authorization: Bearer {{token}}
+
+### 
+# get student operation summary. 
+
+Get {{baseUrl}}/api/v1/students/operations-summary
+Authorization: Bearer {{token}}
+
+###
+# get student payments & dues summary.
+Get {{baseUrl}}/api/v1/students/payment-summary
+Authorization: Bearer {{token}}
+
+
+
+
+###  get Failed Courses of student . 
+Get {{baseUrl}}/api/v1/students/failed-courses
+Authorization: Bearer {{token}}
+
+### get student failure summary. and dues for failure courses.
+
+
+###  get Failed Courses of student . 
+Get {{baseUrl}}/api/v1/students/study-info
+Authorization: Bearer {{token}}
+
+

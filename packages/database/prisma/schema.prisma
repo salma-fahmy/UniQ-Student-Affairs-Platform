@@ -1,0 +1,642 @@
+generator client {
+  provider = "prisma-client"
+  output   = "./../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql" 
+
+}
+
+model Role {
+  role_id         Int              @id @default(autoincrement())
+  role_name       String           @unique @db.VarChar(50)
+  description     String?
+  created_at      DateTime?        @default(now()) @db.Timestamp(6)
+  role_permission RolePermission[]
+  user            User[]
+
+  @@map("roles")
+}
+
+model AcademicProgram {
+  program_id        Int
+  academic_staff_id String        @db.VarChar(50)
+  role              String?       @db.VarChar(50)
+  assigned_date     DateTime?     @db.Date
+  academic_staff    AcademicStaff @relation(fields: [academic_staff_id], references: [staff_id], onDelete: Cascade)
+  program           Program       @relation(fields: [program_id], references: [program_id], onDelete: Cascade)
+
+  @@id([program_id, academic_staff_id])
+  @@map("academic_programs")
+}
+
+model AcademicSemester {
+  semester_id        Int             @id @default(autoincrement())
+  semester_name      String?         @db.VarChar(50)
+  semester_code      String?         @unique @db.VarChar(20)
+  academic_year      String?         @db.VarChar(20)
+  start_date         DateTime?       @db.Date
+  end_date           DateTime?       @db.Date
+  is_current         Boolean?        @default(false)
+  registration_start DateTime?       @db.Date
+  registration_end   DateTime?       @db.Date
+  created_at         DateTime?       @default(now()) @db.Timestamp(6)
+  student            Student[]
+  student_course     StudentCourse[]
+
+  @@map("academic_semesters")
+}
+
+model AcademicStaff {
+  staff_id          String            @id @db.VarChar(50)
+  academic_rank     String?           @db.VarChar(100)
+  specialization    String?           @db.VarChar(100)
+  office_location   String?           @db.VarChar(100)
+  office_hours      String?
+  academic_program  AcademicProgram[]
+  staff             Staff             @relation(fields: [staff_id], references: [staff_id], onDelete: Cascade)
+  student           Student[]
+
+
+  @@map("academic_staff")
+}
+
+model Course {
+  course_id      Int        @id @default(autoincrement())
+  course_code    String?    @unique @db.VarChar(20)
+  course_name_en String?    @db.VarChar(100)
+  credit_hours   Int?
+  description    String?
+  is_active      Boolean?   @default(true)
+  created_at     DateTime?  @default(now()) @db.Timestamp(6)
+  course_type    CourseType
+
+  prerequisites    CoursePrerequisite[] @relation("CoursePrerequisites")
+  prerequisite_for CoursePrerequisite[] @relation("PrerequisiteFor")
+  program_course   ProgramCourse[]
+  student_course   StudentCourse[]
+
+  @@map("courses")
+}
+
+model CoursePrerequisite {
+  course_id              Int
+  prerequisite_course_id Int
+  created_at             DateTime? @default(now()) @db.Timestamp(6)
+  course                 Course    @relation("CoursePrerequisites", fields: [course_id], references: [course_id], onDelete: Cascade)
+  prerequisite           Course    @relation("PrerequisiteFor", fields: [prerequisite_course_id], references: [course_id], onDelete: Cascade)
+
+  @@id([course_id, prerequisite_course_id])
+  @@map("course_prerequisites")
+}
+
+model Permission {
+  permission_id    Int              @id @default(autoincrement())
+  permission_name  String           @unique @db.VarChar(100)
+  description      String?
+  created_at       DateTime?        @default(now()) @db.Timestamp(6)
+  role_permissions RolePermission[]
+
+  @@map("permissions")
+}
+
+model Program {
+  program_id             Int               @id @default(autoincrement())
+  program_name_en        String            @db.VarChar(100)
+  program_name_ar        String?           @db.VarChar(100)
+  program_type           String?           @db.VarChar(50)
+  tuition_fees           Decimal?          @db.Decimal(10, 2)
+  is_active              Boolean?          @default(true)
+  credit_hour_price      Decimal           @db.Decimal(10, 2)
+  program_description_en String            @db.VarChar(500)
+  program_description_ar String            @db.VarChar(500)
+  program_benefits_en    String            @db.VarChar(500)
+  program_benefits_ar    String            @db.VarChar(500)
+  student_skills_en      String            @db.VarChar(500)
+  student_skills_ar      String            @db.VarChar(500)
+  created_at             DateTime?         @default(now()) @db.Timestamp(6)
+  academic_program       AcademicProgram[]
+  program_course         ProgramCourse[]
+  student                Student[]
+
+  @@map("programs")
+}
+
+model ProgramCourse {
+  program_id       Int
+  course_id        Int
+  semester_offered Int?
+  created_at       DateTime? @default(now()) @db.Timestamp(6)
+  course           Course    @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+  program          Program   @relation(fields: [program_id], references: [program_id], onDelete: Cascade)
+
+  @@id([program_id, course_id])
+  @@map("program_courses")
+}
+
+model RequestType {
+  request_type_id   Int       @id @default(autoincrement())
+  code              String    @unique @db.VarChar(30)
+  name              String    @db.VarChar(100)
+  name_ar           String?   @db.VarChar(100)
+  price             Decimal?  @db.Decimal(10, 2)
+  processing_days   Int?
+  requires_approval Boolean?  @default(true)
+  form_schema       Json?
+  is_active         Boolean?  @default(true)
+  created_at        DateTime? @default(now()) @db.Timestamp(6)
+  requests          Request[]
+
+  @@map("request_types")
+}
+
+model RolePermission {
+  role_id       Int
+  permission_id Int
+  assigned_at   DateTime?  @default(now()) @db.Timestamp(6)
+  permission    Permission @relation(fields: [permission_id], references: [permission_id], onDelete: Cascade)
+  role          Role       @relation(fields: [role_id], references: [role_id], onDelete: Cascade)
+
+  @@id([role_id, permission_id])
+  @@map("role_permissions")
+}
+
+model Staff {
+  staff_id           String              @id @db.VarChar(50)
+  job_title          String?             @db.VarChar(100)
+  hire_date          DateTime?           @db.Date
+  department         String?             @db.VarChar(100)
+  created_at         DateTime?           @default(now()) @db.Timestamp(6)
+  academic_staff     AcademicStaff?
+  user               User                @relation(fields: [staff_id], references: [user_id], onDelete: Cascade)
+  requests           Request[]
+  college_info       CollegeInfo[]
+  college_rules_file CollegeRulesFile[]
+  complaint          Complaint[]
+  contact_submission ContactSubmission[]
+
+  @@map("staff")
+}
+
+model Student {
+  student_id              String            @id @db.VarChar(50)
+  status                  StudentStatus     @default(active)
+  fees_due                Decimal?          @default(0) @db.Decimal(10, 2)
+  enrollment_date         DateTime?         @db.Date
+  graduation_date         DateTime?         @db.Date
+  secondary_qualification QualificationType
+  secondary_grade         Int
+  secondary_school        String
+  country                 String
+  secondary_english_grade Int
+  created_at              DateTime?         @default(now()) @db.Timestamp(6)
+  updated_at              DateTime?         @updatedAt @db.Timestamp(6)
+  program_id              Int?
+  current_semester_id     Int?
+  military_id             Int?
+  academic_staff_id       String
+  complaint               Complaint[]
+  payment                 Payment[]
+  requests                Request[]
+  student_course          StudentCourse[]
+  program                 Program?          @relation(fields: [program_id], references: [program_id])
+  user                    User              @relation(fields: [student_id], references: [user_id], onDelete: Cascade)
+  academic_semester       AcademicSemester? @relation(fields: [current_semester_id], references: [semester_id])
+  academic_staff          AcademicStaff     @relation(fields: [academic_staff_id], references: [staff_id])
+  military_training       MilitaryTraining? @relation(fields: [military_id], references: [military_id], onDelete: Restrict)
+
+  @@index([program_id])
+  @@index([current_semester_id])
+  @@index([status])
+  @@map("students")
+}
+
+model MilitaryTraining {
+  military_id                  Int                   @id @default(autoincrement())
+  military_training_completed  Boolean               @default(false)
+  military_training_start_date DateTime?             @db.Date
+  student_training_status      MilitaryStudentStatus
+  military_training_end_date   DateTime?             @db.Date
+
+  student Student[]
+
+  @@index([military_training_completed])
+  @@map("military_training")
+}
+
+model StudentCourse {
+  student_id        String           @db.VarChar(50)
+  course_id         Int
+  semester_id       Int
+  work              Int
+  final             Int
+  mid_term          Int
+  grade             GradeEnum
+  status            CourseStatus?
+  completion_date   DateTime?        @db.Date
+  created_at        DateTime?        @default(now()) @db.Timestamp(6)
+  updated_at        DateTime?        @updatedAt @db.Timestamp(6)
+  course            Course           @relation(fields: [course_id], references: [course_id], onDelete: Cascade)
+  academic_semester AcademicSemester @relation(fields: [semester_id], references: [semester_id])
+  student           Student          @relation(fields: [student_id], references: [student_id], onDelete: Cascade)
+
+  @@id([student_id, course_id, semester_id])
+  @@index([student_id])
+  @@index([course_id])
+  @@index([semester_id])
+  @@index([status])
+  @@map("student_courses")
+}
+
+model User {
+  user_id               String          @id @db.VarChar(50)
+  first_name            String          @db.VarChar(50)
+  second_name           String?         @db.VarChar(50)
+  third_name            String?         @db.VarChar(50)
+  fourth_name           String?         @db.VarChar(50)
+  email                 String          @unique @db.VarChar(100)
+  password              String          @db.VarChar(255)
+  ssn                   String          @unique @db.VarChar(20)
+  birth                 DateTime?       @db.Date
+  phone                 String          @unique @db.VarChar(20)
+  address               String?
+  last_login            DateTime?       @db.Timestamp(6)
+  is_active             Boolean?        @default(true)
+  created_at            DateTime?       @default(now()) @db.Timestamp(6)
+  updated_at            DateTime?       @updatedAt @db.Timestamp(6)
+  role_id               Int
+  photo_url             String?         @default("https://res.cloudinary.com/di1l2qchp/image/upload/avatar-photo_gswvqo_ilrzo7.webp")
+  public_photo_cloud_id String?
+  audit_log             AuditLog[]
+  notification          Notification[]
+  password_reset        PasswordReset[]
+  staff                 Staff?
+  student               Student?
+  refresh_token         RefreshToken?
+  role                  Role            @relation(fields: [role_id], references: [role_id])
+
+  @@index([role_id])
+  @@index([email])
+  @@index([ssn])
+  @@index([is_active])
+  @@map("users")
+}
+
+model AuditLog {
+  log_id     Int       @id @default(autoincrement())
+  table_name String?   @db.VarChar(50)
+  record_id  String?   @db.VarChar(50)
+  action     String?   @db.VarChar(20)
+  old_data   Json?
+  new_data   Json?
+  changed_by String?   @db.VarChar(50)
+  changed_at DateTime? @default(now()) @db.Timestamp(6)
+  user       User?     @relation(fields: [changed_by], references: [user_id])
+
+  @@index([changed_by])
+  @@index([changed_at])
+  @@index([table_name])
+  @@map("audit_logs")
+}
+
+model CollegeInfo {
+  college_id     Int       @id @default(autoincrement())
+  name           String?   @db.VarChar(100)
+  name_ar        String?   @db.VarChar(100)
+  title          String?   @db.VarChar(200)
+  dean_name      String?   @db.VarChar(100)
+  contact_email  String?   @db.VarChar(100)
+  contact_phone  String?   @db.VarChar(20)
+  address        String?
+  logo_url       String?
+  hero_image_url String?
+  vision         String?
+  vision_ar      String?
+  mission        String?
+  mission_ar     String?
+  description    String?
+  description_ar String?
+  uploaded_by    String?   @db.VarChar(50)
+  updated_at     DateTime? @updatedAt @db.Timestamp(6)
+  affairs_staff  Staff?    @relation(fields: [uploaded_by], references: [staff_id])
+
+  @@index([uploaded_by])
+  @@map("college_info")
+}
+
+model CollegeRulesFile {
+  file_id       Int       @id @default(autoincrement())
+  file_url      String?
+  file_name     String?   @db.VarChar(255)
+  file_size     Int?
+  mime_type     String?   @db.VarChar(100)
+  title         String?   @db.VarChar(200)
+  description   String?
+  uploaded_by   String?   @db.VarChar(50)
+  uploaded_at   DateTime? @default(now()) @db.Timestamp(6)
+  updated_at    DateTime? @updatedAt @db.Timestamp(6)
+  version       Int?      @default(1)
+  is_active     Boolean?  @default(true)
+  affairs_staff Staff?    @relation(fields: [uploaded_by], references: [staff_id])
+
+  @@index([uploaded_by])
+  @@index([is_active])
+  @@map("college_rules_files")
+}
+
+model Complaint {
+  complaint_id     Int              @id @default(autoincrement())
+  complaint_number String?          @unique @db.VarChar(50)
+  student_id       String?          @db.VarChar(50)
+  complaint_type   String?          @db.VarChar(100)
+  complaint_text   String?
+  attachment       String?
+  status           ComplaintStatus? @default(open)
+  priority         String?          @default("medium") @db.VarChar(20)
+  handled_by       String?          @db.VarChar(50)
+  resolution_text  String?
+  resolved_at      DateTime?        @db.Timestamp(6)
+  created_at       DateTime?        @default(now()) @db.Timestamp(6)
+  updated_at       DateTime?        @updatedAt @db.Timestamp(6)
+  staff            Staff?           @relation(fields: [handled_by], references: [staff_id])
+  student          Student?         @relation(fields: [student_id], references: [student_id])
+
+  @@index([student_id])
+  @@index([handled_by])
+  @@index([status])
+  @@index([created_at])
+  @@index([priority])
+  @@map("complaints")
+}
+
+model Notification {
+  notification_id   Int        @id @default(autoincrement())
+  user_id           String?    @db.VarChar(50)
+  title             String?    @db.VarChar(100)
+  message           String?
+  notification_type NotifiType
+  is_read           Boolean?   @default(false)
+  read_at           DateTime?  @db.Timestamp(6)
+  action_url        String?
+  created_at        DateTime?  @default(now()) @db.Timestamp(6)
+  expires_at        DateTime?  @db.Timestamp(6)
+  user              User?      @relation(fields: [user_id], references: [user_id])
+
+  @@index([user_id])
+  @@index([is_read])
+  @@index([created_at])
+  @@index([expires_at])
+  @@map("notifications")
+}
+
+model PasswordReset {
+  id         Int      @id @default(autoincrement())
+  token      String   @unique @db.VarChar(255)
+  expires_at DateTime @db.Timestamp(6)
+  user_id    String   @db.VarChar(50)
+  user       User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+  @@index([token])
+  @@index([user_id])
+  @@index([expires_at])
+  @@map("password_resets")
+}
+
+model Payment {
+  payment_id     Int            @id @default(autoincrement())
+  payment_number String?        @unique @db.VarChar(50)
+  student_id     String         @db.VarChar(50)
+  request_id     Int            @unique
+  amount         Decimal        @db.Decimal(10, 2)
+  status         PaymentStatus? @default(pending)
+  transaction_id String?        @db.VarChar(100)
+  payment_date   DateTime?      @default(now()) @db.Timestamp(6)
+  created_at     DateTime?      @default(now()) @db.Timestamp(6)
+  updated_at     DateTime?      @updatedAt @db.Timestamp(6)
+  request        Request        @relation(fields: [request_id], references: [request_id])
+  student        Student        @relation(fields: [student_id], references: [student_id])
+
+  @@index([student_id])
+  @@index([request_id])
+  @@index([status])
+  @@index([payment_date])
+  @@map("payments")
+}
+
+model Request {
+  request_id         Int               @id @default(autoincrement())
+  request_number     String?           @unique @db.VarChar(50)
+  student_id         String            @db.VarChar(50)
+  request_type_id    Int
+  price_at_request   Decimal?          @db.Decimal(10, 2)
+  description        String?
+  request_body       Json?
+  status             RequestStatus?    @default(pending)
+  comments           String?
+  updated_by         String?           @db.VarChar(50)
+  assigned_doctor_id String?           @db.VarChar(50)
+  processed_at       DateTime?         @db.Timestamp(6)
+  created_at         DateTime?         @default(now()) @db.Timestamp(6)
+  updated_at         DateTime?         @updatedAt @db.Timestamp(6)
+  attachment_links  String[]
+  payment            Payment?
+  request_type       RequestType       @relation(fields: [request_type_id], references: [request_type_id])
+  student            Student           @relation(fields: [student_id], references: [student_id])
+  staff              Staff?            @relation(fields: [updated_by], references: [staff_id])
+  @@index([student_id])
+  @@index([request_type_id])
+  @@index([updated_by])
+  @@index([assigned_doctor_id])
+  @@index([status])
+  @@index([created_at])
+  @@map("requests")
+}
+
+
+
+model RefreshToken {
+  id                 Int      @id @default(autoincrement())
+  user_id            String   @unique @db.VarChar(50)
+  token              String   @unique
+  expires_at         DateTime
+  session_expires_at DateTime
+  created_at         DateTime @default(now())
+  user               User     @relation(fields: [user_id], references: [user_id], onDelete: Cascade)
+
+  @@index([user_id])
+  @@index([token])
+  @@index([expires_at])
+  @@map("refresh_tokens")
+}
+
+model ContactSubmission {
+  submission_id Int       @id @default(autoincrement())
+  full_name     String
+  email         String
+  subject       String?
+  message       String
+  is_read       Boolean   @default(false)
+  read_by       String?   @db.VarChar(50)
+  read_at       DateTime?
+  created_at    DateTime  @default(now())
+
+  staff Staff? @relation(fields: [read_by], references: [staff_id], onDelete: SetNull)
+
+  @@map("contact_submissions")
+}
+
+model ComplaintCounter {
+  id       Int @id @default(autoincrement())
+  year     Int @unique
+  sequence Int @default(0)
+
+  @@index([year])
+  @@map("complaint_counters")
+}
+
+model RequestCounter {
+  id       Int @id @default(autoincrement())
+  year     Int @unique
+  sequence Int @default(0)
+
+  @@index([year])
+  @@map("request_counters")
+}
+
+model UserCounter {
+  id       Int @id @default(autoincrement())
+  year     Int @unique
+  sequence Int @default(0)
+
+  @@index([year])
+  @@map("user_counters")
+}
+
+model StudentCounter {
+  id       Int @id @default(autoincrement())
+  year     Int @unique
+  sequence Int @default(0)
+
+  @@index([year])
+  @@map("student_counters")
+}
+
+model PaymentCounter {
+  id       Int @id @default(autoincrement())
+  year     Int @unique
+  sequence Int @default(0)
+
+  @@index([year])
+  @@map("payment_counters")
+}
+
+enum StudentStatus {
+  active
+  graduated
+  suspended
+  withdrawn
+  on_leave
+
+  @@map("student_status")
+}
+
+enum RequestStatus {
+  pending
+  accepted
+  rejected
+  resubmit
+  @@map("request_status")
+}
+
+enum PaymentStatus {
+  pending
+  paid
+  failed
+
+  @@map("payment_status")
+}
+
+enum CourseStatus {
+  enrolled
+  completed
+  dropped
+  failed
+  absent
+  withdrawn
+
+  @@map("course_status")
+}
+
+enum ComplaintStatus {
+  open
+  in_progress
+  accepted
+  rejected
+
+  @@map("complaint_status")
+}
+
+enum QualificationType {
+  general_secondary_science
+  general_secondary_math
+  IGCSE
+  american_diploma
+  IB
+  arab_equivalent
+  steam
+
+  @@map("qualification_type")
+}
+
+enum CourseType {
+  program_elective
+  program_obligatory
+  university_elective
+  university_obligatory
+  faculty_elective
+  faculty_obligatory
+
+  @@map("course_type")
+}
+
+enum NotifiType {
+  request_update
+  payment
+  complaint
+  course_update
+  system
+  announcement
+
+  @@map("notification_type")
+}
+
+enum GradeEnum {
+  A
+  A_minus @map("A-")
+  B_plus  @map("B+")
+  B
+  B_minus @map("B-")
+  C_plus  @map("C+")
+  C
+  C_minus @map("C-")
+  D_plus  @map("D+")
+  D
+  F
+  F_fail  @map("(F)")
+  Abs
+  W
+  FW
+  MW
+  I
+  IP
+  S
+  U
+  AU
+}
+
+enum MilitaryStudentStatus {
+  failed
+  success
+  training
+}

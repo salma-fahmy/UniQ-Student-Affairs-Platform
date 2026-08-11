@@ -1,0 +1,46 @@
+# ─── Base ────────────────────────────────────────────────
+FROM node:20-alpine AS base
+RUN apk add --no-cache netcat-openbsd
+
+# ─── Prepare (prune with turbo) ──────────────────────────
+FROM base AS prepare
+WORKDIR /app
+
+RUN npm install -g turbo
+
+COPY . .
+RUN turbo prune api --docker
+
+# ─── Builder ─────────────────────────────────────────────
+FROM base AS builder
+WORKDIR /app
+
+COPY --from=prepare /app/out/json/ .
+#  ci = faster, deterministic, respects lockfile
+RUN npm ci
+
+COPY --from=prepare /app/out/full/ .
+
+RUN npx turbo build --filter=api...
+
+# ─── Runner ──────────────────────────────────────────────
+FROM node:20-alpine AS runner
+WORKDIR /app
+
+#  Only install runtime OS deps
+RUN apk add --no-cache netcat-openbsd
+
+
+# # Copy built application and node_modules
+COPY --from=builder /app .
+
+COPY entrypoint.sh ./entrypoint.sh
+
+
+RUN chmod +x ./entrypoint.sh
+
+
+
+EXPOSE 6000
+
+CMD ["sh", "./entrypoint.sh"]

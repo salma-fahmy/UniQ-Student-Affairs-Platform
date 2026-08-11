@@ -1,0 +1,223 @@
+# ═══════════════════════════════════════════════════════════════
+#  Complaints API — REST Client File
+#  Base URL: http://localhost:3000
+# ═══════════════════════════════════════════════════════════════
+
+# ── Global Variables ─────────────────────────────────────────────────────────
+
+@baseUrl      = http://localhost:3000
+@adminToken   = PASTE_ADMIN_JWT_TOKEN_HERE
+@affairsToken = PASTE_AFFAIRS_STAFF_JWT_TOKEN_HERE
+@studentToken = PASTE_STUDENT_JWT_TOKEN_HERE
+@doctorToken  = PASTE_YOUR_JWT_TOKEN_HERE
+
+
+# ═══════════════════════════════════════════════════════════════
+#  1. AUTH — Login
+# ═══════════════════════════════════════════════════════════════
+
+### [Auth] Login — admin
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "super-admin-1975-031",
+    "password": "12345678"
+}
+
+###
+
+### [Auth] Login — affairs_staff
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "yasser-mostafa-1984-029",
+    "password": "12345678"
+}
+
+###
+
+### [Auth] Login — student (22010025)
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "22010025",
+    "password": "12345678"
+}
+
+###
+
+### [Auth] Login — academic_staff (doctor)
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "layla-hassan-1978-019",
+    "password": "12345678"
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  2. COMPLAINTS — Get All  (RLS-aware)
+#
+#  student        → own complaints only
+#  affairs_staff  → all complaints EXCEPT doctor_complaint
+#  admin          → ALL complaints including doctor_complaint
+#  academic_staff → 403 Forbidden
+# ═══════════════════════════════════════════════════════════════
+
+### [GET All] as affairs_staff — excludes doctor_complaint
+GET {{baseUrl}}/api/v1/complaints/all-complaints?page=1&limit=10
+Authorization: Bearer {{affairsToken}}
+
+###
+
+### [GET All] as admin — includes doctor_complaint
+GET {{baseUrl}}/api/v1/complaints/all-complaints?page=1&limit=5
+Authorization: Bearer {{adminToken}}
+
+###
+
+### [GET All] as student — own complaints only
+GET {{baseUrl}}/api/v1/complaints/all-complaints?page=1&limit=5
+Authorization: Bearer {{studentToken}}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  3. COMPLAINTS — Get Specific
+# ═══════════════════════════════════════════════════════════════
+
+### [GET One] student views own complaint → 200
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-009
+Authorization: Bearer {{studentToken}}
+
+###
+
+### [GET One] student tries another student's complaint → 403
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-006
+Authorization: Bearer {{studentToken}}
+
+###
+
+### [GET One] affairs_staff — non-doctor complaint → 200 + marks in_progress
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-006
+Authorization: Bearer {{affairsToken}}
+
+###
+
+### [GET One] affairs_staff tries doctor_complaint → 403
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-007
+Authorization: Bearer {{affairsToken}}
+
+###
+
+### [GET One] admin opens any complaint (including doctor_complaint) → 200
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-009
+Authorization: Bearer {{adminToken}}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  4. COMPLAINTS — Get Student Info for a Complaint
+# ═══════════════════════════════════════════════════════════════
+
+### [GET Student Info] for CMP-2026-001 — affairs_staff
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-001/student
+Authorization: Bearer {{affairsToken}}
+
+###
+
+### [GET Student Info] for CMP-2026-002 — affairs_staff
+GET {{baseUrl}}/api/v1/complaints/CMP-2026-002/student
+Authorization: Bearer {{affairsToken}}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  5. COMPLAINTS — Create
+# ═══════════════════════════════════════════════════════════════
+
+### [CREATE] student submits a regular (academic) complaint
+POST {{baseUrl}}/api/v1/complaints/create
+Authorization: Bearer {{studentToken}}
+Content-Type: application/json
+
+{
+    "studentId": "22010025",
+    "complaintType": "academic",
+    "complaintText": "Conflict in section schedules — two mandatory courses overlap.",
+    "priority": "high"
+}
+
+###
+
+### [CREATE] student submits a doctor_complaint (visible to admin only)
+POST {{baseUrl}}/api/v1/complaints/create
+Authorization: Bearer {{studentToken}}
+Content-Type: application/json
+
+{
+    "studentId": "22010025",
+    "complaintType": "doctor_complaint",
+    "complaintText": "The doctor repeatedly marked me absent despite my attendance records showing otherwise.",
+    "priority": "high"
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  6. COMPLAINTS — Approve
+# ═══════════════════════════════════════════════════════════════
+
+### [APPROVE] affairs_staff approves a non-doctor complaint → status: accepted
+PATCH {{baseUrl}}/api/v1/complaints/CMP-2026-009/approve
+Authorization: Bearer {{affairsToken}}
+Content-Type: application/json
+
+{
+    "resolutionText": "Issue resolved after reviewing the student's records."
+}
+
+###
+
+### [APPROVE] admin approves a doctor_complaint
+PATCH {{baseUrl}}/api/v1/complaints/CMP-2026-007/approve
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+    "resolutionText": "Reviewed with the academic department. Complaint addressed accordingly."
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  7. COMPLAINTS — Reject
+# ═══════════════════════════════════════════════════════════════
+
+### [REJECT] affairs_staff rejects a non-doctor complaint → status: rejected
+PATCH {{baseUrl}}/api/v1/complaints/CMP-2026-006/reject
+Authorization: Bearer {{affairsToken}}
+Content-Type: application/json
+
+{
+    "resolutionText": "Complaint rejected due to insufficient evidence."
+}
+
+###
+
+### [REJECT] admin rejects a doctor_complaint
+PATCH {{baseUrl}}/api/v1/complaints/CMP-2026-004/reject
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+    "resolutionText": "Complaint rejected after academic review."
+}
+
+
+# ═══════════════════════════════════════════════════════════════
+#  8. NOTIFICATIONS — Verify notification sent after approve/reject
+# ═══════════════════════════════════════════════════════════════
+
+### [NOTIFICATIONS] student checks their notifications (run after approve/reject)
+GET {{baseUrl}}/api/v1/users/notifications
+Authorization: Bearer {{studentToken}}

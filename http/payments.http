@@ -1,0 +1,67 @@
+### Payment Flow Tests
+@baseUrl = http://localhost:3000/api/v1
+@studentToken = PASTE_STUDENT_JWT_TOKEN_HERE
+@staffToken =  PASTE_STAFF_JWT_TOKEN_HERE
+
+### STEP 1 — Preview
+POST {{baseUrl}}/requests/preview
+Authorization:Bearer {{studentToken}}
+Content-Type: application/json
+
+{
+  "studentId": "22010025",
+  "requestTypeId": 5,
+  "price":100,
+  "body": {},
+  "description": "طلب تسجيل مادة للطالب"
+}
+
+###
+
+### STEP 2 — Initiate payment
+POST {{baseUrl}}/payments/initiate
+Authorization:Bearer {{studentToken}}
+Content-Type: application/json
+
+{
+  "studentId": "22010025",
+  "requestTypeId": 5,
+  "price": 100,
+  "body": {},
+  "description": "طلب تسجيل مادة للطالب"
+}
+
+###
+
+### STEP 3A — Confirm payment
+POST {{baseUrl}}/payments/PAY-2026-TEMP-MPS5HKMD-DODED/confirm
+Authorization:Bearer {{studentToken}}
+Content-Type: application/json
+
+{
+  "transactionId": "TXN-TEST-001",
+  "studentId": "22010007",
+  "requestTypeId": 5,
+  "price": 100,
+  "body": {
+  },
+    "attachment_links":["https://res.cloudinary.com/di1l2qchp/image/upload/profile-photo/ypogxhize8v5kj3yebfj.jpg"],
+  "description": "طلب تسجيل مادة للطالب"
+}
+###
+
+### STEP 3B — Fail payment
+POST {{baseUrl}}/payments/PAY-2026-00002/fail
+Authorization:Bearer {{studentToken}}
+
+###
+
+### STEP 4 — Get receipt
+GET {{baseUrl}}/payments/PAY-2026-00003
+Authorization: Bearer {{studentToken}}
+
+###
+
+### List all payments
+GET {{baseUrl}}/payments?page=1&limit=10
+Authorization:Bearer {{staffToken}}

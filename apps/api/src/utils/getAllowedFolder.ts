@@ -1,0 +1,1 @@
+export const allowedFolders = ["profile-photo" , "docs" ,  "attachments"] ; 

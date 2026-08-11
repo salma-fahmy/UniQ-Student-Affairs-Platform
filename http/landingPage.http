@@ -1,0 +1,113 @@
+# global variables
+@baseUrl = http://localhost:3000
+@token = PASTE_YOUR_JWT_TOKEN_HERE
+
+
+
+# admin login 
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+
+{
+    "userId": "super-admin-1975-031" , 
+    "password":"12345678"
+}
+
+
+###
+# get all programs info
+Get {{baseUrl}}/api/v1/programs
+
+
+# get specific program details 
+###
+Get {{baseUrl}}/api/v1/programs/3
+
+
+
+
+# get specific program details 
+###
+Get {{baseUrl}}/api/v1/collageInfo
+
+
+
+# get collage stats  
+###
+Get {{baseUrl}}/api/v1/collageInfo/stats
+
+
+
+
+########################################
+# those don't be used in the front end , as limitation on time . 
+# so you make refactor to it, by making the contact form be sent to uniqsupport5@gmail.com to reply the inquiries of  ...
+
+# contact submission  in landing page.  
+
+# visitor : create a new inquiry 
+# ###
+# Post {{baseUrl}}/api/v1/inquiry/create
+# Content-Type: application/json 
+
+# {
+
+#     "fullName" : "osama moahamed " , 
+#     "email": "osamaabdelshafy7@gmail.com" , 
+#     "subject":"what is the programs of the collage" , 
+#     "message":" i want to know the programs of the collage and what is its dues in addition to knowing the plan of study  "
+
+# }
+
+
+# # admin  or staff or academic get all inquires
+# ###
+
+# Get {{baseUrl}}/api/v1/inquiry/get-all-inquiries?limit=5&page=1
+# Content-Type: application/json
+# Authorization: Bearer {{token}}
+
+
+# ####
+
+# # admin  or staff or academic get specific inquiry
+
+# Get {{baseUrl}}/api/v1/inquiry/1
+# Authorization: Bearer {{token}}
+
+
+
+
+# ### send email to visitor
+# Post {{baseUrl}}/api/v1/auth/send-email
+# Content-Type: application/json 
+# Authorization: Bearer {{token}}
+
+# {
+#         "template":"INQUIRY_RESPONSE" ,
+#         "to":"osamaabdelshafy7@gmail.com" ,
+#         "subject":"student message",
+#         "data":{
+#            "role":"visitor" , 
+#            "title": "inquiry-response",
+#             "message":"Thank to contact with us , we wish to see you  soon . ",
+#             "notificationType": "announcement"
+            
+#         }
+# }
+
+
+
+# ####
+# #delete specific inquiry
+
+# DELETE {{baseUrl}}/api/v1/inquiry/1
+# Authorization: Bearer {{token}}
+
+
+# ####
+# #delete all inquiry 
+
+# DELETE {{baseUrl}}/api/v1/inquiry/delete-all-inquiries
+# Authorization: Bearer {{token}}

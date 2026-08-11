@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+	--brand-bg-start: #f8faff;
+	--brand-bg-mid: #eef2ff;
+	--brand-bg-end: #ffffff;
+	--brand-surface: rgba(255, 255, 255, 0.92);
+	--brand-surface-strong: rgba(255, 255, 255, 0.98);
+	--brand-border: rgba(165, 180, 252, 0.45);
+	--brand-text: #1e1b4b;
+	--brand-muted: #6b7280;
+	--brand-primary: #312e81;
+	--brand-primary-hover: #28256a;
+	--brand-accent: #4f46e5;
+	--brand-success: #166534;
+	--brand-success-bg: rgba(220, 252, 231, 0.88);
+	--brand-danger: #b91c1c;
+	--brand-danger-bg: rgba(254, 226, 226, 0.92);
+	--brand-warning: #f59e0b;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* إخفاء السكرول بار من الـ Input */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* سكرول بار احترافي وناعم للشات الجانبي */
+  .smooth-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  .smooth-scrollbar::-webkit-scrollbar {
+    width: 5px;
+  }
+  .smooth-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .smooth-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 rounded-full;
+  }
+  .smooth-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400;
+  }
+}
+

@@ -1,0 +1,103 @@
+# global variables
+@baseUrl = http://localhost:3000
+# paste the token you get from login above
+@token = PASTE_YOUR_JWT_TOKEN_HERE
+# ── Login as academic_staff (doctor) ─────────────────────────────────────────
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "layla-hassan-1978-019",
+    "password": "12345678"
+}
+
+
+
+
+###############################################################################
+# 1. Academic Dashboard
+#    Returns: pendingRequests count, assignedStudentsCount, recentRequests
+###############################################################################
+GET {{baseUrl}}/api/v1/academic/dashboard
+Authorization: Bearer {{token}}
+
+
+###############################################################################
+# 2. Assigned Students List  (paginated)
+#    Doctor only sees students in his assigned programs
+###############################################################################
+GET {{baseUrl}}/api/v1/academic/students?page=1&limit=10
+Authorization: Bearer {{token}}
+
+
+###############################################################################
+# 3. Academic Requests List
+#    Only CRS_REG (Add Course) and CRS_WTH (Drop Course) — filtered in service
+###############################################################################
+GET {{baseUrl}}/api/v1/academic/requests?page=1&limit=10
+Authorization: Bearer {{token}}
+
+
+###############################################################################
+# 4. Request Detail
+#    Will 404 if the request is not CRS_REG / CRS_WTH
+###############################################################################
+GET {{baseUrl}}/api/v1/academic/requests/REQ-2024-009
+Authorization: Bearer {{token}}
+
+
+###############################################################################
+# 5. Approve a Request
+###############################################################################
+PATCH {{baseUrl}}/api/v1/academic/requests/REQ-2026-001/status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "status": "accepted",
+    "comments": "Request approved after reviewing student record."
+}
+
+##################log in as a student (if there is a widthdraw or adding request to test)
+POST {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "userId": "22010025",
+  "password": "12345678"
+}
+
+################ create a  acdmic request #token for student 22010025 //modified logic in the payment service
+# POST {{baseUrl}}/api/v1/requests/create
+# Authorization: Bearer PASTE_YOUR_JWT_TOKEN_HERE
+# Content-Type: application/json
+
+# {
+#   "studentId": "22010025",
+#   "requestTypeId": 5,
+#   "price": 100,
+#   "body": {
+#     "course_code": "CS101"
+#   },
+#   "description": "I want to register for this course please"
+# }
+
+# ##### log in as a doctor his students has a acdmic request
+# POST {{baseUrl}}/api/v1/auth/login
+# Content-Type: application/json
+
+# {
+#   "userId": "sarah-johnson-1980-017",
+#   "password": "12345678"
+# }
+###############################################################################
+# 6. Reject a Request # token for doctor sarah-johnson-1980-017
+###############################################################################
+PATCH {{baseUrl}}/api/v1/academic/requests/REQ-2024-003/status
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "status": "rejected",
+  "comments": "Student does not meet prerequisites for this course."
+}

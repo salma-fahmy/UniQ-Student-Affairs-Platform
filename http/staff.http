@@ -1,0 +1,56 @@
+# global variables
+@baseUrl = http://localhost:3000
+# paste the affairs_staff token here
+@affairsToken = PASTE_AFFAIRS_STAFF_JWT_TOKEN_HERE
+# paste the admin token here
+@adminToken = PASTE_ADMIN_JWT_TOKEN_HERE
+###############################################################################
+# Login as affairs_staff
+###############################################################################
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "yasser-mostafa-1984-029",
+    "password": "12345678"
+}
+
+
+
+
+###############################################################################
+# Login as admin
+###############################################################################
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "super-admin-1975-031",
+    "password": "12345678"
+}
+
+
+
+
+###############################################################################
+# Admin trying affairs dashboard — must return 403
+###############################################################################
+GET {{baseUrl}}/api/v1/staff/dashboard
+Authorization: Bearer {{adminToken}}
+
+
+###############################################################################
+# 1. Affairs Staff Dashboard
+#    Returns: pendingRequests, activeComplaints (doctor complaints excluded),
+#             recentRequests, recentComplaints
+###############################################################################
+GET {{baseUrl}}/api/v1/staff/dashboard
+Authorization: Bearer {{affairsToken}}
+
+
+###############################################################################
+# 2. Admin Dashboard
+#    Returns: everything including doctor complaints count
+###############################################################################
+GET {{baseUrl}}/api/v1/staff/admin-dashboard
+Authorization: Bearer {{adminToken}}

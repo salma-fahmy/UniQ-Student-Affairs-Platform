@@ -1,0 +1,149 @@
+# global variables
+@baseUrl = http://localhost:3000
+@token =  PASTE_YOUR_JWT_TOKEN_HERE
+
+
+
+
+# check the server is working
+Get {{baseUrl}}/health
+Authorization: Bearer {{token}}
+
+#### get All users test 
+Get {{baseUrl}}/users
+Authorization: Bearer {{token}}
+
+
+##################################################
+
+##auth routes . 
+#### login as student
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+//osama student id in the database, if you want to test with your CDS account search on DB for userId
+{
+  "userId": "<script>alert(\"heelo\")</script>",
+  "password": "123456789"
+}
+
+
+
+#######
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+//osama student id in the database, if you want to test with your CDS account search on DB for userId
+{
+  "userId":"22010007",
+  "password": "12345678"
+}
+
+### 
+# admin login 
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+
+{
+    "userId": "super-admin-1975-031" , 
+    "password":"12345678"
+}
+
+
+### refresh token 
+Post {{baseUrl}}/api/v1/auth/refresh-token
+Content-Type: application/json 
+
+
+
+### logout 
+# also in the front end , must remove the token from the client.
+Post {{baseUrl}}/api/v1/auth/logout
+Content-Type: application/json
+
+
+####check-password
+Post {{baseUrl}}/api/v1/auth/check-password/22010007
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "password":"12345678"
+}
+
+###change-password 
+Post {{baseUrl}}/api/v1/auth/change-password/22010007 
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "password":"123456789"
+}
+
+
+### forget-password
+Post {{baseUrl}}/api/v1/auth/forget-password
+Content-Type: application/json 
+
+{
+    "email":"cds.osamamohamed23050@alexu.edu.eg"
+}
+
+
+### contact-form
+Post {{baseUrl}}/api/v1/auth/contact-form
+Content-Type: application/json 
+
+{
+    "fullName":"osama mohamed",
+    "subject":"inquiry",
+    "email":"osamaabdelshafy7@gmail.com",
+    "message":"i need to know , how can i join to the credit  programs"
+
+}
+
+
+
+
+
+
+# those are not be used because not time to  implement it in the front end . 
+
+# ### send email to student
+# Post {{baseUrl}}/api/v1/auth/send-email
+# Content-Type: application/json 
+# Authorization: Bearer {{token}}
+
+# {
+#         "template":"STUDENT_MESSAGE" ,
+#         "to":"cds.osamamohamed23050@alexu.edu.eg" ,
+#         "subject":"student message",
+#         "data":{
+#             "role":"student",
+#             "studentId":"22010007",
+#             "message":" you must attend to school at 11:00 AM ",
+#             "title": "Affair message",
+# 			"notificationType": "announcement"
+#         }
+# }
+
+
+
+# ### send email to visitor
+# Post {{baseUrl}}/api/v1/auth/send-email
+# Content-Type: application/json 
+# Authorization: Bearer {{token}}
+
+# {
+#         "template":"INQUIRY_RESPONSE" ,
+#         "to":"osamaabdelshafy7@gmail.com" ,
+#         "subject":"student message",
+#         "data":{
+#            "role":"visitor" , 
+#            "title": "admin-message",
+#             "message":" you must attend to school at 11:00 AM ",
+#             "notificationType": "system"
+            
+#         }
+# }

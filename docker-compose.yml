@@ -1,0 +1,93 @@
+services:
+  
+  node-app:
+    container_name: api 
+    build: 
+      dockerfile: ./apps/api/Dockerfile.api
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./apps/api/src:/app/apps/api/src
+      - ./apps/api/logs:/app/apps/api/logs
+      - ./packages/database:/app/packages/database
+      - ./packages/config:/app/packages/config
+      - ./entrypoint.sh:/app/entrypoint.sh
+    
+    env_file: 
+     - ./apps/api/.env     
+    environment:
+      - NODE_ENV=development
+      - APP_USER_PW=${APP_USER_PW}
+    depends_on:
+      - redis 
+      - postgres
+    networks:
+      - uniq_network
+
+
+  chatbot:
+    container_name: chatbot
+    build:
+      context: ./apps/chatbot
+      dockerfile: Dockerfile
+    ports:
+      - "7860:7860"
+      - "8501:8501"
+    env_file:
+      - ./apps/chatbot/.env
+    environment:
+      - HF_TOKEN=${HF_TOKEN}
+    depends_on:
+      - node-app
+    networks:
+      - uniq_network
+    restart: unless-stopped
+    
+  redis:
+    image: redis@sha256:6cbef353e480a8a6e7f10ec545f13d7d3fa85a212cdcc5ffaf5a1c818b9d3798
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+    networks:
+      - uniq_network
+
+  postgres:
+   image: postgres@sha256:5773fe724c49c42a7a9ca70202e11e1dff21fb7235b335a73f39297d200b73a2
+   container_name: postgres
+   restart : always
+   environment: 
+    - POSTGRES_USER=${POSTGRES_USER}
+    - POSTGRES_PASSWORD=${POSTGRES_PW}
+    - POSTGRES_DB=${POSTGRES_DB}
+    - APP_USER_PW=${APP_USER_PW}
+   ports:
+    - "5000:5432"
+   volumes:
+    - postgres_data:/var/lib/postgresql 
+    - ./sql/init-db-user.sql:/docker-entrypoint-initdb.d/init-db-user.sql
+   networks:
+      - uniq_network
+
+  email-worker : 
+    build:
+     context: .
+     dockerfile: ./apps/workers/Dockerfile.worker
+    volumes:
+      - ./apps/workers:/app/apps/workers
+      - ./packages/database:/app/packages/database
+      - ./packages/config:/app/packages/config
+    env_file: 
+     - ./apps/workers/.env  
+    depends_on:
+      - redis
+    networks:
+      - uniq_network
+
+
+networks:
+   uniq_network: 
+      driver: bridge 
+volumes:
+   postgres_data :

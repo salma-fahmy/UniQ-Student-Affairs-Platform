@@ -1,0 +1,34 @@
+# ─── Base ────────────────────────────────────────────────
+FROM node:20-alpine AS base
+
+# ─── Prepare ─────────────────────────────────────────────
+FROM base AS prepare
+WORKDIR /app
+
+RUN npm install -g turbo
+
+COPY . .
+RUN turbo prune workers --docker
+
+# ─── Builder ─────────────────────────────────────────────
+FROM base AS builder
+WORKDIR /app
+
+COPY --from=prepare /app/out/json/ .
+RUN npm install
+
+COPY --from=prepare /app/out/full/ .
+
+RUN npx turbo build --filter=workers...
+
+# ─── Runner ──────────────────────────────────────────────
+FROM node:20-alpine AS runner
+WORKDIR /app
+
+COPY --from=builder /app .
+
+RUN npm install -g tsx
+
+WORKDIR /app/apps/workers
+
+CMD ["tsx", "src/email/email.worker.js"]

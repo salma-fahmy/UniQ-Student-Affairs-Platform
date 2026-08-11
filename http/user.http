@@ -1,0 +1,300 @@
+# global variables
+@baseUrl = http://localhost:3000
+@token =  PASTE_YOUR_JWT_TOKEN_HERE
+
+
+
+
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+//osama student id in the database, 
+# if you want to test with your CDS account search on DB for userId
+{
+    "userId": "layla-hassan-1978-019" ,
+    "password":"12345678"
+}
+
+###
+# super admin
+
+Post {{baseUrl}}/api/v1/auth/login 
+Content-Type: application/json
+
+{
+    "userId": "super-admin-1975-031" ,
+    "password":"12345678"
+}
+
+
+
+### return the cloud signature,
+Get {{baseUrl}}/api/v1/users/photo-signature?folderName=profile-photo
+Authorization: Bearer {{token}}
+
+
+### get user profile. 
+GET {{baseUrl}}/api/v1/users/profile
+Authorization: Bearer {{token}}
+
+
+###  get User notifications. 
+Get {{baseUrl}}/api/v1/users/notifications
+Authorization: Bearer {{token}}
+
+### update user's specific notification that he clicks on it to be read.
+PATCH   {{baseUrl}}/api/v1/notifications/3/read
+Authorization: Bearer {{token}}
+
+
+### update user profile photo (after uploading to Cloudinary, save the URL)
+PATCH {{baseUrl}}/api/v1/users/profile-photo
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "profilePhoto": "https://res.cloudinary.com/your-cloud/image/upload/v123/profile-photo/abc.jpg",
+    "publicId": "profile-photo/abc"
+}
+
+
+### Delete a SPECIFIC notification by its ID
+DELETE  {{baseUrl}}/api/v1/notifications/3/delete
+Authorization: Bearer {{token}}
+
+
+### Delete specific notification . 
+DELETE  {{baseUrl}}/api/v1/notifications/delete 
+Authorization: Bearer {{token}}
+
+
+### delete all notifications
+DELETE  {{baseUrl}}/api/v1/notifications/delete 
+Authorization: Bearer {{token}}
+
+
+### 
+# create student user  .
+# make sure the category fields like programs ,  roles  , secondary_qualification and etc same formate on the db 
+
+POST  {{baseUrl}}/api/v1/users/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "first_name":"osama" , 
+    "second_name":"elsayed", 
+    "third_name":"farag" ,
+    "fourth_name":"mabrouk", 
+    "role":"student" , 
+    "email":"osamaabdelshafy7@gmail.com" , 
+    "phone":"01123224936", 
+    "ssn":"30110050202458" , 
+    "address":"Abu qir " , 
+    "birth":"2001-10-5" , 
+    "studentData":{
+        "secondary_qualification":"IB" ,
+        "secondary_grade":428, 
+        "secondary_school":"elsemad school" , 
+        "country":"Egypt" , 
+        "secondary_english_grade":95 , 
+        "academic_supervisor_id":"sameh-farouk-1974-024" ,     
+        "program_id" :"Cybersecurity"
+    }
+
+}
+
+
+### 
+# create  academic_staff  .
+# make sure the category fields like programs ,  roles  , secondary_qualification and etc same formate on the db 
+# 
+
+POST {{baseUrl}}/api/v1/users/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "first_name": "ahmed",
+  "second_name": "mohamed",
+  "third_name": "ali",
+  "fourth_name": "hassan",
+  "role": "academic_staff",
+  "email": "ahmed.ali@university.com",
+  "phone": "01012345678",
+  "ssn": "29905010203456",
+  "address": "Alexandria",
+  "birth": "1999-05-01",
+
+  "staffData": {
+    "job_title": "Lecturer",
+    "department": "Computer Science",
+
+    "academicData": {
+      "academic_rank": "Assistant Professor",
+      "specialization": "Artificial Intelligence",
+      "office_location": "Building A - Room 204",
+      "office_hours": "Sun-Wed 10:00-12:00"
+    }
+  }
+}
+
+#### 
+# affairs_staff 
+
+POST {{baseUrl}}/api/v1/users/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "first_name": "mona",
+  "second_name": "samy",
+  "third_name": "khaled",
+  "fourth_name": "nabil",
+  "role": "affairs_staff",
+  "email": "mona.samy@university.com",
+  "phone": "01098765432",
+  "ssn": "29807040201234",
+  "address": "Cairo",
+  "birth": "1998-07-04",
+  "staffData": {
+    "job_title": "Student Affairs Officer",
+    "department": "Academic Affairs"
+
+  }
+}
+
+
+
+###
+# Admin
+POST {{baseUrl}}/api/v1/users/create
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "first_name": "kareem",
+  "second_name": "adel",
+  "third_name": "mostafa",
+  "fourth_name": "ibrahim",
+  "role": "admin",
+  "email": "admin.kareem@system.com",
+  "phone": "01111222333",
+  "ssn": "30001010209876",
+  "address": "Giza",
+  "birth": "2000-01-01",
+
+  "staffData": {
+    "job_title": "System Administrator",
+    "department": "IT"
+ 
+  }
+}
+
+
+###############################################################################
+# ADMIN — User Management
+# All routes below require admin role + read:user / update:user permission
+###############################################################################
+
+###
+# paste the admin token here
+@adminToken = PASTE_ADMIN_JWT_TOKEN_HERE
+# admin login (if not already logged in)
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "super-admin-1975-031",
+    "password": "12345678"
+}
+
+
+
+
+###############################################################################
+# 1. List All Users  (paginated)
+#    Optional query params:
+#      ?page=1&limit=20
+#      ?role=student | academic_staff | affairs_staff | admin
+###############################################################################
+GET {{baseUrl}}/api/v1/users/admin/all?page=1&limit=20
+Authorization: Bearer {{adminToken}}
+
+###
+# filter by role
+GET {{baseUrl}}/api/v1/users/admin/all?page=1&limit=20&role=student
+Authorization: Bearer {{adminToken}}
+
+###
+GET {{baseUrl}}/api/v1/users/admin/all?page=1&limit=20&role=academic_staff
+Authorization: Bearer {{adminToken}}
+
+###
+GET {{baseUrl}}/api/v1/users/admin/all?page=1&limit=20&role=affairs_staff
+Authorization: Bearer {{adminToken}}
+
+
+###############################################################################
+# 2. Get Single User Full Detail
+###############################################################################
+GET {{baseUrl}}/api/v1/users/admin/22010007
+Authorization: Bearer {{adminToken}}
+
+###
+GET {{baseUrl}}/api/v1/users/admin/layla-hassan-1978-019
+Authorization: Bearer {{adminToken}}
+
+
+###############################################################################
+# 3. Update User Fields
+#    Allowed: first_name, second_name, third_name, fourth_name,
+#             email, phone, address, birth, is_active
+#    NOT allowed: password, role  (need separate flows for those)
+#    Only send the fields you want to change — others stay untouched
+###############################################################################
+
+### update user's name and phone
+PATCH {{baseUrl}}/api/v1/users/admin/22010007
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+    "first_name": "osamaa-updated",
+    "phone": "01099887765"
+}
+###### update user photo
+PATCH {{baseUrl}}/api/v1/users/admin/22010007
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "photo_url": "https://res.cloudinary.com/di1l2qchp/image/upload/test_photo.jpg",
+    "publicId": "test_photo_public_id"
+}
+### deactivate a user
+PATCH {{baseUrl}}/api/v1/users/admin/22010007
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+    "is_active": false
+}
+
+### reactivate a user
+PATCH {{baseUrl}}/api/v1/users/admin/22010007
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+    "is_active": true
+}
+
+### update email
+PATCH {{baseUrl}}/api/v1/users/admin/layla-hassan-1978-019
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+
+{
+    "email": "laylaty.new@university.edu.eg"
+}

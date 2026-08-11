@@ -1,0 +1,149 @@
+@baseUrl = http://localhost:3000/api/v1
+@token   = PASTE_YOUR_JWT_TOKEN_HERE
+
+
+
+###########################################################
+# STEP 1 — login to get token
+###########################################################
+
+### Login as student
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "userId": "22010004",
+  "password": "12345678"
+}
+
+
+
+###########################################################
+# STEP 3 — Guest (without token)
+###########################################################
+
+
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+
+{
+  "query": "ايه شروط التسجيل في المواد؟"
+}
+
+
+
+### Guest — trying to access student-only feature (GPA calculation)
+# expected:this  is  only for students with valid token 
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+
+{
+  "query": "احسبلي الجي بي اي بتاعي"
+}
+
+
+###########################################################
+# STEP 4 — testiing the chatbot with valid token
+###########################################################
+
+### Student — question about GPA calculation
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "query": "احسبلي الجي بي اي بتاعي"
+}
+
+
+
+### Student — question about course selection
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "query": "انهي مواد اخد في الترم الجاي؟"
+}
+
+
+
+### Student — general question about registration
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "query": "ايه شروط التسجيل في المواد؟"
+}
+
+
+###########################################################
+# STEP 5 — testing Rate Limiting
+# try 100 request in a minute
+###########################################################
+
+### Rate limit test
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+
+{
+  "query": "test"
+}
+
+
+###########################################################
+# STEP 6 — testing the validation
+###########################################################
+
+### Query : expected (400) Bad Request
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+
+{
+  "query": ""
+}
+
+
+
+### Empty Request Body — Expected: 400 Bad
+Content-Type: application/json
+
+{}
+
+
+
+### Invalid Token — Expected: Access as Guest, Not 401 Unauthorized
+POST {{baseUrl}}/chatbot/chat
+Content-Type: application/json
+Authorization: Bearer this.is.invalid.token
+
+{
+  "query": "ايه شروط التسجيل؟"
+}
+
+#####
+POST http://localhost:3000/api/v1/chatbot/calculate-gpa
+Content-Type: application/json
+
+{
+  "subjects": [
+    { "credit_hours": 3, "grade": "A" },
+    { "credit_hours": 3, "grade": "B+" }
+  ]
+}
+###########################################################
+# STEP 7 — Test the GPA Plan (Target GPA)
+###########################################################
+
+### Student — Planning to Reach a Target GPA
+POST {{baseUrl}}/chatbot/plan-gpa
+Content-Type: application/json
+
+{
+  "current_gpa": 3.4,
+  "target_gpa": 3.5,
+  "completed_hours": 60,
+  "remaining_hours": 60
+}

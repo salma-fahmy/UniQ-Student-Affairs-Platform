@@ -1,0 +1,152 @@
+# global variables
+@baseUrl = http://localhost:3000
+@token = PASTE_YOUR_JWT_TOKEN_HERE
+@affairsToken = PASTE_AFFAIRS_STAFF_JWT_TOKEN_HERE
+@adminToken = PASTE_ADMIN_JWT_TOKEN_HERE
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "22010025",
+    "password": "12345678"
+}
+
+
+### affairs_staff login
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "yasser-mostafa-1984-029",
+    "password": "12345678"
+}
+
+
+### academic_staff login
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "layla-hassan-1978-019",
+    "password": "12345678"
+}
+
+### admin login
+Post {{baseUrl}}/api/v1/auth/login
+Content-Type: application/json
+
+{
+    "userId": "super-admin-1975-031",
+    "password": "12345678"
+}
+
+
+# ── Request Types ─────────────────────────────────────────────────────────────
+
+### get all request types
+GET  {{baseUrl}}/api/v1/requests/types
+Authorization: Bearer {{token}}
+
+
+### get specific request type
+GET  {{baseUrl}}/api/v1/requests/types/OFF_CERT_EXT
+Authorization: Bearer {{token}}
+
+
+# ── Get Requests ──────────────────────────────────────────────────────────────
+# affairs_staff / admin → all types
+# academic_staff        → only CRS_REG and CRS_WTH (enforced DB RLS + app layer)
+# student               → own requests only (app-level filter; DB RLS uses ELSE TRUE)
+
+### get all requests — affairs_staff (all types)
+GET  {{baseUrl}}/api/v1/requests/all?page=1&limit=6
+Authorization: Bearer {{affairsToken}}
+
+
+### get all requests — admin (all types)
+GET  {{baseUrl}}/api/v1/requests/all?page=1&limit=6
+Authorization: Bearer {{adminToken}}
+
+
+### get all requests — academic_staff (CRS_REG and CRS_WTH only)
+GET  {{baseUrl}}/api/v1/requests/all?page=1&limit=6
+Authorization: Bearer {{token}}
+
+
+### get all requests — student (own requests only)
+# Uses @token which holds the student JWT
+GET  {{baseUrl}}/api/v1/requests/all?page=1&limit=6
+Authorization: Bearer {{token}}
+
+
+### get specific request
+GET  {{baseUrl}}/api/v1/requests/REQ-2026-001
+Authorization: Bearer {{affairsToken}}
+
+
+# ── Create Request (student only) ─────────────────────────────────────────────
+
+### student submits a request
+# - studentId    : student's ID
+# - body         : flexible JSON with request-specific data
+# - price        : cost at time of creation
+# - requestTypeId: FK to request_types table
+# - description  : optional, 20-500 chars
+
+# Post  {{baseUrl}}/api/v1/requests/create
+# Authorization: Bearer {{token}}
+# Content-Type: application/json
+
+# {
+#     "studentId": "22010007",
+#     "body": {
+#         "name": "osama",
+#         "studentId": "22010007"
+#     },
+#     "requestTypeId": 1,
+#     "price": 100
+# }
+
+
+# ── Approve / Reject / Resubmit (affairs_staff or admin) ─────────────────────
+
+### Approve a request → status: accepted
+PATCH {{baseUrl}}/api/v1/requests/REQ-2026-001/approve
+Authorization: Bearer {{affairsToken}}
+
+###ensure that the notification has been sent to this student
+
+GET http://localhost:3000/api/v1/users/notifications
+Authorization: Bearer {{token}}
+
+### Reject a request → status: rejected
+PATCH {{baseUrl}}/api/v1/requests/REQ-2026-001/reject
+Authorization: Bearer {{affairsToken}}
+Content-Type: application/json
+
+{
+    "comment": "Insufficient GPA for this program."
+}
+
+
+### Resubmit — ask student to re-upload / fix data → status: resubmit
+PATCH {{baseUrl}}/api/v1/requests/REQ-2026-001/resubmit
+Authorization: Bearer {{affairsToken}}
+Content-Type: application/json
+
+{
+    "comment": "Please re-upload the birth certificate with clearer image quality."
+}
+
+### create free request
+Post {{baseUrl}}/api/v1/requests/create-free
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "studentId": "22010002",
+    "requestTypeId": 1,
+    "price": 0,
+    "body": {},
+    "description": "طلب تعليم عسكري للطالب"
+}
